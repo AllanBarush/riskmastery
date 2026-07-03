@@ -3,53 +3,53 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Machine Learner Certification™ — MLC Program | RiskMathics</title>
+<title>Machine Learner™ Executive Certification Program (MLC) | RiskMathics</title>
 <meta name="description" content="MLC™ - La certificación más completa del mundo en ML/AI. 620+ horas, 20 módulos, 25 capstones, 12+ industrias. Finanzas, Healthcare, Quantum Computing. RiskMathics.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
 <style>
-:root{--black:#0B1D3A;--black-rich:#081428;--black-soft:#142C4E;--yellow:#C99700;--yellow-dark:#A87D14;--yellow-glow:#E3B341;--yellow-soft:#E2CFA2;--teal:#C7923E;--teal-dark:#B98C3C;--ivory:#F7F2E4;--ivory-warm:#FBF8EF;--white:#FFF;--text-primary:#14213A;--text-secondary:#4E576B;--border-subtle:rgba(0,0,0,0.08);--shadow-md:0 8px 32px rgba(0,0,0,0.15);--r-sm:8px;--r-md:16px;--r-lg:24px}
+:root{--black:#0A0A0A;--black-rich:#050505;--black-soft:#181818;--yellow:#FDE100;--yellow-dark:#8F7F00;--yellow-glow:#FFF04D;--yellow-soft:#F0E68C;--teal:#FDE100;--teal-dark:#8F7F00;--ivory:#F7F5E8;--ivory-warm:#FCFAF0;--white:#FFF;--text-primary:#141414;--text-secondary:#52524A;--border-subtle:rgba(0,0,0,0.08);--shadow-md:0 8px 32px rgba(0,0,0,0.15);--r-sm:8px;--r-md:16px;--r-lg:24px}
 *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth;font-size:16px;-webkit-font-smoothing:antialiased}body{font-family:'Lora',Georgia,serif;font-size:1rem;line-height:1.72;color:var(--text-primary);background:var(--ivory);overflow-x:hidden}
 h1,h2,h3,h4,h5,h6{font-family:'Poppins',sans-serif;font-weight:700;line-height:1.15;letter-spacing:-.02em}
-.display-xl{font-size:clamp(2.6rem,5.5vw,4.8rem);font-weight:900;letter-spacing:-.03em}.display-md{font-size:clamp(1.5rem,3vw,2.2rem);font-weight:700}
+.display-xl{font-size:clamp(2rem,4.6vw,3.8rem);font-weight:800;letter-spacing:.05em;text-transform:uppercase}.display-md{font-size:clamp(1.25rem,2.4vw,1.8rem);font-weight:700;letter-spacing:.08em;text-transform:uppercase}
 .section-label{font-family:'Poppins',sans-serif;font-size:.75rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--yellow-dark)}
 .body-lg{font-size:1.125rem;line-height:1.78}.container{max-width:1200px;margin:0 auto;padding:0 clamp(1.5rem,4vw,3rem)}section{padding:clamp(4rem,8vw,8rem) 0}
 
-.site-header{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1rem 0;background:rgba(8,20,40,.96);backdrop-filter:blur(20px);border-bottom:1px solid rgba(201,151,0,.08);transition:all .4s}
+.site-header{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1rem 0;background:rgba(8,20,40,.96);backdrop-filter:blur(20px);border-bottom:1px solid rgba(253,225,0,.08);transition:all .4s}
 .header-inner{display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:0 auto;padding:0 clamp(1.5rem,4vw,3rem)}.header-logo{height:40px;filter:brightness(1.1)}
-.header-nav{display:flex;gap:2rem;align-items:center}.header-nav a{font-family:'Poppins',sans-serif;font-size:.8rem;font-weight:500;color:rgba(255,255,255,.7);text-decoration:none;transition:color .3s}.header-nav a:hover{color:var(--yellow)}
-.btn-header-cta{font-family:'Poppins',sans-serif;font-size:.8rem;font-weight:700;color:var(--black)!important;background:var(--yellow);padding:.6rem 1.4rem;border-radius:100px;text-decoration:none;transition:all .3s}.btn-header-cta:hover{background:var(--yellow-glow);box-shadow:0 0 24px rgba(201,151,0,.4)}
+.header-nav{display:flex;gap:1.25rem;align-items:center;flex-wrap:nowrap}.header-nav a{font-family:'Poppins',sans-serif;font-size:.8rem;font-weight:500;color:rgba(255,255,255,.72);text-decoration:none;transition:color .3s;white-space:nowrap}.header-nav a:hover{color:var(--yellow)}.btn-nav-ghost{padding:10px 22px;border:1px solid rgba(253,225,0,.4);border-radius:100px;color:var(--yellow)!important;font-weight:600!important}.btn-nav-ghost:hover{background:rgba(253,225,0,.08)}
+.btn-header-cta{font-family:'Poppins',sans-serif;font-size:.8rem;font-weight:700;color:#0A0A0A!important;background:var(--yellow);padding:10px 22px;border-radius:100px;text-decoration:none;transition:all .3s;white-space:nowrap}.btn-header-cta:hover{background:var(--yellow-glow);box-shadow:0 0 24px rgba(253,225,0,.4)}
 
 .hero{position:relative;min-height:100vh;display:flex;align-items:center;background:var(--black);overflow:hidden;padding-top:80px}
-.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 90% 70% at 50% 45%,var(--black-soft) 0%,var(--black) 80%)}
-.hero::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 40% 35% at 50% 40%,rgba(201,151,0,.03) 0%,transparent 70%)}
+.hero::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,#1A1600 0%,#0A0A0A 48%,#000 100%)}
+.hero::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 40% 35% at 50% 40%,rgba(253,225,0,.03) 0%,transparent 70%)}
 .hero-content{position:relative;z-index:2;width:100%;max-width:1200px;margin:0 auto;padding:0 clamp(1.5rem,4vw,3rem);display:grid;grid-template-columns:1fr 380px;gap:4rem;align-items:center}
 .hero-text{max-width:720px}
-.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(201,151,0,.08);border:1px solid rgba(201,151,0,.2);padding:.5rem 1.2rem;border-radius:100px;margin-bottom:2rem}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(253,225,0,.08);border:1px solid rgba(253,225,0,.2);padding:.5rem 1.2rem;border-radius:100px;margin-bottom:2rem}
 .hero-badge span{font-family:'Poppins',sans-serif;font-size:.75rem;font-weight:600;color:var(--yellow);letter-spacing:.12em;text-transform:uppercase}
 .hero-badge .dot{width:6px;height:6px;background:var(--yellow);border-radius:50%;animation:pd 2s ease-in-out infinite}@keyframes pd{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.5)}}
-.hero h1{color:var(--white);margin-bottom:.5rem}.hero h1 .accent{color:var(--yellow);position:relative;display:inline-block}.hero h1 .accent::after{content:'';position:absolute;bottom:4px;left:50%;transform:translateX(-50%);width:60px;height:3px;background:var(--teal);border-radius:2px}
+.hero h1{color:var(--white);margin-bottom:.5rem}.hero h1 .accent{color:var(--yellow);display:inline-block}
 .hero-tagline{font-family:'Lora',serif;font-style:italic;font-size:clamp(1.1rem,2vw,1.4rem);color:rgba(255,255,255,.6);margin-bottom:.6rem}
 .hero-date{font-family:'Poppins',sans-serif;font-size:.8rem;font-weight:500;color:var(--teal);letter-spacing:.2em;text-transform:uppercase;margin-bottom:2.5rem}
 .hero-abstract{font-family:'Lora',serif;font-size:1.02rem;color:rgba(255,255,255,.68);line-height:1.85;margin-bottom:2.5rem;max-width:600px}
 .hero-stats{display:flex;gap:2.2rem;margin-bottom:2.5rem;flex-wrap:wrap}.hero-stat-number{font-family:'Poppins',sans-serif;font-size:2rem;font-weight:800;color:var(--yellow);line-height:1;letter-spacing:-.03em}
 .hero-stat-label{font-family:'Poppins',sans-serif;font-size:.68rem;font-weight:500;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.1em;margin-top:.3rem}
 .btn-primary{font-family:'Poppins',sans-serif;font-size:.9rem;font-weight:700;color:var(--black);background:var(--yellow);padding:1rem 2.2rem;border-radius:100px;text-decoration:none;display:inline-flex;align-items:center;gap:.5rem;transition:all .35s;border:none;cursor:pointer}
-.btn-primary:hover{background:var(--yellow-glow);transform:translateY(-2px);box-shadow:0 8px 32px rgba(201,151,0,.3)}
+.btn-primary:hover{background:var(--yellow-glow);transform:translateY(-2px);box-shadow:0 8px 32px rgba(253,225,0,.3)}
 .btn-secondary{font-family:'Poppins',sans-serif;font-size:.9rem;font-weight:500;color:rgba(255,255,255,.8);background:transparent;padding:1rem 2.2rem;border-radius:100px;text-decoration:none;border:1px solid rgba(255,255,255,.2);display:inline-flex;align-items:center;transition:all .35s}
 .btn-secondary:hover{border-color:var(--yellow);color:var(--yellow)}.hero-ctas{display:flex;gap:1rem;flex-wrap:wrap}
-.hero-sidebar{background:rgba(255,255,255,.04);border:1px solid rgba(201,151,0,.1);border-radius:var(--r-lg);padding:2.5rem;backdrop-filter:blur(12px)}
+.hero-sidebar{background:rgba(255,255,255,.04);border:1px solid rgba(253,225,0,.1);border-radius:var(--r-lg);padding:2.5rem;backdrop-filter:blur(12px)}
 .hero-sidebar h3{font-size:.72rem;font-weight:600;color:var(--yellow);letter-spacing:.15em;text-transform:uppercase;margin-bottom:1.5rem}
 .sidebar-item{display:flex;justify-content:space-between;align-items:baseline;padding:.75rem 0;border-bottom:1px solid rgba(255,255,255,.06)}.sidebar-item:last-child{border:none}
 .sidebar-item-label{font-family:'Poppins',sans-serif;font-size:.78rem;color:rgba(255,255,255,.5)}.sidebar-item-value{font-family:'Poppins',sans-serif;font-size:.85rem;color:var(--white);font-weight:600;text-align:right}.sidebar-item-value .hl{color:var(--yellow)}
-.sidebar-start{margin-top:1.5rem;text-align:center;padding:1.2rem;background:rgba(201,151,0,.06);border:1px solid rgba(201,151,0,.15);border-radius:var(--r-md)}
+.sidebar-start{margin-top:1.5rem;text-align:center;padding:1.2rem;background:rgba(253,225,0,.06);border:1px solid rgba(253,225,0,.15);border-radius:var(--r-md)}
 .sidebar-start .label{font-family:'Poppins',sans-serif;font-size:.65rem;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.15em}
 .sidebar-start .date{font-family:'Poppins',sans-serif;font-size:1.3rem;font-weight:700;color:var(--yellow);margin-top:.25rem}
 
 .abstract-section{background:var(--white);border-bottom:1px solid var(--border-subtle)}
 .abstract-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}.abstract-content p{font-size:1.05rem;color:var(--text-secondary);margin-bottom:1.25rem}.abstract-content p strong{color:var(--text-primary);font-weight:600}
-.abstract-pullquote{position:relative;padding:2.5rem;background:var(--black);border-radius:var(--r-lg);color:var(--white);border:1px solid rgba(201,151,0,.1)}.abstract-pullquote::before{content:'"';position:absolute;top:-.3rem;left:1.5rem;font-family:'Poppins',sans-serif;font-size:5rem;font-weight:800;color:var(--yellow);opacity:.3;line-height:1}
+.abstract-pullquote{position:relative;padding:2.5rem;background:var(--black);border-radius:var(--r-lg);color:var(--white);border:1px solid rgba(253,225,0,.1)}.abstract-pullquote::before{content:'"';position:absolute;top:-.3rem;left:1.5rem;font-family:'Poppins',sans-serif;font-size:5rem;font-weight:800;color:var(--yellow);opacity:.3;line-height:1}
 .abstract-pullquote p{font-family:'Lora',serif;font-style:italic;font-size:1.12rem;line-height:1.75;color:rgba(255,255,255,.85);position:relative;z-index:1}
 .abstract-pullquote .attribution{margin-top:1rem;font-family:'Poppins',sans-serif;font-style:normal;font-size:.75rem;color:var(--yellow);font-weight:600}
 .data-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:3rem}
@@ -58,10 +58,10 @@ h1,h2,h3,h4,h5,h6{font-family:'Poppins',sans-serif;font-weight:700;line-height:1
 .data-chip .lbl{font-family:'Poppins',sans-serif;font-size:.65rem;color:var(--text-secondary);text-transform:uppercase;letter-spacing:.06em;margin-top:.2rem}
 .data-chip .src{font-family:'Lora',serif;font-size:.62rem;color:#999;font-style:italic;margin-top:.3rem}
 
-.highlights-section{background:var(--black);position:relative;overflow:hidden}.highlights-section::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(201,151,0,.03) 0%,transparent 50%)}
+.highlights-section{background:var(--black);position:relative;overflow:hidden}.highlights-section::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(253,225,0,.03) 0%,transparent 50%)}
 .highlights-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;position:relative;z-index:1}
 .highlight-card{background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.06);border-radius:var(--r-md);padding:2rem;transition:all .4s}
-.highlight-card:hover{background:rgba(201,151,0,.03);border-color:rgba(201,151,0,.15);transform:translateY(-3px)}
+.highlight-card:hover{background:rgba(253,225,0,.03);border-color:rgba(253,225,0,.15);transform:translateY(-3px)}
 .highlight-number{font-family:'Poppins',sans-serif;font-size:.7rem;font-weight:700;color:var(--yellow);letter-spacing:.12em;margin-bottom:.75rem}
 .highlight-card h3{font-size:1rem;font-weight:600;color:var(--white);margin-bottom:.5rem;line-height:1.35}
 .highlight-card p{font-family:'Lora',serif;font-size:.88rem;color:rgba(255,255,255,.5);line-height:1.6}
@@ -85,9 +85,9 @@ h1,h2,h3,h4,h5,h6{font-family:'Poppins',sans-serif;font-weight:700;line-height:1
 .module-card-header{display:grid;grid-template-columns:50px 1fr auto;align-items:center;padding:1.1rem 1.5rem;cursor:pointer;gap:1rem}
 .module-number{font-family:'Poppins',sans-serif;font-size:1.1rem;font-weight:800;color:var(--yellow-dark);text-align:center;line-height:1}
 .module-info h4{font-size:.9rem;color:var(--black);line-height:1.35;margin-bottom:.1rem}.module-meta{font-family:'Poppins',sans-serif;font-size:.68rem;color:var(--text-secondary)}
-.module-toggle{font-size:1.3rem;color:var(--yellow-dark);width:30px;height:30px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:rgba(201,151,0,.08);transition:transform .3s}
+.module-toggle{font-size:1.3rem;color:var(--yellow-dark);width:30px;height:30px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:rgba(253,225,0,.08);transition:transform .3s}
 .module-card.active .module-toggle{transform:rotate(45deg)}.module-body{display:none;padding:0 1.5rem 1.25rem;border-top:1px solid var(--border-subtle)}.module-card.active .module-body{display:block}
-.module-objective{background:rgba(201,151,0,.04);border-left:3px solid var(--yellow-dark);padding:.85rem 1.1rem;margin:.85rem 0 1rem;border-radius:0 var(--r-sm) var(--r-sm) 0}
+.module-objective{background:rgba(253,225,0,.04);border-left:3px solid var(--yellow-dark);padding:.85rem 1.1rem;margin:.85rem 0 1rem;border-radius:0 var(--r-sm) var(--r-sm) 0}
 .module-objective h5{font-family:'Poppins',sans-serif;font-size:.7rem;font-weight:600;color:var(--yellow-dark);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.4rem}
 .module-objective p{font-size:.88rem;color:var(--text-secondary);line-height:1.65}
 .module-topics h5{font-family:'Poppins',sans-serif;font-size:.75rem;font-weight:600;color:var(--black);margin-bottom:.6rem;text-transform:uppercase;letter-spacing:.08em}
@@ -101,43 +101,43 @@ h1,h2,h3,h4,h5,h6{font-family:'Poppins',sans-serif;font-weight:700;line-height:1
 .summary-item{text-align:center}.summary-item .number{font-family:'Poppins',sans-serif;font-size:2.5rem;font-weight:800;color:var(--yellow);line-height:1}
 .summary-item .label{font-family:'Poppins',sans-serif;font-size:.7rem;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.12em;margin-top:.3rem}
 
-.form-section{background:var(--black);position:relative;overflow:hidden}.form-section::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 20% 50%,rgba(201,151,0,.03) 0%,transparent 50%)}
+.form-section{background:var(--black);position:relative;overflow:hidden}.form-section::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 20% 50%,rgba(253,225,0,.03) 0%,transparent 50%)}
 .form-container{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
 .form-left h2{color:var(--white);margin-bottom:1rem}.form-left p{color:rgba(255,255,255,.6);font-size:1.05rem;line-height:1.75;margin-bottom:2rem}
 .form-benefits{list-style:none;padding:0}.form-benefits li{display:flex;align-items:flex-start;gap:.75rem;padding:.5rem 0;font-family:'Poppins',sans-serif;font-size:.85rem;color:rgba(255,255,255,.7)}.form-benefits li .check{color:var(--yellow);font-weight:700;font-size:1rem;flex-shrink:0}
-.form-right{background:rgba(255,255,255,.03);border:1px solid rgba(201,151,0,.1);border-radius:var(--r-lg);padding:2.5rem}
+.form-right{background:rgba(255,255,255,.03);border:1px solid rgba(253,225,0,.1);border-radius:var(--r-lg);padding:2.5rem}
 .form-right h3{font-size:1.1rem;color:var(--white);margin-bottom:.4rem}.form-right .form-subtitle{font-family:'Poppins',sans-serif;font-size:.75rem;color:rgba(255,255,255,.4);margin-bottom:1.5rem}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.form-group{margin-bottom:1rem}
 .form-group label{display:block;font-family:'Poppins',sans-serif;font-size:.72rem;font-weight:500;color:rgba(255,255,255,.5);margin-bottom:.4rem;text-transform:uppercase;letter-spacing:.08em}
 .form-group input,.form-group select{width:100%;padding:.8rem 1rem;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--r-sm);color:var(--white);font-family:'Lora',serif;font-size:.9rem;transition:all .3s;outline:none}
 .form-group input::placeholder{color:rgba(255,255,255,.25)}
-.form-group input:focus,.form-group select:focus{border-color:var(--yellow);background:rgba(201,151,0,.04);box-shadow:0 0 0 3px rgba(201,151,0,.08)}
+.form-group input:focus,.form-group select:focus{border-color:var(--yellow);background:rgba(253,225,0,.04);box-shadow:0 0 0 3px rgba(253,225,0,.08)}
 .form-group select{cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23C99700' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .8rem center;background-size:16px;padding-right:2.5rem}
 .form-group select option{background:var(--black);color:var(--white)}
 .form-disclaimer{font-family:'Poppins',sans-serif;font-size:.68rem;color:rgba(255,255,255,.3);margin-top:.5rem}
 .btn-submit{width:100%;margin-top:1rem;font-family:'Poppins',sans-serif;font-size:.95rem;font-weight:700;color:var(--black);background:var(--yellow);padding:1.1rem;border:none;border-radius:var(--r-sm);cursor:pointer;transition:all .35s}
-.btn-submit:hover{background:var(--yellow-glow);box-shadow:0 8px 32px rgba(201,151,0,.3);transform:translateY(-1px)}
+.btn-submit:hover{background:var(--yellow-glow);box-shadow:0 8px 32px rgba(253,225,0,.3);transform:translateY(-1px)}
 .form-secure{display:flex;align-items:center;justify-content:center;gap:.5rem;margin-top:1rem;font-family:'Poppins',sans-serif;font-size:.68rem;color:rgba(255,255,255,.3)}
 .form-success{display:none;text-align:center;padding:3rem 2rem}.form-right.submitted form{display:none}.form-right.submitted .form-success{display:block}
 .form-success .check-circle{width:64px;height:64px;background:var(--yellow);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-size:2rem;color:var(--black)}
 .form-success h3{color:var(--white);font-size:1.3rem;margin-bottom:.5rem}.form-success p{color:rgba(255,255,255,.6)}
-.site-footer{background:var(--black);padding:3rem 0 2rem;border-top:1px solid rgba(201,151,0,.08)}
+.site-footer{background:var(--black);padding:3rem 0 2rem;border-top:1px solid rgba(253,225,0,.08)}
 .footer-inner{display:flex;justify-content:space-between;align-items:center}.footer-logo{height:32px}.footer-text{font-family:'Poppins',sans-serif;font-size:.72rem;color:rgba(255,255,255,.35)}
 .footer-links{display:flex;gap:2rem}.footer-links a{font-family:'Poppins',sans-serif;font-size:.72rem;color:rgba(255,255,255,.4);text-decoration:none;transition:color .3s}.footer-links a:hover{color:var(--yellow)}
 
-.timeline-section{background:#EFE7D2;padding:clamp(3rem,5vw,4.5rem) 0;border-top:1px solid rgba(201,151,0,.18);border-bottom:1px solid rgba(201,151,0,.18)}
-.timeline-track{display:flex;gap:1rem;overflow-x:auto;padding:1.75rem .25rem .9rem;scrollbar-width:thin;scrollbar-color:#C99700 transparent}
-.tl-item{flex:0 0 auto;width:172px;background:var(--white);border:1px solid rgba(201,151,0,.28);border-top:3px solid var(--yellow-dark);border-radius:var(--r-sm);padding:1rem 1.1rem}
+.timeline-section{background:#F4F1DC;padding:clamp(3rem,5vw,4.5rem) 0;border-top:1px solid rgba(253,225,0,.18);border-bottom:1px solid rgba(253,225,0,.18)}
+.timeline-track{display:flex;gap:1rem;overflow-x:auto;padding:1.75rem .25rem .9rem;scrollbar-width:thin;scrollbar-color:#FDE100 transparent}
+.tl-item{flex:0 0 auto;width:172px;background:var(--white);border:1px solid rgba(253,225,0,.28);border-top:3px solid var(--yellow-dark);border-radius:var(--r-sm);padding:1rem 1.1rem}
 .tl-year{font-family:'Poppins',sans-serif;font-weight:800;font-size:1.05rem;color:var(--yellow-dark);letter-spacing:-.01em}
 .tl-txt{font-family:'Lora',serif;font-size:.78rem;color:var(--text-secondary);line-height:1.55;margin-top:.35rem}
-.compare-section{background:var(--black);position:relative;overflow:hidden}.compare-section::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 15% 15%,rgba(201,151,0,.05) 0%,transparent 50%)}
-.compare-wrap{position:relative;z-index:1;overflow-x:auto;margin-top:2.5rem;border:1px solid rgba(201,151,0,.18);border-radius:var(--r-md);background:rgba(255,255,255,.02)}
+.compare-section{background:var(--black);position:relative;overflow:hidden}.compare-section::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 15% 15%,rgba(253,225,0,.05) 0%,transparent 50%)}
+.compare-wrap{position:relative;z-index:1;overflow-x:auto;margin-top:2.5rem;border:1px solid rgba(253,225,0,.18);border-radius:var(--r-md);background:rgba(255,255,255,.02)}
 table.compare{width:100%;border-collapse:collapse;min-width:820px;font-family:'Poppins',sans-serif;font-size:.78rem}
-.compare th{text-align:left;padding:.9rem 1.1rem;font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--yellow);border-bottom:1px solid rgba(201,151,0,.25);white-space:nowrap}
+.compare th{text-align:left;padding:.9rem 1.1rem;font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--yellow);border-bottom:1px solid rgba(253,225,0,.25);white-space:nowrap}
 .compare td{padding:.85rem 1.1rem;border-top:1px solid rgba(255,255,255,.06);color:rgba(255,255,255,.68);white-space:nowrap}
 .compare td:first-child{font-weight:600;color:rgba(255,255,255,.85)}
-.compare tr.mlc td{background:rgba(201,151,0,.12);color:#fff;font-weight:700;border-top:1px solid rgba(201,151,0,.35)}
-.compare .yes{color:#DDAF4A;font-weight:700}.compare .no{color:rgba(255,255,255,.26)}
+.compare tr.mlc td{background:rgba(253,225,0,.12);color:#fff;font-weight:700;border-top:1px solid rgba(253,225,0,.35)}
+.compare .yes{color:#FDE100;font-weight:700}.compare .no{color:rgba(255,255,255,.26)}
 .compare-note{position:relative;z-index:1;font-family:'Lora',serif;font-style:italic;font-size:.75rem;color:rgba(255,255,255,.35);margin-top:1rem}
 .dd-section{background:var(--ivory-warm)}
 .dd-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.75rem;margin-top:2.5rem}
@@ -148,7 +148,7 @@ table.compare{width:100%;border-collapse:collapse;min-width:820px;font-family:'P
 .jury-list{list-style:none;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:.35rem 1rem}
 .jury-list li{position:relative;padding:.3rem 0 .3rem 1.3rem;font-family:'Lora',serif;font-size:.83rem;color:var(--text-secondary);line-height:1.45}
 .jury-list li::before{content:'';position:absolute;left:0;top:.72rem;width:5px;height:5px;background:var(--yellow-dark);border-radius:50%}
-.dd-quote{margin-top:1.4rem;padding:1rem 1.2rem;background:rgba(201,151,0,.06);border-left:3px solid var(--yellow-dark);border-radius:0 var(--r-sm) var(--r-sm) 0;font-family:'Lora',serif;font-style:italic;font-size:.86rem;color:var(--text-primary);line-height:1.65}
+.dd-quote{margin-top:1.4rem;padding:1rem 1.2rem;background:rgba(253,225,0,.06);border-left:3px solid var(--yellow-dark);border-radius:0 var(--r-sm) var(--r-sm) 0;font-family:'Lora',serif;font-style:italic;font-size:.86rem;color:var(--text-primary);line-height:1.65}
 .req-list{list-style:none;padding:0;margin-bottom:1.5rem}
 .req-list li{position:relative;padding:.42rem 0 .42rem 1.5rem;font-family:'Lora',serif;font-size:.9rem;color:var(--text-secondary);line-height:1.6}
 .req-list li::before{content:'✓';position:absolute;left:0;top:.42rem;color:var(--yellow-dark);font-family:'Poppins',sans-serif;font-weight:700;font-size:.85rem}
@@ -160,20 +160,32 @@ table.compare{width:100%;border-collapse:collapse;min-width:820px;font-family:'P
 @media(max-width:1024px){.dd-grid{grid-template-columns:1fr}}
 @media(max-width:640px){.jury-list{grid-template-columns:1fr}}
 
-@media(max-width:1024px){.hero-content{grid-template-columns:1fr}.hero-sidebar{display:none}.abstract-grid{grid-template-columns:1fr}.highlights-grid{grid-template-columns:1fr}.level-grid{grid-template-columns:repeat(2,1fr)}.form-container{grid-template-columns:1fr}.data-bar{grid-template-columns:repeat(2,1fr)}.curriculum-summary{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:640px){.header-nav{display:none}.hero-stats{flex-direction:column;gap:1rem}.hero-ctas{flex-direction:column}.level-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}.data-bar{grid-template-columns:1fr}.curriculum-summary{grid-template-columns:1fr}.footer-inner{flex-direction:column;gap:1.5rem;text-align:center}}
+.sec-center{text-align:center}.sec-center .section-label{display:block}
+.accent-rule{width:50px;height:2px;background:var(--yellow);margin:1.2rem auto 0}
+.accent-rule--left{margin:1.2rem 0 0}
+.urgency-strip{background:var(--yellow);padding:.85rem 1rem;text-align:center}
+.urgency-strip span{font-family:'Poppins',sans-serif;font-weight:700;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:#0A0A0A}
+.apply-section{background:var(--black-rich);position:relative;overflow:hidden}.apply-section::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 85% 15%,rgba(253,225,0,.04) 0%,transparent 50%)}
+.apply-grid{position:relative;z-index:1;display:grid;grid-template-columns:repeat(5,1fr);gap:1rem;margin-top:3rem}
+.apply-step{background:rgba(255,255,255,.025);border:1px solid rgba(253,225,0,.14);border-radius:var(--r-md);padding:1.6rem 1.3rem;transition:all .35s}.apply-step:hover{border-color:rgba(253,225,0,.4);transform:translateY(-3px)}
+.apply-step .num{font-family:'Poppins',sans-serif;font-weight:800;font-size:.68rem;color:var(--yellow);letter-spacing:.14em}
+.apply-step h4{font-size:.92rem;color:var(--white);margin:.55rem 0 .45rem}
+.apply-step p{font-family:'Lora',serif;font-size:.8rem;color:rgba(255,255,255,.55);line-height:1.6}
+@media(max-width:1024px){.apply-grid{grid-template-columns:repeat(2,1fr)}.header-nav a:not(.btn-header-cta):not(.btn-nav-ghost){display:none}.hero-content{grid-template-columns:1fr}.hero-sidebar{display:none}.abstract-grid{grid-template-columns:1fr}.highlights-grid{grid-template-columns:1fr}.level-grid{grid-template-columns:repeat(2,1fr)}.form-container{grid-template-columns:1fr}.data-bar{grid-template-columns:repeat(2,1fr)}.curriculum-summary{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.header-nav a:not(.btn-header-cta){display:none}.header-nav{gap:.75rem}.apply-grid{grid-template-columns:1fr}.hero-stats{flex-direction:column;gap:1rem}.hero-ctas{flex-direction:column}.level-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}.data-bar{grid-template-columns:1fr}.curriculum-summary{grid-template-columns:1fr}.footer-inner{flex-direction:column;gap:1.5rem;text-align:center}}
 </style>
 </head>
 <body>
-<header class="site-header"><div class="header-inner"><div style="font-family:'Poppins',sans-serif;font-weight:800;font-size:1.1rem;letter-spacing:.5px;color:#fff;">RISK<span style="color:var(--yellow)">MATHICS</span></div><nav class="header-nav"><a href="#abstract">Abstract</a><a href="#levels">Niveles</a><a href="#curriculum">Programa</a><a href="#compare">Comparativa</a><a href="#rm-enroll" class="btn-header-cta">Inscríbete →</a></nav></div></header>
+<header class="site-header"><div class="header-inner"><div style="font-family:'Poppins',sans-serif;font-weight:800;font-size:1.1rem;letter-spacing:.5px;color:#fff;">RISK<span style="color:var(--yellow)">MATHICS</span></div><nav class="header-nav"><a href="#levels">Niveles</a><a href="#curriculum">Programa</a><a href="#compare">Benchmark</a><a href="#rm-enroll" class="btn-nav-ghost">Quiero el temario</a><a href="#rm-enroll" class="btn-header-cta">Inscribirse</a></nav></div></header>
 
 <section class="hero"><div class="hero-content"><div class="hero-text">
-<div class="hero-badge"><div class="dot"></div><span>MLC™ Program — Inicio Q3 2026</span></div>
-<h1 class="display-xl">Machine Learner<br><span class="accent">Certification™</span></h1>
-<p class="hero-tagline">Learn. Apply. Create. And Profit.</p>
-<p class="hero-date">Inicio Q3 2026 · 14 meses · Híbrido</p>
-<p class="hero-abstract">La certificación más completa del mundo en ML/AI aplicado a Finanzas, Healthcare, Corporativos y Multi-Industria. 620+ horas en 20 módulos, 4 niveles, 25 capstones evaluados por practitioners reales. Learn. Apply. Create. And Profit.</p>
-<div class="hero-stats"><div><div class="hero-stat-number">620+</div><div class="hero-stat-label">Horas</div></div><div><div class="hero-stat-number">20</div><div class="hero-stat-label">Módulos</div></div><div><div class="hero-stat-number">25</div><div class="hero-stat-label">Capstones</div></div><div><div class="hero-stat-number">12+</div><div class="hero-stat-label">Industrias</div></div></div>
+<div class="hero-badge"><div class="dot"></div><span>Edición 2026 · Programa Ejecutivo · MLC™</span></div>
+<h1 class="display-xl">Machine Learner™<br><span class="accent">Executive Certification</span></h1>
+<div class="accent-rule accent-rule--left"></div>
+<p class="hero-tagline">Learn · Apply · Create · Profit.</p>
+<p class="hero-date">Arranque Q3 2026 · 14 meses · Cohorte de 60</p>
+<p class="hero-abstract">La certificación ejecutiva más completa del mundo hispanohablante en Machine Learning, Deep Learning, IA Generativa, IA Agéntica y ML cuántico. 620+ horas en 20 módulos, 4 niveles y 25 capstones evaluados por practitioners reales. Aplicación selectiva: 60 lugares por cohorte.</p>
+<div class="hero-stats"><div><div class="hero-stat-number">620+</div><div class="hero-stat-label">Horas</div></div><div><div class="hero-stat-number">20</div><div class="hero-stat-label">Módulos</div></div><div><div class="hero-stat-number">25</div><div class="hero-stat-label">Capstones</div></div><div><div class="hero-stat-number">60</div><div class="hero-stat-label">Lugares / cohorte</div></div></div>
 <div class="hero-ctas"><a href="#rm-enroll" class="btn-primary">Solicitar información →</a><a href="#curriculum" class="btn-secondary">Ver programa completo</a></div>
 </div>
 <div class="hero-sidebar"><h3>Ficha del programa</h3>
@@ -182,13 +194,16 @@ table.compare{width:100%;border-collapse:collapse;min-width:820px;font-family:'P
 <div class="sidebar-item"><span class="sidebar-item-label">Duración</span><span class="sidebar-item-value">14 meses</span></div>
 <div class="sidebar-item"><span class="sidebar-item-label">Niveles</span><span class="sidebar-item-value"><span class="hl">4</span></span></div>
 <div class="sidebar-item"><span class="sidebar-item-label">Capstones</span><span class="sidebar-item-value"><span class="hl">25</span> proyectos</span></div>
+<div class="sidebar-item"><span class="sidebar-item-label">Cupo</span><span class="sidebar-item-value"><span class="hl">60</span> por cohorte</span></div>
 <div class="sidebar-item"><span class="sidebar-item-label">Idioma</span><span class="sidebar-item-value">ES + EN técnico</span></div>
 <div class="sidebar-item"><span class="sidebar-item-label">Certificación</span><span class="sidebar-item-value"><span class="hl">MLC™</span></span></div>
 <div class="sidebar-start"><div class="label">Fecha de inicio</div><div class="date">Q3 2026</div></div></div></div></section>
 
+<div class="urgency-strip"><span>Cupo limitado — 60 lugares por cohorte · Arranque Q3 2026 · Aplicación selectiva</span></div>
+
 <section class="abstract-section" id="abstract"><div class="container">
-<span class="section-label">Abstract</span>
-<h2 class="display-md" style="margin-top:.75rem;color:var(--black)">Las empresas que no entiendan esto, ya fueron</h2>
+<div class="sec-center"><span class="section-label">Abstract</span>
+<h2 class="display-md" style="margin-top:.75rem;color:var(--black)">Las empresas que no entiendan esto, ya fueron</h2><div class="accent-rule"></div></div>
 <div class="abstract-grid" style="margin-top:2.5rem"><div class="abstract-content">
 <p>En 1943, McCulloch y Pitts publicaron el primer modelo de neurona artificial. 80 años después, McKinsey estima que la IA generativa agregará entre <strong>$2.6 y $4.4 trillones anuales</strong> a la economía global. Goldman Sachs proyecta <strong>300 millones de empleos</strong> transformados.</p>
 <p>JPMorgan tiene 2,000+ ingenieros ML. La FDA ha aprobado 900+ dispositivos con IA. El crédito se origina con scoring ML. Los contratos se revisan con NLP. Los portafolios se optimizan con reinforcement learning.</p>
@@ -203,8 +218,8 @@ table.compare{width:100%;border-collapse:collapse;min-width:820px;font-family:'P
 </div></div></section>
 
 <section class="timeline-section"><div class="container">
-<span class="section-label">Cronología</span>
-<h2 class="display-md" style="margin-top:.75rem;color:var(--text-primary)">80 años de Inteligencia Artificial</h2>
+<div class="sec-center"><span class="section-label">Cronología</span>
+<h2 class="display-md" style="margin-top:.75rem;color:var(--text-primary)">80 años de Inteligencia Artificial</h2><div class="accent-rule"></div></div>
 <div class="timeline-track">
 <div class="tl-item"><div class="tl-year">1943</div><div class="tl-txt">McCulloch & Pitts publican el primer modelo de neurona artificial.</div></div>
 <div class="tl-item"><div class="tl-year">1950</div><div class="tl-txt">Alan Turing formula la pregunta de una era: «Can machines think?»</div></div>
@@ -220,10 +235,10 @@ table.compare{width:100%;border-collapse:collapse;min-width:820px;font-family:'P
 </div></div></section>
 
 <section class="highlights-section"><div class="container">
-<span class="section-label" style="color:var(--yellow)">10 Razones</span>
-<h2 class="display-md" style="margin-top:.75rem;color:var(--white)">Por qué la MLC™ es la mejor del planeta</h2>
+<div class="sec-center"><span class="section-label" style="color:var(--yellow)">10 Razones</span>
+<h2 class="display-md" style="margin-top:.75rem;color:var(--white)">Por qué la MLC™ es la mejor del planeta</h2><div class="accent-rule"></div></div>
 <div class="highlights-grid" style="margin-top:2.5rem">
-<div class="highlight-card"><div class="highlight-number">01</div><h3>620+ horas en 20 módulos — escala sin precedentes</h3><p>El competidor más cercano (IIQF India) ofrece 250h. Columbia ~80h. MIT ~60h. La MLC entrega 2.5x más que cualquiera.</p></div>
+<div class="highlight-card"><div class="highlight-number">01</div><h3>620+ horas en 20 módulos — escala sin precedentes</h3><p>El programa de mayor cobertura después de la MLC (MIT MicroMasters) ofrece 300h. NYU Tandon 240h, Stanford 180h. La MLC entrega 2x+ que cualquiera.</p></div>
 <div class="highlight-card"><div class="highlight-number">02</div><h3>12+ industrias en una sola certificación</h3><p>Finanzas, Banking, Trading, Derivados, Legal, Auditoría, IB, M&A, Healthcare, Biomedical, Drug Discovery, Quantum.</p></div>
 <div class="highlight-card"><div class="highlight-number">03</div><h3>25 capstones evaluados por practitioners</h3><p>CTOs, CROs, Partners de Big 4, General Counsels, VCs, Directores Médicos. Los 3 mejores reciben mentoría real.</p></div>
 <div class="highlight-card"><div class="highlight-number">04</div><h3>Stack completo: Regresión → Quantum Computing</h3><p>ML Clásico → Deep Learning → NLP/FinBERT → Transformers/LLMs → Fine-Tuning → IA Agéntica/RAG/MCP → RL → Quantum ML.</p></div>
@@ -236,38 +251,38 @@ table.compare{width:100%;border-collapse:collapse;min-width:820px;font-family:'P
 </div></div></section>
 
 <section class="levels-section" id="levels"><div class="container">
-<span class="section-label">Arquitectura</span>
-<h2 class="display-md" style="margin-top:.75rem">4 niveles · 20 módulos · 620+ horas</h2>
+<div class="sec-center"><span class="section-label">Arquitectura</span>
+<h2 class="display-md" style="margin-top:.75rem">4 niveles · 20 módulos · 620+ horas</h2><div class="accent-rule"></div></div>
 <div class="level-grid">
-<div class="level-card"><div class="level-num">Nivel 1</div><h4>Foundations</h4><div class="level-philosophy">LEARN</div><p>Bases matemáticas y computacionales rigurosas. Álgebra lineal, cálculo, probabilidad, Python, ML supervisado y no supervisado.</p><div class="level-hours">140</div><div class="level-hours-label">horas · M1–M4</div></div>
-<div class="level-card"><div class="level-num">Nivel 2</div><h4>Applied ML</h4><div class="level-philosophy">APPLY</div><p>Aplicaciones financieras reales: Deep Learning, NLP/FinBERT, derivatives pricing, algo trading, banking ML suite.</p><div class="level-hours">160</div><div class="level-hours-label">horas · M5–M9</div></div>
+<div class="level-card"><div class="level-num">Nivel 1</div><h4>Foundations</h4><div class="level-philosophy">LEARN</div><p>Bases matemáticas y computacionales rigurosas. Álgebra lineal, cálculo, probabilidad, Python, ML supervisado y no supervisado.</p><div class="level-hours">140</div><div class="level-hours-label">horas · 4 meses · M1–M4</div></div>
+<div class="level-card"><div class="level-num">Nivel 2</div><h4>Applied ML</h4><div class="level-philosophy">APPLY</div><p>Aplicaciones financieras reales: Deep Learning, NLP/FinBERT, derivatives pricing, algo trading, banking ML suite.</p><div class="level-hours">160</div><div class="level-hours-label">horas · 4 meses · M5–M9</div></div>
 <div class="level-card"><div class="level-num">Nivel 3</div><h4>Advanced AI</h4><div class="level-philosophy">CREATE</div><p>Transformers, LLMs, fine-tuning (LoRA/QLoRA/RLHF/DPO), IA agéntica, RAG enterprise, MCP, legal AI, IB & M&A.</p><div class="level-hours">188</div><div class="level-hours-label">horas · M10–M15</div></div>
 <div class="level-card"><div class="level-num">Nivel 4</div><h4>Frontier & Quantum</h4><div class="level-philosophy">PROFIT</div><p>MLOps/Kubernetes, multi-industria, Reinforcement Learning, Quantum Computing con Qiskit, Healthcare/Biomedical AI.</p><div class="level-hours">132</div><div class="level-hours-label">horas · M16–M20</div></div>
 </div></div></section>
 
 <section class="curriculum-section" id="curriculum"><div class="container">
-<span class="section-label">Programa completo</span>
-<h2 class="display-md" style="margin-top:.75rem">20 módulos · 25 capstones</h2>
+<div class="sec-center"><span class="section-label">Programa completo</span>
+<h2 class="display-md" style="margin-top:.75rem">20 módulos · 25 capstones</h2><div class="accent-rule"></div></div>
 
 <div class="phase-header" style="margin-top:3rem"><span class="phase-tag">Nivel 1 · Learn</span><h3>Foundations — 140h</h3></div>
-<div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M1</div><div class="module-info"><h4>Mathematical Foundations for ML</h4><div class="module-meta">10 semanas · Álgebra lineal, Cálculo, Probabilidad, Optimización, Teoría de Información</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Álgebra lineal: vectores, matrices, eigenvalores, SVD, PCA</li><li>Cálculo multivariable: gradientes, Jacobianos, Hessianos, backpropagation</li><li>Probabilidad: distribuciones, Bayes, MLE, MAP, bootstrap</li><li>Optimización: Gradient Descent (batch/SGD/mini-batch), Adam, convexidad, KKT</li><li>Teoría de información: entropía de Shannon, KL-Divergence, cross-entropy</li></ul></div><div class="capstone"><h5>Capstone 1</h5><p>50 problemas aplicados a ML + 10 derivaciones manuales de gradientes para redes neuronales.</p></div></div></div>
+<div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M1</div><div class="module-info"><h4>Mathematical Foundations for ML</h4><div class="module-meta">10 semanas · 40h · Álgebra lineal, Cálculo, Probabilidad, Optimización, Teoría de Información</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Álgebra lineal: vectores, matrices, eigenvalores, SVD, PCA</li><li>Cálculo multivariable: gradientes, Jacobianos, Hessianos, backpropagation</li><li>Probabilidad: distribuciones, Bayes, MLE, MAP, bootstrap</li><li>Optimización: Gradient Descent (batch/SGD/mini-batch), Adam, convexidad, KKT</li><li>Teoría de información: entropía de Shannon, KL-Divergence, cross-entropy</li></ul></div><div class="capstone"><h5>Capstone 1</h5><p>50 problemas aplicados a ML + 10 derivaciones manuales de gradientes para redes neuronales.</p></div></div></div>
 
-<div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M2</div><div class="module-info"><h4>Python for Data Science & Engineering</h4><div class="module-meta">8 semanas · OOP, NumPy, Pandas, SQL, Git, Plotly</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Python Core: OOP avanzado, decoradores, generators, type hints, pydantic</li><li>NumPy & Pandas: vectorización, window functions, memory optimization</li><li>Visualización: Matplotlib, Seaborn, Plotly dashboards interactivos</li><li>SQL, Git/GitHub, testing con pytest, CI/CD, cookiecutter data science</li></ul></div><div class="capstone"><h5>Capstone 2</h5><p>Pipeline end-to-end: Yahoo Finance + FRED API → limpieza → SQLite → dashboard interactivo Plotly con tests unitarios.</p></div></div></div>
+<div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M2</div><div class="module-info"><h4>Python for Data Science & Engineering</h4><div class="module-meta">8 semanas · 30h · OOP, NumPy, Pandas, SQL, Git, Plotly</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Python Core: OOP avanzado, decoradores, generators, type hints, pydantic</li><li>NumPy & Pandas: vectorización, window functions, memory optimization</li><li>Visualización: Matplotlib, Seaborn, Plotly dashboards interactivos</li><li>SQL, Git/GitHub, testing con pytest, CI/CD, cookiecutter data science</li></ul></div><div class="capstone"><h5>Capstone 2</h5><p>Pipeline end-to-end: Yahoo Finance + FRED API → limpieza → SQLite → dashboard interactivo Plotly con tests unitarios.</p></div></div></div>
 
-<div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M3</div><div class="module-info"><h4>Supervised Machine Learning</h4><div class="module-meta">10 semanas · Regresión, Clasificación, Ensembles, XGBoost, Feature Engineering</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Regresión: Linear, Ridge, Lasso, Elastic Net from scratch + scikit-learn</li><li>Clasificación: Logistic, SVM, Decision Trees, Random Forest, XGBoost/LightGBM</li><li>Ensembles: bagging vs boosting, stacking, Bayesian Optimization con Optuna</li><li>Model Evaluation: K-Fold, AUC-ROC, F1, bias-variance, calibration</li><li>Feature Engineering: selection, SMOTE/ADASYN, pipelines end-to-end</li></ul></div><div class="capstone"><h5>Capstone 3</h5><p>Credit scoring completo con Lending Club: 5+ algoritmos, Optuna tuning, reporte con Gini/KS/PSI. Presentable ante regulador.</p></div></div></div>
+<div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M3</div><div class="module-info"><h4>Supervised Machine Learning</h4><div class="module-meta">10 semanas · 40h · Regresión, Clasificación, Ensembles, XGBoost, Feature Engineering</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Regresión: Linear, Ridge, Lasso, Elastic Net from scratch + scikit-learn</li><li>Clasificación: Logistic, SVM, Decision Trees, Random Forest, XGBoost/LightGBM</li><li>Ensembles: bagging vs boosting, stacking, Bayesian Optimization con Optuna</li><li>Model Evaluation: K-Fold, AUC-ROC, F1, bias-variance, calibration</li><li>Feature Engineering: selection, SMOTE/ADASYN, pipelines end-to-end</li></ul></div><div class="capstone"><h5>Capstone 3</h5><p>Credit scoring completo con Lending Club: 5+ algoritmos, Optuna tuning, reporte con Gini/KS/PSI. Presentable ante regulador.</p></div></div></div>
 
-<div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M4</div><div class="module-info"><h4>Unsupervised ML & Anomaly Detection</h4><div class="module-meta">8 semanas · Clustering, PCA, t-SNE, UMAP, Isolation Forest, LDA</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Clustering: K-Means, DBSCAN, Hierarchical, GMM</li><li>Dimensionalidad: PCA, t-SNE, UMAP, autoencoders</li><li>Anomalías: Isolation Forest, One-Class SVM, LOF, autoencoders</li><li>Association Rules: Apriori, FP-Growth; Topic Modeling: LDA, NMF</li></ul></div><div class="capstone"><h5>Capstone 4</h5><p>Segmentación bancaria (3+ técnicas) + detección de transacciones anómalas (Isolation Forest + Autoencoder). Presentar al CRO.</p></div></div></div>
+<div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M4</div><div class="module-info"><h4>Unsupervised ML & Anomaly Detection</h4><div class="module-meta">8 semanas · 30h · Clustering, PCA, t-SNE, UMAP, Isolation Forest, LDA</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Clustering: K-Means, DBSCAN, Hierarchical, GMM</li><li>Dimensionalidad: PCA, t-SNE, UMAP, autoencoders</li><li>Anomalías: Isolation Forest, One-Class SVM, LOF, autoencoders</li><li>Association Rules: Apriori, FP-Growth; Topic Modeling: LDA, NMF</li></ul></div><div class="capstone"><h5>Capstone 4</h5><p>Segmentación bancaria (3+ técnicas) + detección de transacciones anómalas (Isolation Forest + Autoencoder). Presentar al CRO.</p></div></div></div>
 
 <div class="phase-header"><span class="phase-tag">Nivel 2 · Apply</span><h3>Applied ML — 160h</h3></div>
-<div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M5</div><div class="module-info"><h4>Deep Learning: Neural Networks, CNNs & RNNs</h4><div class="module-meta">9 semanas · PyTorch, backpropagation, ResNet, LSTM, GRU</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Neural Networks from scratch: backpropagation, activaciones, weight initialization</li><li>PyTorch deep dive: tensors, autograd, custom layers, training loops</li><li>CNNs: LeNet → AlexNet → VGG → ResNet → EfficientNet; transfer learning</li><li>RNNs: LSTM, GRU, bidirectional, seq2seq, attention pre-transformer</li></ul></div><div class="capstone"><h5>Capstone 5</h5><p>Clasificador de documentos financieros (CNN, accuracy >95%) + predictor LSTM vs ARIMA. Ambos con FastAPI.</p></div></div></div>
+<div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M5</div><div class="module-info"><h4>Deep Learning: Neural Networks, CNNs & RNNs</h4><div class="module-meta">9 semanas · 36h · PyTorch, backpropagation, ResNet, LSTM, GRU</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Neural Networks from scratch: backpropagation, activaciones, weight initialization</li><li>PyTorch deep dive: tensors, autograd, custom layers, training loops</li><li>CNNs: LeNet → AlexNet → VGG → ResNet → EfficientNet; transfer learning</li><li>RNNs: LSTM, GRU, bidirectional, seq2seq, attention pre-transformer</li></ul></div><div class="capstone"><h5>Capstone 5</h5><p>Clasificador de documentos financieros (CNN, accuracy >95%) + predictor LSTM vs ARIMA. Ambos con FastAPI.</p></div></div></div>
 
-<div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M6</div><div class="module-info"><h4>NLP & Financial Text Analytics</h4><div class="module-meta">9 semanas · FinBERT, NER, Sentiment, Text Generation</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Foundations: TF-IDF, Word2Vec, GloVe, FastText</li><li>FinBERT: sentiment de earnings calls, 10-K parsing, riesgo extraction</li><li>NER financiero: empresas, montos, regulaciones; knowledge graphs</li><li>Text generation: summarization, reportes automatizados</li></ul></div><div class="capstone"><h5>Capstone 6</h5><p>Pipeline: scraping → FinBERT sentiment → NER → alertas automáticas. Dashboard Streamlit, 1,000+ noticias.</p></div></div></div>
+<div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M6</div><div class="module-info"><h4>NLP & Financial Text Analytics</h4><div class="module-meta">9 semanas · 36h · FinBERT, NER, Sentiment, Text Generation</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Foundations: TF-IDF, Word2Vec, GloVe, FastText</li><li>FinBERT: sentiment de earnings calls, 10-K parsing, riesgo extraction</li><li>NER financiero: empresas, montos, regulaciones; knowledge graphs</li><li>Text generation: summarization, reportes automatizados</li></ul></div><div class="capstone"><h5>Capstone 6</h5><p>Pipeline: scraping → FinBERT sentiment → NER → alertas automáticas. Dashboard Streamlit, 1,000+ noticias.</p></div></div></div>
 
-<div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M7</div><div class="module-info"><h4>ML for Derivatives, Risk & Portfolio Optimization</h4><div class="module-meta">8 semanas · Deep Hedging, VaR con ML, Black-Litterman, TFT</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Options pricing con Neural Networks vs Black-Scholes; deep hedging</li><li>VaR/ES con ensemble methods; stress testing con GANs/VAEs</li><li>Portfolio: Black-Litterman + ML views, RL para asset allocation, risk parity</li><li>Time Series: GARCH+ML, Temporal Fusion Transformers, regime detection</li></ul></div><div class="capstone"><h5>Capstone 7</h5><p>Risk engine: superficie de vol con NN (error <5%), VaR/ES con 3+ modelos ML, stress testing con GAN.</p></div></div></div>
+<div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M7</div><div class="module-info"><h4>ML for Derivatives, Risk & Portfolio Optimization</h4><div class="module-meta">8 semanas · 32h · Deep Hedging, VaR con ML, Black-Litterman, TFT</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Options pricing con Neural Networks vs Black-Scholes; deep hedging</li><li>VaR/ES con ensemble methods; stress testing con GANs/VAEs</li><li>Portfolio: Black-Litterman + ML views, RL para asset allocation, risk parity</li><li>Time Series: GARCH+ML, Temporal Fusion Transformers, regime detection</li></ul></div><div class="capstone"><h5>Capstone 7</h5><p>Risk engine: superficie de vol con NN (error <5%), VaR/ES con 3+ modelos ML, stress testing con GAN.</p></div></div></div>
 
-<div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M8</div><div class="module-info"><h4>Algorithmic Trading con ML</h4><div class="module-meta">8 semanas · Feature engineering, backtesting, meta-labeling, execution</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Features: technical indicators, alternative data, microstructure</li><li>Walk-forward validation, purged K-Fold, triple barrier (López de Prado)</li><li>Backtesting: Backtrader/Zipline, overfitting detection, deflated Sharpe</li><li>Execution: Almgren-Chriss, market making con ML, order flow prediction</li></ul></div><div class="capstone"><h5>Capstone 8</h5><p>Sistema completo: señales ML → backtesting walk-forward 5 años → Sharpe, Sortino, max drawdown, Calmar.</p></div></div></div>
+<div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M8</div><div class="module-info"><h4>Algorithmic Trading con ML</h4><div class="module-meta">8 semanas · 32h · Feature engineering, backtesting, meta-labeling, execution</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Features: technical indicators, alternative data, microstructure</li><li>Walk-forward validation, purged K-Fold, triple barrier (López de Prado)</li><li>Backtesting: Backtrader/Zipline, overfitting detection, deflated Sharpe</li><li>Execution: Almgren-Chriss, market making con ML, order flow prediction</li></ul></div><div class="capstone"><h5>Capstone 8</h5><p>Sistema completo: señales ML → backtesting walk-forward 5 años → Sharpe, Sortino, max drawdown, Calmar.</p></div></div></div>
 
-<div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M9</div><div class="module-info"><h4>Banking ML Suite: Credit, AML & Customer Analytics</h4><div class="module-meta">6 semanas · IFRS 9, scorecards, graph AML, recommender systems</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Credit Risk ML: IFRS 9/CECL con ML, scorecards regulatorios, SR 11-7</li><li>AML: network analysis, entity resolution, SAR automation</li><li>Customer: churn, CLV, next-best-action, recommender systems</li></ul></div><div class="capstone"><h5>Capstone 9</h5><p>Suite integrada: scorecard IFRS 9 compliant + sistema AML con graph analytics (50K+ tx) + motor next-best-offer (10K+ clientes).</p></div></div></div>
+<div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M9</div><div class="module-info"><h4>Banking ML Suite: Credit, AML & Customer Analytics</h4><div class="module-meta">6 semanas · 24h · IFRS 9, scorecards, graph AML, recommender systems</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Credit Risk ML: IFRS 9/CECL con ML, scorecards regulatorios, SR 11-7</li><li>AML: network analysis, entity resolution, SAR automation</li><li>Customer: churn, CLV, next-best-action, recommender systems</li></ul></div><div class="capstone"><h5>Capstone 9</h5><p>Suite integrada: scorecard IFRS 9 compliant + sistema AML con graph analytics (50K+ tx) + motor next-best-offer (10K+ clientes).</p></div></div></div>
 
 <div class="phase-header"><span class="phase-tag">Nivel 3 · Create</span><h3>Advanced AI & Creation — 188h</h3></div>
 <div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M10</div><div class="module-info"><h4>Transformers & LLMs</h4><div class="module-meta">9 semanas · Self-attention from scratch, GPT, Claude, LLaMA, Mistral, prompt engineering</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Transformer: self-attention from scratch, multi-head, positional encoding (RoPE)</li><li>LLMs: BERT, GPT, LLaMA, Mistral, Claude (Constitutional AI)</li><li>Prompt engineering: CoT, tree-of-thought, system prompts, few-shot</li><li>APIs: OpenAI, Anthropic, function calling, structured outputs, streaming</li><li>Evaluación: MMLU, HumanEval, red teaming, hallucination measurement</li></ul></div><div class="capstone"><h5>Capstone 10</h5><p>LLM-Powered Financial Analyst: analizar 10-Ks, generar resúmenes, RAG Q&A. Precisión factual en 50 preguntas benchmark.</p></div></div></div>
@@ -298,68 +313,81 @@ table.compare{width:100%;border-collapse:collapse;min-width:820px;font-family:'P
 
 
 <section class="compare-section" id="compare"><div class="container">
-<span class="section-label" style="color:var(--yellow)">Benchmark mundial</span>
-<h2 class="display-md" style="margin-top:.75rem;color:var(--white)">La MLC™ no tiene competencia real</h2>
-<p style="position:relative;z-index:1;color:rgba(255,255,255,.55);max-width:680px;margin-top:1rem;font-size:1rem;line-height:1.75">A nivel mundial no existe ningún programa que combine ML/AI para finanzas, corporativos, biomedical, logística, física y quantum computing en una sola certificación. Los programas existentes cubren 1–2 sectores y van de 42 a 250 horas.</p>
+<div class="sec-center"><span class="section-label" style="color:var(--yellow)">Benchmark mundial</span>
+<h2 class="display-md" style="margin-top:.75rem;color:var(--white)">La MLC™ no tiene competencia real</h2><div class="accent-rule"></div></div>
+<p style="position:relative;z-index:1;color:rgba(255,255,255,.55);max-width:680px;margin:1rem auto 0;font-size:1rem;line-height:1.75;text-align:center">La MLC™ es el único programa global que combina cobertura matemática profunda, frontera 2026 (LLMs, agentes, MCP, Quantum), aplicación multi-industria sistemática y horas-laboratorio con práctica real. Los top schools son excepcionales en una dimensión; ninguno integra las cuatro.</p>
 <div class="compare-wrap"><table class="compare">
-<thead><tr><th>Programa</th><th>Horas</th><th>Módulos</th><th>LLMs & Fine-Tuning</th><th>IA Agéntica / MCP</th><th>Quantum</th><th>Multi-industria</th></tr></thead>
+<thead><tr><th>Programa</th><th>Horas</th><th>Matemática</th><th>LLMs / Agentes</th><th>Multi-industria</th><th>Capstones</th></tr></thead>
 <tbody>
-<tr class="mlc"><td>MLC™ — RiskMathics</td><td>620+</td><td>20</td><td class="yes">✓ LoRA / RLHF / DPO</td><td class="yes">✓ Módulo de 36h</td><td class="yes">✓ 24h con Qiskit</td><td class="yes">✓ 12+ industrias</td></tr>
-<tr><td>IIQF CPMLF (India)</td><td>250</td><td>7</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">Solo BFSI</td></tr>
-<tr><td>Columbia CBS (USA)</td><td>~80</td><td>8</td><td class="no">API only</td><td class="no">✗</td><td class="no">✗</td><td class="no">1–2 sectores</td></tr>
-<tr><td>CFA Data Science</td><td>~100</td><td>5</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">Solo finanzas</td></tr>
-<tr><td>MIT IDSS (USA)</td><td>~60</td><td>4</td><td class="no">Básico</td><td class="no">✗</td><td class="no">✗</td><td class="no">Parcial</td></tr>
-<tr><td>Oxford Saïd (UK)</td><td>~42</td><td>6</td><td class="no">Conceptual</td><td class="no">✗</td><td class="no">✗</td><td class="no">Parcial</td></tr>
+<tr class="mlc"><td>MLC™ — RiskMathics</td><td>620+</td><td class="yes">✓ Profunda</td><td class="yes">✓ Frontera 2026</td><td class="yes">✓ 12+ verticales</td><td>25</td></tr>
+<tr><td>MIT MicroMasters Stats &amp; DS</td><td>300</td><td class="yes">✓ Profunda</td><td class="no">◐ Parcial</td><td class="no">◐ Limitada</td><td>5</td></tr>
+<tr><td>NYU Tandon Quant Finance ML</td><td>240</td><td class="yes">✓ Profunda</td><td class="no">◐ Limitado</td><td class="no">✗ Solo finanzas</td><td>6</td></tr>
+<tr><td>Stanford AI Professional</td><td>180</td><td class="no">◐ Media</td><td class="yes">✓ Frontera</td><td class="no">✗ Generalista</td><td>4</td></tr>
 </tbody></table></div>
-<div class="compare-note">Fuente: RiskMathics Competitive Intelligence 2026 — análisis de programas de IIQF, Columbia, CFA Institute, MIT, Oxford, Stanford, Harvard, NYU y WorldQuant.</div>
+<div class="compare-note">Fuente: Análisis Competitivo Global MLC™ 2026 — comparativa contra MIT, Stanford, NYU Tandon, Imperial College, Berkeley Haas, Wharton, INSEAD y CFA Institute.</div>
 </div></section>
 
 <section class="dd-section" id="demoday"><div class="container">
-<span class="section-label">Capstone Final & Demo Day</span>
-<h2 class="display-md" style="margin-top:.75rem;color:var(--black)">Tu proyecto, ante un jurado real</h2>
+<div class="sec-center"><span class="section-label">Capstone Final & Demo Day</span>
+<h2 class="display-md" style="margin-top:.75rem;color:var(--black)">Tu proyecto, ante un jurado real</h2><div class="accent-rule"></div></div>
 <div class="dd-grid">
 <div class="dd-card">
 <h3>Demo Day: proyecto integrador final</h3>
-<p class="dd-lead">Proyecto que combina 4+ módulos resolviendo un problema REAL de una empresa o institución de salud, con impacto medible, documentación profesional y cumplimiento regulatorio. Formato: 15 minutos de pitch + 10 minutos de Q&A técnico ante jurado.</p>
+<p class="dd-lead">El examen final no es un examen: es un producto. Capstone integrador de 8 semanas que combina 4+ módulos resolviendo un problema REAL, con defensa pública ante un jurado de industria. Tres formatos: producto-empresa (MVP SaaS con caso de negocio), investigación aplicada (paper de frontera con extensión propia) o proyecto-empleador (ROI demostrable desplegado en producción).</p>
 <h4>Composición del jurado</h4>
 <ul class="jury-list">
+<li>Quants senior de asset managers</li>
+<li>Heads de Machine Learning</li>
+<li>Partners de venture capital</li>
+<li>CIOs de hospitales</li>
 <li>CTOs de empresas financieras</li>
-<li>Heads de Risk Management</li>
 <li>Partners de Big 4</li>
 <li>General Counsels</li>
-<li>Venture Capitalists</li>
-<li>Directores Médicos de hospitales</li>
-<li>Pharma Innovation Leads</li>
-<li>Quant Leads de asset managers</li>
+<li>Directores Médicos</li>
 </ul>
-<div class="dd-quote">"Los 3 mejores proyectos reciben mentoría de implementación real con empresas partner de RiskMathics." — MLC™ Demo Day</div>
+<div class="dd-quote">"El Demo Day es público y se transmite. Los proyectos sobresalientes reciben aceleración, conexión con inversionistas o presentación a comité ejecutivo con respaldo institucional de RiskMathics." — MLC™ Demo Day</div>
 </div>
 <div class="dd-card">
 <h3>Dirigido a & Requisitos</h3>
 <ul class="req-list">
-<li>Licenciatura en áreas cuantitativas o experiencia equivalente.</li>
-<li>Bases sólidas de Matemáticas Financieras.</li>
-<li>De preferencia, trabajar o haber trabajado en instituciones del medio financiero.</li>
-<li>Conocimientos básicos de programación deseables.</li>
+<li>Cálculo nivel licenciatura y álgebra lineal.</li>
+<li>Programación intermedia (cualquier lenguaje).</li>
+<li>Inglés técnico de lectura.</li>
+<li>Perfil: quants, ingenieros financieros, científicos de datos, ejecutivos de tecnología y profesionales senior.</li>
 </ul>
 <h4>Datos generales</h4>
 <div class="dd-facts">
-<div class="fact"><span>Modalidad</span><b>Híbrida · Live + On-Demand + Labs</b></div>
+<div class="fact"><span>Modalidad</span><b>Híbrida · Live 40% · On-Demand 30% · Labs 20% · Mentoría 10%</b></div>
 <div class="fact"><span>Duración</span><b>14 meses · 620+ horas</b></div>
-<div class="fact"><span>Idioma</span><b>Español + inglés técnico</b></div>
-<div class="fact"><span>Inicio</span><b>Q3 2026</b></div>
-<div class="fact"><span>Certificación</span><b>MLC™ · RiskMathics Financial Institute</b></div>
+<div class="fact"><span>Idioma</span><b>Español · materiales y código en inglés</b></div>
+<div class="fact"><span>Inicio</span><b>Cohorte 2026 · arranque Q3 2026</b></div>
+<div class="fact"><span>Cupo</span><b>60 lugares por cohorte</b></div>
+<div class="fact"><span>Certificación</span><b>Diploma MLC™ · transcript · LinkedIn badge</b></div>
+<div class="fact"><span>Alumni</span><b>Comunidad vitalicia · job board · updates trimestrales</b></div>
 </div>
-<p class="dd-corp">¿Vas en equipo? Existen planes Corporativo (5–10), Enterprise (11–25) y Licencia Institucional (25+) con proyectos customizados y executive briefings. Solicita información en el formulario.</p>
+<p class="dd-corp">¿Vas en equipo? Patrocinio empresarial: las empresas que envían 3+ alumnos reciben descuento por volumen, sesiones onsite adicionales y un capstone alineado a un problema de negocio real del patrocinador. Solicita información en el formulario.</p>
 </div>
 </div></div></section>
 
+<section class="apply-section" id="apply"><div class="container">
+<div class="sec-center"><span class="section-label" style="color:var(--yellow)">Inscripción &amp; próximos pasos</span>
+<h2 class="display-md" style="margin-top:.75rem;color:var(--white)">Aplicación selectiva · 60 lugares</h2><div class="accent-rule"></div></div>
+<div class="apply-grid">
+<div class="apply-step"><div class="num">01 · APLICACIÓN</div><h4>Formulario + evaluación</h4><p>Formulario online, CV, carta de motivación de 600 palabras, 2 referencias y evaluación matemática diagnóstica de 90 minutos.</p></div>
+<div class="apply-step"><div class="num">02 · ENTREVISTA</div><h4>Comité académico</h4><p>45 minutos con el comité: motivación, expectativas, profundidad técnica actual y encaje cultural con la cohorte.</p></div>
+<div class="apply-step"><div class="num">03 · ADMISIÓN</div><h4>Decisión en 10 días</h4><p>Carta de admisión condicional o final. 30 días para confirmar y depositar reserva (10% del monto).</p></div>
+<div class="apply-step"><div class="num">04 · ONBOARDING</div><h4>Pre-work de 30 horas</h4><p>Repaso matemático, instalación de stack, lecturas y asignación de mentor y grupo de cohorte, 4 semanas antes del arranque.</p></div>
+<div class="apply-step"><div class="num">05 · ARRANQUE</div><h4>Sesión inaugural</h4><p>Presencial o híbrida, con buddy asignado. Acceso a plataforma, código base, datasets, GPU credits y biblioteca digital.</p></div>
+</div>
+<p style="font-family:'Lora',serif;font-style:italic;text-align:center;color:rgba(255,255,255,.45);font-size:.85rem;margin-top:2.5rem">Financiamiento: pago directo con descuento por liquidación anticipada · plan a 12 meses sin intereses para la cohorte 2026 (cupo limitado) · patrocinio empresarial para equipos de 3+.</p>
+</div></section>
+
 <div id="contact"></div>
 <!-- ===== RISKMATHICS SALES MACHINE (inyectable) ===== -->
-<section id="rm-enroll" style="background:linear-gradient(135deg,#142C4E,#081428);color:#fff;padding:64px 20px;font-family:'Poppins',Arial,sans-serif;">
+<section id="rm-enroll" style="background:linear-gradient(135deg,#1A1700,#050505);color:#fff;padding:64px 20px;font-family:'Poppins',Arial,sans-serif;">
   <div style="max-width:660px;margin:0 auto;">
     <div style="text-align:center;margin-bottom:28px;">
-      <div style="color:#C99700;letter-spacing:3px;font-size:12px;font-weight:700;">INSCRIPCIÓN · CUPO LIMITADO</div>
+      <div style="color:#FDE100;letter-spacing:3px;font-size:12px;font-weight:700;">INSCRIPCIÓN · CUPO LIMITADO</div>
       <h2 style="font-size:34px;margin:12px 0 8px;font-weight:800;line-height:1.15;">Asegura tu lugar</h2>
       <p style="color:#c9ccd4;font-size:16px;margin:0;">Déjanos tus datos, verifica tu WhatsApp y recibe el temario completo. Sin compromiso.</p>
     </div>
@@ -375,17 +403,17 @@ table.compare{width:100%;border-collapse:collapse;min-width:820px;font-family:'P
           <input name="empresa" placeholder="Institución / Empresa" style="padding:13px 14px;border:1px solid #d8dee9;border-radius:10px;font-size:15px;">
         </div>
         <input name="whatsapp" placeholder="WhatsApp (ej. +52...)" required style="padding:13px 14px;border:1px solid #d8dee9;border-radius:10px;font-size:15px;">
-        <button type="submit" style="background:linear-gradient(135deg,#E3B341,#C99700);color:#14213A;font-weight:800;font-size:16px;border:none;padding:15px;border-radius:10px;cursor:pointer;">Quiero el temario</button>
+        <button type="submit" style="background:linear-gradient(135deg,#FFF04D,#FDE100);color:#111111;font-weight:800;font-size:16px;border:none;padding:15px;border-radius:10px;cursor:pointer;">Quiero el temario</button>
         <p style="font-size:12px;color:#8a94a6;margin:0;text-align:center;">🔒 Te enviamos un código por SMS para verificar. Datos protegidos.</p>
       </form>
       <div id="rm-verify" style="display:none;"></div>
       <div id="rm-thanks" style="display:none;background:#ecfdf5;border:1px solid #6ee7b7;color:#065f46;padding:20px;border-radius:14px;font-size:15px;">✅ <b>¡Listo!</b> Recibimos y verificamos tus datos. Te enviamos el temario y un asesor te contactará.</div>
       <div style="margin-top:24px;padding-top:22px;border-top:1px solid #eef1f6;text-align:center;">
         <div style="font-size:13px;color:#6b7280;letter-spacing:1px;">O INSCRÍBETE Y PAGA DIRECTO</div>
-        <div style="font-size:30px;font-weight:800;color:#081428;margin:8px 0 4px;">USD $<span>24,500</span> <span style="font-size:14px;color:#6b7280;font-weight:500;">+ IVA</span></div>
+        <div style="font-size:30px;font-weight:800;color:#0A0A0A;margin:8px 0 4px;">USD $<span>24,500</span> <span style="font-size:14px;color:#6b7280;font-weight:500;">+ IVA</span></div>
         <div style="display:grid;gap:10px;margin-top:16px;">
-          <a id="rm-paypal" href="" target="_blank" rel="noopener" style="background:#C99700;color:#14213A;font-weight:800;padding:14px;border-radius:10px;text-decoration:none;">Pagar con PayPal · 6 MSI</a>
-          <a id="rm-stripe" href="https://buy.stripe.com/eVq9ALbzF9GUf335QZ2Ry11" target="_blank" rel="noopener" style="background:#081428;color:#fff;font-weight:700;padding:14px;border-radius:10px;text-decoration:none;">Pagar con tarjeta · Stripe</a>
+          <a id="rm-paypal" href="" target="_blank" rel="noopener" style="background:#FDE100;color:#111111;font-weight:800;padding:14px;border-radius:10px;text-decoration:none;">Pagar con PayPal · 6 MSI</a>
+          <a id="rm-stripe" href="https://buy.stripe.com/eVq9ALbzF9GUf335QZ2Ry11" target="_blank" rel="noopener" style="background:#0A0A0A;color:#fff;font-weight:700;padding:14px;border-radius:10px;text-decoration:none;">Pagar con tarjeta · Stripe</a>
         </div>
         <p style="font-size:11px;color:#9aa4b4;margin-top:12px;">100% seguro · SSL · PayPal Verified · RiskMathics Financial Institute</p>
       </div>
