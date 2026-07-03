@@ -9,24 +9,24 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
 <style>
-:root{--black:#000000;--black-rich:#050508;--black-soft:#0d0f14;--yellow:#FDE100;--yellow-dark:#D4BE00;--yellow-glow:#FFF04D;--yellow-soft:#F5E680;--teal:#00DCF7;--teal-dark:#00B4CC;--ivory:#F9F9F2;--ivory-warm:#FCFCF7;--white:#FFF;--text-primary:#111111;--text-secondary:#555555;--border-subtle:rgba(0,0,0,0.08);--shadow-md:0 8px 32px rgba(0,0,0,0.15);--r-sm:8px;--r-md:16px;--r-lg:24px}
+:root{--black:#0B1D3A;--black-rich:#081428;--black-soft:#142C4E;--yellow:#C99700;--yellow-dark:#A87D14;--yellow-glow:#E3B341;--yellow-soft:#E2CFA2;--teal:#C7923E;--teal-dark:#B98C3C;--ivory:#F7F2E4;--ivory-warm:#FBF8EF;--white:#FFF;--text-primary:#14213A;--text-secondary:#4E576B;--border-subtle:rgba(0,0,0,0.08);--shadow-md:0 8px 32px rgba(0,0,0,0.15);--r-sm:8px;--r-md:16px;--r-lg:24px}
 *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth;font-size:16px;-webkit-font-smoothing:antialiased}body{font-family:'Lora',Georgia,serif;font-size:1rem;line-height:1.72;color:var(--text-primary);background:var(--ivory);overflow-x:hidden}
 h1,h2,h3,h4,h5,h6{font-family:'Poppins',sans-serif;font-weight:700;line-height:1.15;letter-spacing:-.02em}
 .display-xl{font-size:clamp(2.6rem,5.5vw,4.8rem);font-weight:900;letter-spacing:-.03em}.display-md{font-size:clamp(1.5rem,3vw,2.2rem);font-weight:700}
 .section-label{font-family:'Poppins',sans-serif;font-size:.75rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--yellow-dark)}
 .body-lg{font-size:1.125rem;line-height:1.78}.container{max-width:1200px;margin:0 auto;padding:0 clamp(1.5rem,4vw,3rem)}section{padding:clamp(4rem,8vw,8rem) 0}
 
-.site-header{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1rem 0;background:rgba(0,0,0,.96);backdrop-filter:blur(20px);border-bottom:1px solid rgba(253,225,0,.08);transition:all .4s}
+.site-header{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1rem 0;background:rgba(8,20,40,.96);backdrop-filter:blur(20px);border-bottom:1px solid rgba(201,151,0,.08);transition:all .4s}
 .header-inner{display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:0 auto;padding:0 clamp(1.5rem,4vw,3rem)}.header-logo{height:40px;filter:brightness(1.1)}
 .header-nav{display:flex;gap:2rem;align-items:center}.header-nav a{font-family:'Poppins',sans-serif;font-size:.8rem;font-weight:500;color:rgba(255,255,255,.7);text-decoration:none;transition:color .3s}.header-nav a:hover{color:var(--yellow)}
-.btn-header-cta{font-family:'Poppins',sans-serif;font-size:.8rem;font-weight:700;color:var(--black)!important;background:var(--yellow);padding:.6rem 1.4rem;border-radius:100px;text-decoration:none;transition:all .3s}.btn-header-cta:hover{background:var(--yellow-glow);box-shadow:0 0 24px rgba(253,225,0,.4)}
+.btn-header-cta{font-family:'Poppins',sans-serif;font-size:.8rem;font-weight:700;color:var(--black)!important;background:var(--yellow);padding:.6rem 1.4rem;border-radius:100px;text-decoration:none;transition:all .3s}.btn-header-cta:hover{background:var(--yellow-glow);box-shadow:0 0 24px rgba(201,151,0,.4)}
 
 .hero{position:relative;min-height:100vh;display:flex;align-items:center;background:var(--black);overflow:hidden;padding-top:80px}
 .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 90% 70% at 50% 45%,var(--black-soft) 0%,var(--black) 80%)}
-.hero::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 40% 35% at 50% 40%,rgba(253,225,0,.03) 0%,transparent 70%)}
+.hero::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 40% 35% at 50% 40%,rgba(201,151,0,.03) 0%,transparent 70%)}
 .hero-content{position:relative;z-index:2;width:100%;max-width:1200px;margin:0 auto;padding:0 clamp(1.5rem,4vw,3rem);display:grid;grid-template-columns:1fr 380px;gap:4rem;align-items:center}
 .hero-text{max-width:720px}
-.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(253,225,0,.08);border:1px solid rgba(253,225,0,.2);padding:.5rem 1.2rem;border-radius:100px;margin-bottom:2rem}
+.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(201,151,0,.08);border:1px solid rgba(201,151,0,.2);padding:.5rem 1.2rem;border-radius:100px;margin-bottom:2rem}
 .hero-badge span{font-family:'Poppins',sans-serif;font-size:.75rem;font-weight:600;color:var(--yellow);letter-spacing:.12em;text-transform:uppercase}
 .hero-badge .dot{width:6px;height:6px;background:var(--yellow);border-radius:50%;animation:pd 2s ease-in-out infinite}@keyframes pd{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.5)}}
 .hero h1{color:var(--white);margin-bottom:.5rem}.hero h1 .accent{color:var(--yellow);position:relative;display:inline-block}.hero h1 .accent::after{content:'';position:absolute;bottom:4px;left:50%;transform:translateX(-50%);width:60px;height:3px;background:var(--teal);border-radius:2px}
@@ -36,20 +36,20 @@ h1,h2,h3,h4,h5,h6{font-family:'Poppins',sans-serif;font-weight:700;line-height:1
 .hero-stats{display:flex;gap:2.2rem;margin-bottom:2.5rem;flex-wrap:wrap}.hero-stat-number{font-family:'Poppins',sans-serif;font-size:2rem;font-weight:800;color:var(--yellow);line-height:1;letter-spacing:-.03em}
 .hero-stat-label{font-family:'Poppins',sans-serif;font-size:.68rem;font-weight:500;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.1em;margin-top:.3rem}
 .btn-primary{font-family:'Poppins',sans-serif;font-size:.9rem;font-weight:700;color:var(--black);background:var(--yellow);padding:1rem 2.2rem;border-radius:100px;text-decoration:none;display:inline-flex;align-items:center;gap:.5rem;transition:all .35s;border:none;cursor:pointer}
-.btn-primary:hover{background:var(--yellow-glow);transform:translateY(-2px);box-shadow:0 8px 32px rgba(253,225,0,.3)}
+.btn-primary:hover{background:var(--yellow-glow);transform:translateY(-2px);box-shadow:0 8px 32px rgba(201,151,0,.3)}
 .btn-secondary{font-family:'Poppins',sans-serif;font-size:.9rem;font-weight:500;color:rgba(255,255,255,.8);background:transparent;padding:1rem 2.2rem;border-radius:100px;text-decoration:none;border:1px solid rgba(255,255,255,.2);display:inline-flex;align-items:center;transition:all .35s}
 .btn-secondary:hover{border-color:var(--yellow);color:var(--yellow)}.hero-ctas{display:flex;gap:1rem;flex-wrap:wrap}
-.hero-sidebar{background:rgba(255,255,255,.04);border:1px solid rgba(253,225,0,.1);border-radius:var(--r-lg);padding:2.5rem;backdrop-filter:blur(12px)}
+.hero-sidebar{background:rgba(255,255,255,.04);border:1px solid rgba(201,151,0,.1);border-radius:var(--r-lg);padding:2.5rem;backdrop-filter:blur(12px)}
 .hero-sidebar h3{font-size:.72rem;font-weight:600;color:var(--yellow);letter-spacing:.15em;text-transform:uppercase;margin-bottom:1.5rem}
 .sidebar-item{display:flex;justify-content:space-between;align-items:baseline;padding:.75rem 0;border-bottom:1px solid rgba(255,255,255,.06)}.sidebar-item:last-child{border:none}
 .sidebar-item-label{font-family:'Poppins',sans-serif;font-size:.78rem;color:rgba(255,255,255,.5)}.sidebar-item-value{font-family:'Poppins',sans-serif;font-size:.85rem;color:var(--white);font-weight:600;text-align:right}.sidebar-item-value .hl{color:var(--yellow)}
-.sidebar-start{margin-top:1.5rem;text-align:center;padding:1.2rem;background:rgba(253,225,0,.06);border:1px solid rgba(253,225,0,.15);border-radius:var(--r-md)}
+.sidebar-start{margin-top:1.5rem;text-align:center;padding:1.2rem;background:rgba(201,151,0,.06);border:1px solid rgba(201,151,0,.15);border-radius:var(--r-md)}
 .sidebar-start .label{font-family:'Poppins',sans-serif;font-size:.65rem;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.15em}
 .sidebar-start .date{font-family:'Poppins',sans-serif;font-size:1.3rem;font-weight:700;color:var(--yellow);margin-top:.25rem}
 
 .abstract-section{background:var(--white);border-bottom:1px solid var(--border-subtle)}
 .abstract-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}.abstract-content p{font-size:1.05rem;color:var(--text-secondary);margin-bottom:1.25rem}.abstract-content p strong{color:var(--text-primary);font-weight:600}
-.abstract-pullquote{position:relative;padding:2.5rem;background:var(--black);border-radius:var(--r-lg);color:var(--white);border:1px solid rgba(253,225,0,.1)}.abstract-pullquote::before{content:'"';position:absolute;top:-.3rem;left:1.5rem;font-family:'Poppins',sans-serif;font-size:5rem;font-weight:800;color:var(--yellow);opacity:.3;line-height:1}
+.abstract-pullquote{position:relative;padding:2.5rem;background:var(--black);border-radius:var(--r-lg);color:var(--white);border:1px solid rgba(201,151,0,.1)}.abstract-pullquote::before{content:'"';position:absolute;top:-.3rem;left:1.5rem;font-family:'Poppins',sans-serif;font-size:5rem;font-weight:800;color:var(--yellow);opacity:.3;line-height:1}
 .abstract-pullquote p{font-family:'Lora',serif;font-style:italic;font-size:1.12rem;line-height:1.75;color:rgba(255,255,255,.85);position:relative;z-index:1}
 .abstract-pullquote .attribution{margin-top:1rem;font-family:'Poppins',sans-serif;font-style:normal;font-size:.75rem;color:var(--yellow);font-weight:600}
 .data-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:3rem}
@@ -58,10 +58,10 @@ h1,h2,h3,h4,h5,h6{font-family:'Poppins',sans-serif;font-weight:700;line-height:1
 .data-chip .lbl{font-family:'Poppins',sans-serif;font-size:.65rem;color:var(--text-secondary);text-transform:uppercase;letter-spacing:.06em;margin-top:.2rem}
 .data-chip .src{font-family:'Lora',serif;font-size:.62rem;color:#999;font-style:italic;margin-top:.3rem}
 
-.highlights-section{background:var(--black);position:relative;overflow:hidden}.highlights-section::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(253,225,0,.03) 0%,transparent 50%)}
+.highlights-section{background:var(--black);position:relative;overflow:hidden}.highlights-section::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(201,151,0,.03) 0%,transparent 50%)}
 .highlights-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;position:relative;z-index:1}
 .highlight-card{background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.06);border-radius:var(--r-md);padding:2rem;transition:all .4s}
-.highlight-card:hover{background:rgba(253,225,0,.03);border-color:rgba(253,225,0,.15);transform:translateY(-3px)}
+.highlight-card:hover{background:rgba(201,151,0,.03);border-color:rgba(201,151,0,.15);transform:translateY(-3px)}
 .highlight-number{font-family:'Poppins',sans-serif;font-size:.7rem;font-weight:700;color:var(--yellow);letter-spacing:.12em;margin-bottom:.75rem}
 .highlight-card h3{font-size:1rem;font-weight:600;color:var(--white);margin-bottom:.5rem;line-height:1.35}
 .highlight-card p{font-family:'Lora',serif;font-size:.88rem;color:rgba(255,255,255,.5);line-height:1.6}
@@ -85,15 +85,15 @@ h1,h2,h3,h4,h5,h6{font-family:'Poppins',sans-serif;font-weight:700;line-height:1
 .module-card-header{display:grid;grid-template-columns:50px 1fr auto;align-items:center;padding:1.1rem 1.5rem;cursor:pointer;gap:1rem}
 .module-number{font-family:'Poppins',sans-serif;font-size:1.1rem;font-weight:800;color:var(--yellow-dark);text-align:center;line-height:1}
 .module-info h4{font-size:.9rem;color:var(--black);line-height:1.35;margin-bottom:.1rem}.module-meta{font-family:'Poppins',sans-serif;font-size:.68rem;color:var(--text-secondary)}
-.module-toggle{font-size:1.3rem;color:var(--yellow-dark);width:30px;height:30px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:rgba(253,225,0,.08);transition:transform .3s}
+.module-toggle{font-size:1.3rem;color:var(--yellow-dark);width:30px;height:30px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:rgba(201,151,0,.08);transition:transform .3s}
 .module-card.active .module-toggle{transform:rotate(45deg)}.module-body{display:none;padding:0 1.5rem 1.25rem;border-top:1px solid var(--border-subtle)}.module-card.active .module-body{display:block}
-.module-objective{background:rgba(253,225,0,.04);border-left:3px solid var(--yellow-dark);padding:.85rem 1.1rem;margin:.85rem 0 1rem;border-radius:0 var(--r-sm) var(--r-sm) 0}
+.module-objective{background:rgba(201,151,0,.04);border-left:3px solid var(--yellow-dark);padding:.85rem 1.1rem;margin:.85rem 0 1rem;border-radius:0 var(--r-sm) var(--r-sm) 0}
 .module-objective h5{font-family:'Poppins',sans-serif;font-size:.7rem;font-weight:600;color:var(--yellow-dark);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.4rem}
 .module-objective p{font-size:.88rem;color:var(--text-secondary);line-height:1.65}
 .module-topics h5{font-family:'Poppins',sans-serif;font-size:.75rem;font-weight:600;color:var(--black);margin-bottom:.6rem;text-transform:uppercase;letter-spacing:.08em}
 .module-topics ul{list-style:none;padding:0}.module-topics li{position:relative;padding:.35rem 0 .35rem 1.4rem;font-size:.85rem;color:var(--text-secondary);line-height:1.5}
 .module-topics li::before{content:'';position:absolute;left:0;top:.75rem;width:5px;height:5px;background:var(--yellow-dark);border-radius:50%}
-.capstone{margin-top:.75rem;padding:.75rem 1rem;background:rgba(0,220,247,.04);border:1px solid rgba(0,220,247,.1);border-radius:var(--r-sm)}
+.capstone{margin-top:.75rem;padding:.75rem 1rem;background:rgba(199,146,62,.04);border:1px solid rgba(199,146,62,.1);border-radius:var(--r-sm)}
 .capstone h5{font-family:'Poppins',sans-serif;font-size:.7rem;font-weight:600;color:var(--teal-dark);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.3rem}
 .capstone p{font-size:.82rem;color:var(--text-secondary);line-height:1.55}
 
@@ -101,55 +101,90 @@ h1,h2,h3,h4,h5,h6{font-family:'Poppins',sans-serif;font-weight:700;line-height:1
 .summary-item{text-align:center}.summary-item .number{font-family:'Poppins',sans-serif;font-size:2.5rem;font-weight:800;color:var(--yellow);line-height:1}
 .summary-item .label{font-family:'Poppins',sans-serif;font-size:.7rem;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.12em;margin-top:.3rem}
 
-.form-section{background:var(--black);position:relative;overflow:hidden}.form-section::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 20% 50%,rgba(253,225,0,.03) 0%,transparent 50%)}
+.form-section{background:var(--black);position:relative;overflow:hidden}.form-section::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 20% 50%,rgba(201,151,0,.03) 0%,transparent 50%)}
 .form-container{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
 .form-left h2{color:var(--white);margin-bottom:1rem}.form-left p{color:rgba(255,255,255,.6);font-size:1.05rem;line-height:1.75;margin-bottom:2rem}
 .form-benefits{list-style:none;padding:0}.form-benefits li{display:flex;align-items:flex-start;gap:.75rem;padding:.5rem 0;font-family:'Poppins',sans-serif;font-size:.85rem;color:rgba(255,255,255,.7)}.form-benefits li .check{color:var(--yellow);font-weight:700;font-size:1rem;flex-shrink:0}
-.form-right{background:rgba(255,255,255,.03);border:1px solid rgba(253,225,0,.1);border-radius:var(--r-lg);padding:2.5rem}
+.form-right{background:rgba(255,255,255,.03);border:1px solid rgba(201,151,0,.1);border-radius:var(--r-lg);padding:2.5rem}
 .form-right h3{font-size:1.1rem;color:var(--white);margin-bottom:.4rem}.form-right .form-subtitle{font-family:'Poppins',sans-serif;font-size:.75rem;color:rgba(255,255,255,.4);margin-bottom:1.5rem}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.form-group{margin-bottom:1rem}
 .form-group label{display:block;font-family:'Poppins',sans-serif;font-size:.72rem;font-weight:500;color:rgba(255,255,255,.5);margin-bottom:.4rem;text-transform:uppercase;letter-spacing:.08em}
 .form-group input,.form-group select{width:100%;padding:.8rem 1rem;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--r-sm);color:var(--white);font-family:'Lora',serif;font-size:.9rem;transition:all .3s;outline:none}
 .form-group input::placeholder{color:rgba(255,255,255,.25)}
-.form-group input:focus,.form-group select:focus{border-color:var(--yellow);background:rgba(253,225,0,.04);box-shadow:0 0 0 3px rgba(253,225,0,.08)}
-.form-group select{cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23FDE100' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .8rem center;background-size:16px;padding-right:2.5rem}
+.form-group input:focus,.form-group select:focus{border-color:var(--yellow);background:rgba(201,151,0,.04);box-shadow:0 0 0 3px rgba(201,151,0,.08)}
+.form-group select{cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23C99700' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .8rem center;background-size:16px;padding-right:2.5rem}
 .form-group select option{background:var(--black);color:var(--white)}
 .form-disclaimer{font-family:'Poppins',sans-serif;font-size:.68rem;color:rgba(255,255,255,.3);margin-top:.5rem}
 .btn-submit{width:100%;margin-top:1rem;font-family:'Poppins',sans-serif;font-size:.95rem;font-weight:700;color:var(--black);background:var(--yellow);padding:1.1rem;border:none;border-radius:var(--r-sm);cursor:pointer;transition:all .35s}
-.btn-submit:hover{background:var(--yellow-glow);box-shadow:0 8px 32px rgba(253,225,0,.3);transform:translateY(-1px)}
+.btn-submit:hover{background:var(--yellow-glow);box-shadow:0 8px 32px rgba(201,151,0,.3);transform:translateY(-1px)}
 .form-secure{display:flex;align-items:center;justify-content:center;gap:.5rem;margin-top:1rem;font-family:'Poppins',sans-serif;font-size:.68rem;color:rgba(255,255,255,.3)}
 .form-success{display:none;text-align:center;padding:3rem 2rem}.form-right.submitted form{display:none}.form-right.submitted .form-success{display:block}
 .form-success .check-circle{width:64px;height:64px;background:var(--yellow);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-size:2rem;color:var(--black)}
 .form-success h3{color:var(--white);font-size:1.3rem;margin-bottom:.5rem}.form-success p{color:rgba(255,255,255,.6)}
-.site-footer{background:var(--black);padding:3rem 0 2rem;border-top:1px solid rgba(253,225,0,.08)}
+.site-footer{background:var(--black);padding:3rem 0 2rem;border-top:1px solid rgba(201,151,0,.08)}
 .footer-inner{display:flex;justify-content:space-between;align-items:center}.footer-logo{height:32px}.footer-text{font-family:'Poppins',sans-serif;font-size:.72rem;color:rgba(255,255,255,.35)}
 .footer-links{display:flex;gap:2rem}.footer-links a{font-family:'Poppins',sans-serif;font-size:.72rem;color:rgba(255,255,255,.4);text-decoration:none;transition:color .3s}.footer-links a:hover{color:var(--yellow)}
+
+.timeline-section{background:#EFE7D2;padding:clamp(3rem,5vw,4.5rem) 0;border-top:1px solid rgba(201,151,0,.18);border-bottom:1px solid rgba(201,151,0,.18)}
+.timeline-track{display:flex;gap:1rem;overflow-x:auto;padding:1.75rem .25rem .9rem;scrollbar-width:thin;scrollbar-color:#C99700 transparent}
+.tl-item{flex:0 0 auto;width:172px;background:var(--white);border:1px solid rgba(201,151,0,.28);border-top:3px solid var(--yellow-dark);border-radius:var(--r-sm);padding:1rem 1.1rem}
+.tl-year{font-family:'Poppins',sans-serif;font-weight:800;font-size:1.05rem;color:var(--yellow-dark);letter-spacing:-.01em}
+.tl-txt{font-family:'Lora',serif;font-size:.78rem;color:var(--text-secondary);line-height:1.55;margin-top:.35rem}
+.compare-section{background:var(--black);position:relative;overflow:hidden}.compare-section::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 15% 15%,rgba(201,151,0,.05) 0%,transparent 50%)}
+.compare-wrap{position:relative;z-index:1;overflow-x:auto;margin-top:2.5rem;border:1px solid rgba(201,151,0,.18);border-radius:var(--r-md);background:rgba(255,255,255,.02)}
+table.compare{width:100%;border-collapse:collapse;min-width:820px;font-family:'Poppins',sans-serif;font-size:.78rem}
+.compare th{text-align:left;padding:.9rem 1.1rem;font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--yellow);border-bottom:1px solid rgba(201,151,0,.25);white-space:nowrap}
+.compare td{padding:.85rem 1.1rem;border-top:1px solid rgba(255,255,255,.06);color:rgba(255,255,255,.68);white-space:nowrap}
+.compare td:first-child{font-weight:600;color:rgba(255,255,255,.85)}
+.compare tr.mlc td{background:rgba(201,151,0,.12);color:#fff;font-weight:700;border-top:1px solid rgba(201,151,0,.35)}
+.compare .yes{color:#DDAF4A;font-weight:700}.compare .no{color:rgba(255,255,255,.26)}
+.compare-note{position:relative;z-index:1;font-family:'Lora',serif;font-style:italic;font-size:.75rem;color:rgba(255,255,255,.35);margin-top:1rem}
+.dd-section{background:var(--ivory-warm)}
+.dd-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.75rem;margin-top:2.5rem}
+.dd-card{background:var(--white);border:1px solid var(--border-subtle);border-top:3px solid var(--yellow-dark);border-radius:var(--r-md);padding:2.2rem}
+.dd-card h3{font-size:1.05rem;color:var(--black);margin-bottom:.9rem}
+.dd-card .dd-lead{font-size:.92rem;color:var(--text-secondary);line-height:1.7;margin-bottom:1.4rem}
+.dd-card h4{font-family:'Poppins',sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--yellow-dark);margin-bottom:.7rem}
+.jury-list{list-style:none;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:.35rem 1rem}
+.jury-list li{position:relative;padding:.3rem 0 .3rem 1.3rem;font-family:'Lora',serif;font-size:.83rem;color:var(--text-secondary);line-height:1.45}
+.jury-list li::before{content:'';position:absolute;left:0;top:.72rem;width:5px;height:5px;background:var(--yellow-dark);border-radius:50%}
+.dd-quote{margin-top:1.4rem;padding:1rem 1.2rem;background:rgba(201,151,0,.06);border-left:3px solid var(--yellow-dark);border-radius:0 var(--r-sm) var(--r-sm) 0;font-family:'Lora',serif;font-style:italic;font-size:.86rem;color:var(--text-primary);line-height:1.65}
+.req-list{list-style:none;padding:0;margin-bottom:1.5rem}
+.req-list li{position:relative;padding:.42rem 0 .42rem 1.5rem;font-family:'Lora',serif;font-size:.9rem;color:var(--text-secondary);line-height:1.6}
+.req-list li::before{content:'✓';position:absolute;left:0;top:.42rem;color:var(--yellow-dark);font-family:'Poppins',sans-serif;font-weight:700;font-size:.85rem}
+.dd-facts{border-top:1px solid var(--border-subtle);padding-top:.4rem}
+.dd-facts .fact{display:flex;justify-content:space-between;gap:1rem;align-items:baseline;padding:.55rem 0;border-bottom:1px solid var(--border-subtle)}
+.dd-facts .fact span{font-family:'Poppins',sans-serif;font-size:.68rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text-secondary);white-space:nowrap}
+.dd-facts .fact b{font-family:'Poppins',sans-serif;font-size:.8rem;font-weight:600;color:var(--black);text-align:right}
+.dd-corp{margin-top:1.3rem;font-family:'Lora',serif;font-size:.83rem;font-style:italic;color:var(--text-secondary);line-height:1.6}
+@media(max-width:1024px){.dd-grid{grid-template-columns:1fr}}
+@media(max-width:640px){.jury-list{grid-template-columns:1fr}}
 
 @media(max-width:1024px){.hero-content{grid-template-columns:1fr}.hero-sidebar{display:none}.abstract-grid{grid-template-columns:1fr}.highlights-grid{grid-template-columns:1fr}.level-grid{grid-template-columns:repeat(2,1fr)}.form-container{grid-template-columns:1fr}.data-bar{grid-template-columns:repeat(2,1fr)}.curriculum-summary{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:640px){.header-nav{display:none}.hero-stats{flex-direction:column;gap:1rem}.hero-ctas{flex-direction:column}.level-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}.data-bar{grid-template-columns:1fr}.curriculum-summary{grid-template-columns:1fr}.footer-inner{flex-direction:column;gap:1.5rem;text-align:center}}
 </style>
 </head>
 <body>
-<header class="site-header"><div class="header-inner"><div style="font-family:'Poppins',sans-serif;font-weight:800;font-size:1.1rem;letter-spacing:.5px;color:#fff;">RISK<span style="color:var(--yellow)">MATHICS</span></div><nav class="header-nav"><a href="#abstract">Abstract</a><a href="#levels">Niveles</a><a href="#curriculum">Programa</a><a href="#rm-enroll" class="btn-header-cta">Inscríbete →</a></nav></div></header>
+<header class="site-header"><div class="header-inner"><div style="font-family:'Poppins',sans-serif;font-weight:800;font-size:1.1rem;letter-spacing:.5px;color:#fff;">RISK<span style="color:var(--yellow)">MATHICS</span></div><nav class="header-nav"><a href="#abstract">Abstract</a><a href="#levels">Niveles</a><a href="#curriculum">Programa</a><a href="#compare">Comparativa</a><a href="#rm-enroll" class="btn-header-cta">Inscríbete →</a></nav></div></header>
 
 <section class="hero"><div class="hero-content"><div class="hero-text">
-<div class="hero-badge"><div class="dot"></div><span>MLC™ Program — Agosto 2026</span></div>
+<div class="hero-badge"><div class="dot"></div><span>MLC™ Program — Inicio Q3 2026</span></div>
 <h1 class="display-xl">Machine Learner<br><span class="accent">Certification™</span></h1>
-<p class="hero-tagline">MLC Program</p>
-<p class="hero-date">Agosto 2026</p>
+<p class="hero-tagline">Learn. Apply. Create. And Profit.</p>
+<p class="hero-date">Inicio Q3 2026 · 14 meses · Híbrido</p>
 <p class="hero-abstract">La certificación más completa del mundo en ML/AI aplicado a Finanzas, Healthcare, Corporativos y Multi-Industria. 620+ horas en 20 módulos, 4 niveles, 25 capstones evaluados por practitioners reales. Learn. Apply. Create. And Profit.</p>
 <div class="hero-stats"><div><div class="hero-stat-number">620+</div><div class="hero-stat-label">Horas</div></div><div><div class="hero-stat-number">20</div><div class="hero-stat-label">Módulos</div></div><div><div class="hero-stat-number">25</div><div class="hero-stat-label">Capstones</div></div><div><div class="hero-stat-number">12+</div><div class="hero-stat-label">Industrias</div></div></div>
 <div class="hero-ctas"><a href="#rm-enroll" class="btn-primary">Solicitar información →</a><a href="#curriculum" class="btn-secondary">Ver programa completo</a></div>
 </div>
 <div class="hero-sidebar"><h3>Ficha del programa</h3>
-<div class="sidebar-item"><span class="sidebar-item-label">Formato</span><span class="sidebar-item-value">Híbrido (Live + Labs)</span></div>
+<div class="sidebar-item"><span class="sidebar-item-label">Formato</span><span class="sidebar-item-value">Live + On-Demand + Labs</span></div>
 <div class="sidebar-item"><span class="sidebar-item-label">Horas</span><span class="sidebar-item-value"><span class="hl">620+</span></span></div>
-<div class="sidebar-item"><span class="sidebar-item-label">Duración</span><span class="sidebar-item-value">12–16 meses</span></div>
+<div class="sidebar-item"><span class="sidebar-item-label">Duración</span><span class="sidebar-item-value">14 meses</span></div>
 <div class="sidebar-item"><span class="sidebar-item-label">Niveles</span><span class="sidebar-item-value"><span class="hl">4</span></span></div>
 <div class="sidebar-item"><span class="sidebar-item-label">Capstones</span><span class="sidebar-item-value"><span class="hl">25</span> proyectos</span></div>
 <div class="sidebar-item"><span class="sidebar-item-label">Idioma</span><span class="sidebar-item-value">ES + EN técnico</span></div>
 <div class="sidebar-item"><span class="sidebar-item-label">Certificación</span><span class="sidebar-item-value"><span class="hl">MLC™</span></span></div>
-<div class="sidebar-start"><div class="label">Fecha de inicio</div><div class="date">Agosto 2026</div></div></div></div></section>
+<div class="sidebar-start"><div class="label">Fecha de inicio</div><div class="date">Q3 2026</div></div></div></div></section>
 
 <section class="abstract-section" id="abstract"><div class="container">
 <span class="section-label">Abstract</span>
@@ -165,6 +200,23 @@ h1,h2,h3,h4,h5,h6{font-family:'Poppins',sans-serif;font-weight:700;line-height:1
 <div class="data-chip"><div class="val">300M</div><div class="lbl">Empleos transformados</div><div class="src">Goldman Sachs</div></div>
 <div class="data-chip"><div class="val">2,000+</div><div class="lbl">Ingenieros ML</div><div class="src">Solo JPMorgan</div></div>
 <div class="data-chip"><div class="val">900+</div><div class="lbl">Dispositivos FDA AI</div><div class="src">Aprobados</div></div>
+</div></div></section>
+
+<section class="timeline-section"><div class="container">
+<span class="section-label">Cronología</span>
+<h2 class="display-md" style="margin-top:.75rem;color:var(--text-primary)">80 años de Inteligencia Artificial</h2>
+<div class="timeline-track">
+<div class="tl-item"><div class="tl-year">1943</div><div class="tl-txt">McCulloch & Pitts publican el primer modelo de neurona artificial.</div></div>
+<div class="tl-item"><div class="tl-year">1950</div><div class="tl-txt">Alan Turing formula la pregunta de una era: «Can machines think?»</div></div>
+<div class="tl-item"><div class="tl-year">1958</div><div class="tl-txt">Rosenblatt construye el Perceptrón, la primera red neuronal funcional.</div></div>
+<div class="tl-item"><div class="tl-year">1973</div><div class="tl-txt">Informe Lighthill: Primer Invierno de la IA.</div></div>
+<div class="tl-item"><div class="tl-year">1987</div><div class="tl-txt">Colapso de los Sistemas Expertos: Segundo Invierno de la IA.</div></div>
+<div class="tl-item"><div class="tl-year">2012</div><div class="tl-txt">AlexNet destroza ImageNet (26% → 15.3%) y detona el Deep Learning.</div></div>
+<div class="tl-item"><div class="tl-year">2016</div><div class="tl-txt">AlphaGo vence a Lee Sedol: la IA supera la intuición humana.</div></div>
+<div class="tl-item"><div class="tl-year">2017</div><div class="tl-txt">«Attention Is All You Need»: nace la arquitectura Transformer.</div></div>
+<div class="tl-item"><div class="tl-year">2020</div><div class="tl-txt">GPT-3 demuestra que las máquinas escriben, traducen y razonan.</div></div>
+<div class="tl-item"><div class="tl-year">2022</div><div class="tl-txt">ChatGPT: 100M de usuarios en 2 meses. Adopción sin precedente.</div></div>
+<div class="tl-item"><div class="tl-year">2024–26</div><div class="tl-txt">Claude, MCP e IA Agéntica transforman cómo operan las empresas.</div></div>
 </div></div></section>
 
 <section class="highlights-section"><div class="container">
@@ -244,12 +296,70 @@ h1,h2,h3,h4,h5,h6{font-family:'Poppins',sans-serif;font-weight:700;line-height:1
 <div class="curriculum-summary"><div class="summary-item"><div class="number">20</div><div class="label">Módulos</div></div><div class="summary-item"><div class="number">620+</div><div class="label">Horas</div></div><div class="summary-item"><div class="number">25</div><div class="label">Capstones</div></div><div class="summary-item"><div class="number">12+</div><div class="label">Industrias</div></div></div>
 </div></section>
 
+
+<section class="compare-section" id="compare"><div class="container">
+<span class="section-label" style="color:var(--yellow)">Benchmark mundial</span>
+<h2 class="display-md" style="margin-top:.75rem;color:var(--white)">La MLC™ no tiene competencia real</h2>
+<p style="position:relative;z-index:1;color:rgba(255,255,255,.55);max-width:680px;margin-top:1rem;font-size:1rem;line-height:1.75">A nivel mundial no existe ningún programa que combine ML/AI para finanzas, corporativos, biomedical, logística, física y quantum computing en una sola certificación. Los programas existentes cubren 1–2 sectores y van de 42 a 250 horas.</p>
+<div class="compare-wrap"><table class="compare">
+<thead><tr><th>Programa</th><th>Horas</th><th>Módulos</th><th>LLMs & Fine-Tuning</th><th>IA Agéntica / MCP</th><th>Quantum</th><th>Multi-industria</th></tr></thead>
+<tbody>
+<tr class="mlc"><td>MLC™ — RiskMathics</td><td>620+</td><td>20</td><td class="yes">✓ LoRA / RLHF / DPO</td><td class="yes">✓ Módulo de 36h</td><td class="yes">✓ 24h con Qiskit</td><td class="yes">✓ 12+ industrias</td></tr>
+<tr><td>IIQF CPMLF (India)</td><td>250</td><td>7</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">Solo BFSI</td></tr>
+<tr><td>Columbia CBS (USA)</td><td>~80</td><td>8</td><td class="no">API only</td><td class="no">✗</td><td class="no">✗</td><td class="no">1–2 sectores</td></tr>
+<tr><td>CFA Data Science</td><td>~100</td><td>5</td><td class="no">✗</td><td class="no">✗</td><td class="no">✗</td><td class="no">Solo finanzas</td></tr>
+<tr><td>MIT IDSS (USA)</td><td>~60</td><td>4</td><td class="no">Básico</td><td class="no">✗</td><td class="no">✗</td><td class="no">Parcial</td></tr>
+<tr><td>Oxford Saïd (UK)</td><td>~42</td><td>6</td><td class="no">Conceptual</td><td class="no">✗</td><td class="no">✗</td><td class="no">Parcial</td></tr>
+</tbody></table></div>
+<div class="compare-note">Fuente: RiskMathics Competitive Intelligence 2026 — análisis de programas de IIQF, Columbia, CFA Institute, MIT, Oxford, Stanford, Harvard, NYU y WorldQuant.</div>
+</div></section>
+
+<section class="dd-section" id="demoday"><div class="container">
+<span class="section-label">Capstone Final & Demo Day</span>
+<h2 class="display-md" style="margin-top:.75rem;color:var(--black)">Tu proyecto, ante un jurado real</h2>
+<div class="dd-grid">
+<div class="dd-card">
+<h3>Demo Day: proyecto integrador final</h3>
+<p class="dd-lead">Proyecto que combina 4+ módulos resolviendo un problema REAL de una empresa o institución de salud, con impacto medible, documentación profesional y cumplimiento regulatorio. Formato: 15 minutos de pitch + 10 minutos de Q&A técnico ante jurado.</p>
+<h4>Composición del jurado</h4>
+<ul class="jury-list">
+<li>CTOs de empresas financieras</li>
+<li>Heads de Risk Management</li>
+<li>Partners de Big 4</li>
+<li>General Counsels</li>
+<li>Venture Capitalists</li>
+<li>Directores Médicos de hospitales</li>
+<li>Pharma Innovation Leads</li>
+<li>Quant Leads de asset managers</li>
+</ul>
+<div class="dd-quote">"Los 3 mejores proyectos reciben mentoría de implementación real con empresas partner de RiskMathics." — MLC™ Demo Day</div>
+</div>
+<div class="dd-card">
+<h3>Dirigido a & Requisitos</h3>
+<ul class="req-list">
+<li>Licenciatura en áreas cuantitativas o experiencia equivalente.</li>
+<li>Bases sólidas de Matemáticas Financieras.</li>
+<li>De preferencia, trabajar o haber trabajado en instituciones del medio financiero.</li>
+<li>Conocimientos básicos de programación deseables.</li>
+</ul>
+<h4>Datos generales</h4>
+<div class="dd-facts">
+<div class="fact"><span>Modalidad</span><b>Híbrida · Live + On-Demand + Labs</b></div>
+<div class="fact"><span>Duración</span><b>14 meses · 620+ horas</b></div>
+<div class="fact"><span>Idioma</span><b>Español + inglés técnico</b></div>
+<div class="fact"><span>Inicio</span><b>Q3 2026</b></div>
+<div class="fact"><span>Certificación</span><b>MLC™ · RiskMathics Financial Institute</b></div>
+</div>
+<p class="dd-corp">¿Vas en equipo? Existen planes Corporativo (5–10), Enterprise (11–25) y Licencia Institucional (25+) con proyectos customizados y executive briefings. Solicita información en el formulario.</p>
+</div>
+</div></div></section>
+
 <div id="contact"></div>
 <!-- ===== RISKMATHICS SALES MACHINE (inyectable) ===== -->
-<section id="rm-enroll" style="background:linear-gradient(135deg,#0d0f14,#050508);color:#fff;padding:64px 20px;font-family:'Poppins','Inter',Arial,sans-serif;">
+<section id="rm-enroll" style="background:linear-gradient(135deg,#142C4E,#081428);color:#fff;padding:64px 20px;font-family:'Poppins',Arial,sans-serif;">
   <div style="max-width:660px;margin:0 auto;">
     <div style="text-align:center;margin-bottom:28px;">
-      <div style="color:#FDE100;letter-spacing:3px;font-size:12px;font-weight:700;">INSCRIPCIÓN · CUPO LIMITADO</div>
+      <div style="color:#C99700;letter-spacing:3px;font-size:12px;font-weight:700;">INSCRIPCIÓN · CUPO LIMITADO</div>
       <h2 style="font-size:34px;margin:12px 0 8px;font-weight:800;line-height:1.15;">Asegura tu lugar</h2>
       <p style="color:#c9ccd4;font-size:16px;margin:0;">Déjanos tus datos, verifica tu WhatsApp y recibe el temario completo. Sin compromiso.</p>
     </div>
@@ -265,17 +375,17 @@ h1,h2,h3,h4,h5,h6{font-family:'Poppins',sans-serif;font-weight:700;line-height:1
           <input name="empresa" placeholder="Institución / Empresa" style="padding:13px 14px;border:1px solid #d8dee9;border-radius:10px;font-size:15px;">
         </div>
         <input name="whatsapp" placeholder="WhatsApp (ej. +52...)" required style="padding:13px 14px;border:1px solid #d8dee9;border-radius:10px;font-size:15px;">
-        <button type="submit" style="background:linear-gradient(135deg,#FFF04D,#FDE100);color:#111111;font-weight:800;font-size:16px;border:none;padding:15px;border-radius:10px;cursor:pointer;">Quiero el temario</button>
+        <button type="submit" style="background:linear-gradient(135deg,#E3B341,#C99700);color:#14213A;font-weight:800;font-size:16px;border:none;padding:15px;border-radius:10px;cursor:pointer;">Quiero el temario</button>
         <p style="font-size:12px;color:#8a94a6;margin:0;text-align:center;">🔒 Te enviamos un código por SMS para verificar. Datos protegidos.</p>
       </form>
       <div id="rm-verify" style="display:none;"></div>
       <div id="rm-thanks" style="display:none;background:#ecfdf5;border:1px solid #6ee7b7;color:#065f46;padding:20px;border-radius:14px;font-size:15px;">✅ <b>¡Listo!</b> Recibimos y verificamos tus datos. Te enviamos el temario y un asesor te contactará.</div>
       <div style="margin-top:24px;padding-top:22px;border-top:1px solid #eef1f6;text-align:center;">
         <div style="font-size:13px;color:#6b7280;letter-spacing:1px;">O INSCRÍBETE Y PAGA DIRECTO</div>
-        <div style="font-size:30px;font-weight:800;color:#050508;margin:8px 0 4px;">USD $<span>24,500</span> <span style="font-size:14px;color:#6b7280;font-weight:500;">+ IVA</span></div>
+        <div style="font-size:30px;font-weight:800;color:#081428;margin:8px 0 4px;">USD $<span>24,500</span> <span style="font-size:14px;color:#6b7280;font-weight:500;">+ IVA</span></div>
         <div style="display:grid;gap:10px;margin-top:16px;">
-          <a id="rm-paypal" href="" target="_blank" rel="noopener" style="background:#FDE100;color:#111111;font-weight:800;padding:14px;border-radius:10px;text-decoration:none;">Pagar con PayPal · 6 MSI</a>
-          <a id="rm-stripe" href="https://buy.stripe.com/eVq9ALbzF9GUf335QZ2Ry11" target="_blank" rel="noopener" style="background:#050508;color:#fff;font-weight:700;padding:14px;border-radius:10px;text-decoration:none;">Pagar con tarjeta · Stripe</a>
+          <a id="rm-paypal" href="" target="_blank" rel="noopener" style="background:#C99700;color:#14213A;font-weight:800;padding:14px;border-radius:10px;text-decoration:none;">Pagar con PayPal · 6 MSI</a>
+          <a id="rm-stripe" href="https://buy.stripe.com/eVq9ALbzF9GUf335QZ2Ry11" target="_blank" rel="noopener" style="background:#081428;color:#fff;font-weight:700;padding:14px;border-radius:10px;text-decoration:none;">Pagar con tarjeta · Stripe</a>
         </div>
         <p style="font-size:11px;color:#9aa4b4;margin-top:12px;">100% seguro · SSL · PayPal Verified · RiskMathics Financial Institute</p>
       </div>
