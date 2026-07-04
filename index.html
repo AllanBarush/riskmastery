@@ -3,393 +3,1849 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Machine Learner™ Executive Certification Program (MLC) | RiskMathics</title>
-<meta name="description" content="MLC™ - La certificación más completa del mundo en ML/AI. 620+ horas, 20 módulos, 25 capstones, 12+ industrias. Finanzas, Healthcare, Quantum Computing. RiskMathics.">
+<title>Global Financial Derivatives Specialist — Certification | RiskMathics</title>
+<meta name="description" content="Global Financial Derivatives Specialist Certification (GFDS). 320 horas, 128 sesiones, 22 módulos, Julio 2026 – Julio 2027, live online. Learn. Apply. Profit. RiskMathics Financial Innovation Institute.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
 <style>
-:root{--black:#0A0A0A;--black-rich:#050505;--black-soft:#181818;--yellow:#FDE100;--yellow-dark:#8F7F00;--yellow-glow:#FFF04D;--yellow-soft:#F0E68C;--teal:#FDE100;--teal-dark:#8F7F00;--ivory:#F7F5E8;--ivory-warm:#FCFAF0;--white:#FFF;--text-primary:#141414;--text-secondary:#52524A;--border-subtle:rgba(0,0,0,0.08);--shadow-md:0 8px 32px rgba(0,0,0,0.15);--r-sm:8px;--r-md:16px;--r-lg:24px}
-*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth;font-size:16px;-webkit-font-smoothing:antialiased}body{font-family:'Lora',Georgia,serif;font-size:1rem;line-height:1.72;color:var(--text-primary);background:var(--ivory);overflow-x:hidden}
-h1,h2,h3,h4,h5,h6{font-family:'Poppins',sans-serif;font-weight:700;line-height:1.15;letter-spacing:-.02em}
-.display-xl{font-size:clamp(2rem,4.6vw,3.8rem);font-weight:800;letter-spacing:.05em;text-transform:uppercase}.display-md{font-size:clamp(1.25rem,2.4vw,1.8rem);font-weight:700;letter-spacing:.08em;text-transform:uppercase}
-.section-label{font-family:'Poppins',sans-serif;font-size:.75rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--yellow-dark)}
-.body-lg{font-size:1.125rem;line-height:1.78}.container{max-width:1200px;margin:0 auto;padding:0 clamp(1.5rem,4vw,3rem)}section{padding:clamp(4rem,8vw,8rem) 0}
+/* ==========================================================
+   RISKMATHICS - GFDS SUPER LANDING (re-skin manual identidad)
+   Tipografia: Poppins (titulares/CTAs) + Lora (cuerpo/italicas)
+   Paleta 100% del folleto oficial:
+   Navy #1F3152 - Deep #11203E - Ink #0D2151 - Royal #2A5A9B
+   Steel #579ADA - Gold #AF7D1F / #C9992F - Ivory #F8F6EA
+   ========================================================== */
+:root{
+  --navy:#1F3152;
+  --navy-deep:#11203E;
+  --navy-ink:#0D2151;
+  --accent:#2A5A9B;
+  --accent-dark:#1C4287;
+  --accent-glow:#579ADA;
+  --accent-soft:#AEBDD6;
+  --gold:#AF7D1F;
+  --gold-light:#C9992F;
+  --bronze:#85704D;
+  --ivory:#F8F6EA;
+  --white:#FFFFFF;
+  --text-primary:#F8F6EA;
+  --text-secondary:rgba(248,246,234,0.66);
+  --text-faint:rgba(248,246,234,0.42);
+  --surface:rgba(255,255,255,0.035);
+  --surface-strong:rgba(255,255,255,0.07);
+  --line:rgba(255,255,255,0.10);
+  --line-soft:rgba(255,255,255,0.06);
+  --border-subtle:rgba(255,255,255,0.08);
+  --shadow-md:0 8px 32px rgba(4,10,26,0.35);
+  --radius-sm:8px;
+  --radius-md:16px;
+  --radius-lg:24px;
+}
 
-.site-header{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1rem 0;background:rgba(8,20,40,.96);backdrop-filter:blur(20px);border-bottom:1px solid rgba(253,225,0,.08);transition:all .4s}
-.header-inner{display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:0 auto;padding:0 clamp(1.5rem,4vw,3rem)}.header-logo{height:40px;filter:brightness(1.1)}
-.header-nav{display:flex;gap:1.25rem;align-items:center;flex-wrap:nowrap}.header-nav a{font-family:'Poppins',sans-serif;font-size:.8rem;font-weight:500;color:rgba(255,255,255,.72);text-decoration:none;transition:color .3s;white-space:nowrap}.header-nav a:hover{color:var(--yellow)}.btn-nav-ghost{padding:10px 22px;border:1px solid rgba(253,225,0,.4);border-radius:100px;color:var(--yellow)!important;font-weight:600!important}.btn-nav-ghost:hover{background:rgba(253,225,0,.08)}
-.btn-header-cta{font-family:'Poppins',sans-serif;font-size:.8rem;font-weight:700;color:#0A0A0A!important;background:var(--yellow);padding:10px 22px;border-radius:100px;text-decoration:none;transition:all .3s;white-space:nowrap}.btn-header-cta:hover{background:var(--yellow-glow);box-shadow:0 0 24px rgba(253,225,0,.4)}
+*{margin:0;padding:0;box-sizing:border-box}
 
-.hero{position:relative;min-height:100vh;display:flex;align-items:center;background:var(--black);overflow:hidden;padding-top:80px}
-.hero::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,#1A1600 0%,#0A0A0A 48%,#000 100%)}
-.hero::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 40% 35% at 50% 40%,rgba(253,225,0,.03) 0%,transparent 70%)}
-.hero-content{position:relative;z-index:2;width:100%;max-width:1200px;margin:0 auto;padding:0 clamp(1.5rem,4vw,3rem);display:grid;grid-template-columns:1fr 380px;gap:4rem;align-items:center}
+html{scroll-behavior:smooth;font-size:16px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+
+body{
+  font-family:'Lora',Georgia,serif;
+  font-size:1rem;
+  line-height:1.72;
+  color:var(--text-primary);
+  background:linear-gradient(135deg,var(--navy-ink) 0%,var(--navy-deep) 48%,var(--navy) 100%) fixed;
+  overflow-x:hidden;
+}
+
+/* --- TIPOGRAFIA --- */
+h1,h2,h3,h4,h5,h6{
+  font-family:'Poppins',sans-serif;
+  font-weight:700;
+  line-height:1.22;
+  color:var(--ivory);
+}
+
+.display-xl{
+  font-size:clamp(2.1rem,4.8vw,3.9rem);
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:0.05em;
+  line-height:1.12;
+}
+
+.display-lg{
+  font-size:clamp(1.7rem,3.4vw,2.6rem);
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:0.06em;
+}
+
+.display-md{
+  font-size:clamp(1.25rem,2.5vw,1.85rem);
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:0.09em;
+  text-align:center;
+  color:var(--ivory);
+}
+
+.section-label{
+  display:block;
+  text-align:center;
+  font-family:'Poppins',sans-serif;
+  font-size:0.72rem;
+  font-weight:600;
+  letter-spacing:0.24em;
+  text-transform:uppercase;
+  color:var(--gold-light);
+}
+
+/* Motivo signature: linea de acento 50x2 centrada */
+.accent-line{
+  width:50px;
+  height:2px;
+  background:var(--gold-light);
+  margin:1.4rem auto 0;
+}
+
+.body-lg{
+  font-size:1.08rem;
+  line-height:1.8;
+}
+
+section p.body-lg{
+  font-style:italic;
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+  color:var(--text-secondary);
+}
+
+/* --- LAYOUT --- */
+.container{max-width:1200px;margin:0 auto;padding:0 clamp(1.5rem,4vw,3rem)}
+.container-narrow{max-width:860px;margin:0 auto;padding:0 clamp(1.5rem,4vw,3rem)}
+
+section{padding:clamp(4.5rem,9vw,9rem) 0}
+
+/* --- HEADER FIJO --- */
+.site-header{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  padding:0.9rem 0;
+  background:rgba(13,33,81,0.92);
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+  border-bottom:1px solid rgba(87,154,218,0.10);
+  transition:padding 0.4s ease;
+}
+
+.header-inner{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:1.5rem;
+  max-width:1200px;
+  margin:0 auto;
+  padding:0 clamp(1.25rem,4vw,3rem);
+}
+
+.header-logo{white-space:nowrap;flex-shrink:0}
+
+/* Nav: aire, gap fijo, rotulos que NUNCA se parten ni se enciman */
+.header-nav{
+  display:flex;
+  align-items:center;
+  gap:1.25rem;
+  flex-wrap:nowrap;
+}
+
+.header-nav a{
+  font-family:'Poppins',sans-serif;
+  font-size:0.78rem;
+  font-weight:500;
+  color:rgba(255,255,255,0.72);
+  text-decoration:none;
+  letter-spacing:0.05em;
+  white-space:nowrap;
+  padding:10px 4px;
+  display:inline-flex;
+  align-items:center;
+  transition:color 0.3s;
+}
+
+.header-nav a:hover{color:var(--accent-glow)}
+
+.btn-header-cta{
+  font-family:'Poppins',sans-serif;
+  font-size:0.78rem;
+  font-weight:600;
+  color:var(--navy-deep) !important;
+  background:linear-gradient(135deg,var(--gold-light),var(--gold));
+  padding:10px 22px !important;
+  border-radius:100px;
+  text-decoration:none;
+  letter-spacing:0.04em;
+  white-space:nowrap;
+  transition:all 0.3s;
+}
+
+.btn-header-cta:hover{
+  background:linear-gradient(135deg,#DDB23C,var(--gold-light));
+  box-shadow:0 0 24px rgba(175,125,31,0.45);
+}
+
+/* --- HERO --- */
+.hero{
+  position:relative;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+  padding-top:96px;
+  padding-bottom:clamp(4rem,8vw,7rem);
+}
+
+.hero::before{
+  content:'';
+  position:absolute;inset:0;
+  background:radial-gradient(ellipse 90% 70% at 50% 38%,rgba(42,90,155,0.22) 0%,transparent 70%);
+  pointer-events:none;
+}
+
+.hero::after{
+  content:'';
+  position:absolute;inset:0;
+  background:radial-gradient(ellipse 55% 45% at 55% 45%,rgba(87,154,218,0.06) 0%,transparent 70%);
+  pointer-events:none;
+}
+
+.hero-content{
+  position:relative;z-index:2;width:100%;
+  max-width:1200px;margin:0 auto;
+  padding:0 clamp(1.5rem,4vw,3rem);
+  display:grid;
+  grid-template-columns:1fr 380px;
+  gap:4rem;
+  align-items:center;
+}
+
 .hero-text{max-width:720px}
-.hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(253,225,0,.08);border:1px solid rgba(253,225,0,.2);padding:.5rem 1.2rem;border-radius:100px;margin-bottom:2rem}
-.hero-badge span{font-family:'Poppins',sans-serif;font-size:.75rem;font-weight:600;color:var(--yellow);letter-spacing:.12em;text-transform:uppercase}
-.hero-badge .dot{width:6px;height:6px;background:var(--yellow);border-radius:50%;animation:pd 2s ease-in-out infinite}@keyframes pd{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.5)}}
-.hero h1{color:var(--white);margin-bottom:.5rem}.hero h1 .accent{color:var(--yellow);display:inline-block}
-.hero-tagline{font-family:'Lora',serif;font-style:italic;font-size:clamp(1.1rem,2vw,1.4rem);color:rgba(255,255,255,.6);margin-bottom:.6rem}
-.hero-date{font-family:'Poppins',sans-serif;font-size:.8rem;font-weight:500;color:var(--teal);letter-spacing:.2em;text-transform:uppercase;margin-bottom:2.5rem}
-.hero-abstract{font-family:'Lora',serif;font-size:1.02rem;color:rgba(255,255,255,.68);line-height:1.85;margin-bottom:2.5rem;max-width:600px}
-.hero-stats{display:flex;gap:2.2rem;margin-bottom:2.5rem;flex-wrap:wrap}.hero-stat-number{font-family:'Poppins',sans-serif;font-size:2rem;font-weight:800;color:var(--yellow);line-height:1;letter-spacing:-.03em}
-.hero-stat-label{font-family:'Poppins',sans-serif;font-size:.68rem;font-weight:500;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:.1em;margin-top:.3rem}
-.btn-primary{font-family:'Poppins',sans-serif;font-size:.9rem;font-weight:700;color:var(--black);background:var(--yellow);padding:1rem 2.2rem;border-radius:100px;text-decoration:none;display:inline-flex;align-items:center;gap:.5rem;transition:all .35s;border:none;cursor:pointer}
-.btn-primary:hover{background:var(--yellow-glow);transform:translateY(-2px);box-shadow:0 8px 32px rgba(253,225,0,.3)}
-.btn-secondary{font-family:'Poppins',sans-serif;font-size:.9rem;font-weight:500;color:rgba(255,255,255,.8);background:transparent;padding:1rem 2.2rem;border-radius:100px;text-decoration:none;border:1px solid rgba(255,255,255,.2);display:inline-flex;align-items:center;transition:all .35s}
-.btn-secondary:hover{border-color:var(--yellow);color:var(--yellow)}.hero-ctas{display:flex;gap:1rem;flex-wrap:wrap}
-.hero-sidebar{background:rgba(255,255,255,.04);border:1px solid rgba(253,225,0,.1);border-radius:var(--r-lg);padding:2.5rem;backdrop-filter:blur(12px)}
-.hero-sidebar h3{font-size:.72rem;font-weight:600;color:var(--yellow);letter-spacing:.15em;text-transform:uppercase;margin-bottom:1.5rem}
-.sidebar-item{display:flex;justify-content:space-between;align-items:baseline;padding:.75rem 0;border-bottom:1px solid rgba(255,255,255,.06)}.sidebar-item:last-child{border:none}
-.sidebar-item-label{font-family:'Poppins',sans-serif;font-size:.78rem;color:rgba(255,255,255,.5)}.sidebar-item-value{font-family:'Poppins',sans-serif;font-size:.85rem;color:var(--white);font-weight:600;text-align:right}.sidebar-item-value .hl{color:var(--yellow)}
-.sidebar-start{margin-top:1.5rem;text-align:center;padding:1.2rem;background:rgba(253,225,0,.06);border:1px solid rgba(253,225,0,.15);border-radius:var(--r-md)}
-.sidebar-start .label{font-family:'Poppins',sans-serif;font-size:.65rem;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.15em}
-.sidebar-start .date{font-family:'Poppins',sans-serif;font-size:1.3rem;font-weight:700;color:var(--yellow);margin-top:.25rem}
 
-.abstract-section{background:var(--white);border-bottom:1px solid var(--border-subtle)}
-.abstract-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}.abstract-content p{font-size:1.05rem;color:var(--text-secondary);margin-bottom:1.25rem}.abstract-content p strong{color:var(--text-primary);font-weight:600}
-.abstract-pullquote{position:relative;padding:2.5rem;background:var(--black);border-radius:var(--r-lg);color:var(--white);border:1px solid rgba(253,225,0,.1)}.abstract-pullquote::before{content:'"';position:absolute;top:-.3rem;left:1.5rem;font-family:'Poppins',sans-serif;font-size:5rem;font-weight:800;color:var(--yellow);opacity:.3;line-height:1}
-.abstract-pullquote p{font-family:'Lora',serif;font-style:italic;font-size:1.12rem;line-height:1.75;color:rgba(255,255,255,.85);position:relative;z-index:1}
-.abstract-pullquote .attribution{margin-top:1rem;font-family:'Poppins',sans-serif;font-style:normal;font-size:.75rem;color:var(--yellow);font-weight:600}
-.data-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:3rem}
-.data-chip{background:var(--ivory-warm);border:1px solid var(--border-subtle);border-radius:var(--r-sm);padding:1.2rem;text-align:center}
-.data-chip .val{font-family:'Poppins',sans-serif;font-size:1.5rem;font-weight:800;color:var(--black);letter-spacing:-.02em}
-.data-chip .lbl{font-family:'Poppins',sans-serif;font-size:.65rem;color:var(--text-secondary);text-transform:uppercase;letter-spacing:.06em;margin-top:.2rem}
-.data-chip .src{font-family:'Lora',serif;font-size:.62rem;color:#999;font-style:italic;margin-top:.3rem}
+.hero-certification-badge{
+  display:inline-flex;align-items:center;gap:0.5rem;
+  background:rgba(87,154,218,0.10);
+  border:1px solid rgba(87,154,218,0.25);
+  padding:0.5rem 1.2rem;border-radius:100px;
+  margin-bottom:2.2rem;
+}
 
-.highlights-section{background:var(--black);position:relative;overflow:hidden}.highlights-section::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(253,225,0,.03) 0%,transparent 50%)}
-.highlights-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;position:relative;z-index:1}
-.highlight-card{background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.06);border-radius:var(--r-md);padding:2rem;transition:all .4s}
-.highlight-card:hover{background:rgba(253,225,0,.03);border-color:rgba(253,225,0,.15);transform:translateY(-3px)}
-.highlight-number{font-family:'Poppins',sans-serif;font-size:.7rem;font-weight:700;color:var(--yellow);letter-spacing:.12em;margin-bottom:.75rem}
-.highlight-card h3{font-size:1rem;font-weight:600;color:var(--white);margin-bottom:.5rem;line-height:1.35}
-.highlight-card p{font-family:'Lora',serif;font-size:.88rem;color:rgba(255,255,255,.5);line-height:1.6}
+.hero-certification-badge span{
+  font-family:'Poppins',sans-serif;
+  font-size:0.72rem;font-weight:600;
+  color:var(--accent-glow);
+  letter-spacing:0.14em;text-transform:uppercase;
+}
 
-.levels-section{background:var(--ivory-warm)}
-.level-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;margin-top:2.5rem}
-.level-card{padding:2rem 1.5rem;border:1px solid var(--border-subtle);border-radius:var(--r-md);background:var(--white);text-align:center;transition:all .3s}
-.level-card:hover{border-color:var(--yellow-dark);box-shadow:var(--shadow-md);transform:translateY(-2px)}
-.level-card .level-num{font-family:'Poppins',sans-serif;font-size:.65rem;font-weight:700;color:var(--yellow-dark);letter-spacing:.12em;text-transform:uppercase}
-.level-card h4{font-size:1rem;color:var(--black);margin:.5rem 0 .3rem}
-.level-card .level-philosophy{font-family:'Poppins',sans-serif;font-size:.85rem;font-weight:700;color:var(--yellow-dark);margin-bottom:.5rem}
-.level-card p{font-size:.82rem;color:var(--text-secondary);line-height:1.55}
-.level-card .level-hours{font-family:'Poppins',sans-serif;font-size:1.6rem;font-weight:800;color:var(--black);margin-top:.75rem;line-height:1}
-.level-card .level-hours-label{font-family:'Poppins',sans-serif;font-size:.6rem;color:var(--text-secondary);text-transform:uppercase;letter-spacing:.1em}
+.hero-certification-badge .dot{
+  width:6px;height:6px;background:var(--accent-glow);
+  border-radius:50%;animation:pulse-dot 2s ease-in-out infinite;
+  flex-shrink:0;
+}
 
-.curriculum-section{background:var(--ivory)}
-.phase-header{display:flex;align-items:center;gap:1rem;margin-bottom:2rem;margin-top:3rem}
-.phase-tag{font-family:'Poppins',sans-serif;font-size:.65rem;font-weight:700;color:var(--black);background:var(--yellow);padding:.35rem 1rem;border-radius:100px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap}
-.phase-header h3{font-size:1.05rem;color:var(--black)}
-.module-card{background:var(--white);border:1px solid var(--border-subtle);border-radius:var(--r-md);margin-bottom:.75rem;overflow:hidden;transition:all .3s}.module-card:hover{box-shadow:var(--shadow-md)}
-.module-card-header{display:grid;grid-template-columns:50px 1fr auto;align-items:center;padding:1.1rem 1.5rem;cursor:pointer;gap:1rem}
-.module-number{font-family:'Poppins',sans-serif;font-size:1.1rem;font-weight:800;color:var(--yellow-dark);text-align:center;line-height:1}
-.module-info h4{font-size:.9rem;color:var(--black);line-height:1.35;margin-bottom:.1rem}.module-meta{font-family:'Poppins',sans-serif;font-size:.68rem;color:var(--text-secondary)}
-.module-toggle{font-size:1.3rem;color:var(--yellow-dark);width:30px;height:30px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:rgba(253,225,0,.08);transition:transform .3s}
-.module-card.active .module-toggle{transform:rotate(45deg)}.module-body{display:none;padding:0 1.5rem 1.25rem;border-top:1px solid var(--border-subtle)}.module-card.active .module-body{display:block}
-.module-objective{background:rgba(253,225,0,.04);border-left:3px solid var(--yellow-dark);padding:.85rem 1.1rem;margin:.85rem 0 1rem;border-radius:0 var(--r-sm) var(--r-sm) 0}
-.module-objective h5{font-family:'Poppins',sans-serif;font-size:.7rem;font-weight:600;color:var(--yellow-dark);text-transform:uppercase;letter-spacing:.1em;margin-bottom:.4rem}
-.module-objective p{font-size:.88rem;color:var(--text-secondary);line-height:1.65}
-.module-topics h5{font-family:'Poppins',sans-serif;font-size:.75rem;font-weight:600;color:var(--black);margin-bottom:.6rem;text-transform:uppercase;letter-spacing:.08em}
-.module-topics ul{list-style:none;padding:0}.module-topics li{position:relative;padding:.35rem 0 .35rem 1.4rem;font-size:.85rem;color:var(--text-secondary);line-height:1.5}
-.module-topics li::before{content:'';position:absolute;left:0;top:.75rem;width:5px;height:5px;background:var(--yellow-dark);border-radius:50%}
-.capstone{margin-top:.75rem;padding:.75rem 1rem;background:rgba(199,146,62,.04);border:1px solid rgba(199,146,62,.1);border-radius:var(--r-sm)}
-.capstone h5{font-family:'Poppins',sans-serif;font-size:.7rem;font-weight:600;color:var(--teal-dark);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.3rem}
-.capstone p{font-size:.82rem;color:var(--text-secondary);line-height:1.55}
+@keyframes pulse-dot{
+  0%,100%{opacity:1;transform:scale(1)}
+  50%{opacity:0.5;transform:scale(1.5)}
+}
 
-.curriculum-summary{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:3rem;padding:2.5rem;background:var(--black);border-radius:var(--r-lg)}
-.summary-item{text-align:center}.summary-item .number{font-family:'Poppins',sans-serif;font-size:2.5rem;font-weight:800;color:var(--yellow);line-height:1}
-.summary-item .label{font-family:'Poppins',sans-serif;font-size:.7rem;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.12em;margin-top:.3rem}
+.hero h1{color:var(--white);margin-bottom:1.1rem}
 
-.form-section{background:var(--black);position:relative;overflow:hidden}.form-section::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 20% 50%,rgba(253,225,0,.03) 0%,transparent 50%)}
-.form-container{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
-.form-left h2{color:var(--white);margin-bottom:1rem}.form-left p{color:rgba(255,255,255,.6);font-size:1.05rem;line-height:1.75;margin-bottom:2rem}
-.form-benefits{list-style:none;padding:0}.form-benefits li{display:flex;align-items:flex-start;gap:.75rem;padding:.5rem 0;font-family:'Poppins',sans-serif;font-size:.85rem;color:rgba(255,255,255,.7)}.form-benefits li .check{color:var(--yellow);font-weight:700;font-size:1rem;flex-shrink:0}
-.form-right{background:rgba(255,255,255,.03);border:1px solid rgba(253,225,0,.1);border-radius:var(--r-lg);padding:2.5rem}
-.form-right h3{font-size:1.1rem;color:var(--white);margin-bottom:.4rem}.form-right .form-subtitle{font-family:'Poppins',sans-serif;font-size:.75rem;color:rgba(255,255,255,.4);margin-bottom:1.5rem}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.form-group{margin-bottom:1rem}
-.form-group label{display:block;font-family:'Poppins',sans-serif;font-size:.72rem;font-weight:500;color:rgba(255,255,255,.5);margin-bottom:.4rem;text-transform:uppercase;letter-spacing:.08em}
-.form-group input,.form-group select{width:100%;padding:.8rem 1rem;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--r-sm);color:var(--white);font-family:'Lora',serif;font-size:.9rem;transition:all .3s;outline:none}
-.form-group input::placeholder{color:rgba(255,255,255,.25)}
-.form-group input:focus,.form-group select:focus{border-color:var(--yellow);background:rgba(253,225,0,.04);box-shadow:0 0 0 3px rgba(253,225,0,.08)}
-.form-group select{cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23C99700' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .8rem center;background-size:16px;padding-right:2.5rem}
-.form-group select option{background:var(--black);color:var(--white)}
-.form-disclaimer{font-family:'Poppins',sans-serif;font-size:.68rem;color:rgba(255,255,255,.3);margin-top:.5rem}
-.btn-submit{width:100%;margin-top:1rem;font-family:'Poppins',sans-serif;font-size:.95rem;font-weight:700;color:var(--black);background:var(--yellow);padding:1.1rem;border:none;border-radius:var(--r-sm);cursor:pointer;transition:all .35s}
-.btn-submit:hover{background:var(--yellow-glow);box-shadow:0 8px 32px rgba(253,225,0,.3);transform:translateY(-1px)}
-.form-secure{display:flex;align-items:center;justify-content:center;gap:.5rem;margin-top:1rem;font-family:'Poppins',sans-serif;font-size:.68rem;color:rgba(255,255,255,.3)}
-.form-success{display:none;text-align:center;padding:3rem 2rem}.form-right.submitted form{display:none}.form-right.submitted .form-success{display:block}
-.form-success .check-circle{width:64px;height:64px;background:var(--yellow);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-size:2rem;color:var(--black)}
-.form-success h3{color:var(--white);font-size:1.3rem;margin-bottom:.5rem}.form-success p{color:rgba(255,255,255,.6)}
-.site-footer{background:var(--black);padding:3rem 0 2rem;border-top:1px solid rgba(253,225,0,.08)}
-.footer-inner{display:flex;justify-content:space-between;align-items:center}.footer-logo{height:32px}.footer-text{font-family:'Poppins',sans-serif;font-size:.72rem;color:rgba(255,255,255,.35)}
-.footer-links{display:flex;gap:2rem}.footer-links a{font-family:'Poppins',sans-serif;font-size:.72rem;color:rgba(255,255,255,.4);text-decoration:none;transition:color .3s}.footer-links a:hover{color:var(--yellow)}
+.hero h1 .accent{color:var(--white);position:relative;display:inline-block}
 
-.timeline-section{background:#F4F1DC;padding:clamp(3rem,5vw,4.5rem) 0;border-top:1px solid rgba(253,225,0,.18);border-bottom:1px solid rgba(253,225,0,.18)}
-.timeline-track{display:flex;gap:1rem;overflow-x:auto;padding:1.75rem .25rem .9rem;scrollbar-width:thin;scrollbar-color:#FDE100 transparent}
-.tl-item{flex:0 0 auto;width:172px;background:var(--white);border:1px solid rgba(253,225,0,.28);border-top:3px solid var(--yellow-dark);border-radius:var(--r-sm);padding:1rem 1.1rem}
-.tl-year{font-family:'Poppins',sans-serif;font-weight:800;font-size:1.05rem;color:var(--yellow-dark);letter-spacing:-.01em}
-.tl-txt{font-family:'Lora',serif;font-size:.78rem;color:var(--text-secondary);line-height:1.55;margin-top:.35rem}
-.compare-section{background:var(--black);position:relative;overflow:hidden}.compare-section::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 15% 15%,rgba(253,225,0,.05) 0%,transparent 50%)}
-.compare-wrap{position:relative;z-index:1;overflow-x:auto;margin-top:2.5rem;border:1px solid rgba(253,225,0,.18);border-radius:var(--r-md);background:rgba(255,255,255,.02)}
-table.compare{width:100%;border-collapse:collapse;min-width:820px;font-family:'Poppins',sans-serif;font-size:.78rem}
-.compare th{text-align:left;padding:.9rem 1.1rem;font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--yellow);border-bottom:1px solid rgba(253,225,0,.25);white-space:nowrap}
-.compare td{padding:.85rem 1.1rem;border-top:1px solid rgba(255,255,255,.06);color:rgba(255,255,255,.68);white-space:nowrap}
-.compare td:first-child{font-weight:600;color:rgba(255,255,255,.85)}
-.compare tr.mlc td{background:rgba(253,225,0,.12);color:#fff;font-weight:700;border-top:1px solid rgba(253,225,0,.35)}
-.compare .yes{color:#FDE100;font-weight:700}.compare .no{color:rgba(255,255,255,.26)}
-.compare-note{position:relative;z-index:1;font-family:'Lora',serif;font-style:italic;font-size:.75rem;color:rgba(255,255,255,.35);margin-top:1rem}
-.dd-section{background:var(--ivory-warm)}
-.dd-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.75rem;margin-top:2.5rem}
-.dd-card{background:var(--white);border:1px solid var(--border-subtle);border-top:3px solid var(--yellow-dark);border-radius:var(--r-md);padding:2.2rem}
-.dd-card h3{font-size:1.05rem;color:var(--black);margin-bottom:.9rem}
-.dd-card .dd-lead{font-size:.92rem;color:var(--text-secondary);line-height:1.7;margin-bottom:1.4rem}
-.dd-card h4{font-family:'Poppins',sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--yellow-dark);margin-bottom:.7rem}
-.jury-list{list-style:none;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:.35rem 1rem}
-.jury-list li{position:relative;padding:.3rem 0 .3rem 1.3rem;font-family:'Lora',serif;font-size:.83rem;color:var(--text-secondary);line-height:1.45}
-.jury-list li::before{content:'';position:absolute;left:0;top:.72rem;width:5px;height:5px;background:var(--yellow-dark);border-radius:50%}
-.dd-quote{margin-top:1.4rem;padding:1rem 1.2rem;background:rgba(253,225,0,.06);border-left:3px solid var(--yellow-dark);border-radius:0 var(--r-sm) var(--r-sm) 0;font-family:'Lora',serif;font-style:italic;font-size:.86rem;color:var(--text-primary);line-height:1.65}
-.req-list{list-style:none;padding:0;margin-bottom:1.5rem}
-.req-list li{position:relative;padding:.42rem 0 .42rem 1.5rem;font-family:'Lora',serif;font-size:.9rem;color:var(--text-secondary);line-height:1.6}
-.req-list li::before{content:'✓';position:absolute;left:0;top:.42rem;color:var(--yellow-dark);font-family:'Poppins',sans-serif;font-weight:700;font-size:.85rem}
-.dd-facts{border-top:1px solid var(--border-subtle);padding-top:.4rem}
-.dd-facts .fact{display:flex;justify-content:space-between;gap:1rem;align-items:baseline;padding:.55rem 0;border-bottom:1px solid var(--border-subtle)}
-.dd-facts .fact span{font-family:'Poppins',sans-serif;font-size:.68rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text-secondary);white-space:nowrap}
-.dd-facts .fact b{font-family:'Poppins',sans-serif;font-size:.8rem;font-weight:600;color:var(--black);text-align:right}
-.dd-corp{margin-top:1.3rem;font-family:'Lora',serif;font-size:.83rem;font-style:italic;color:var(--text-secondary);line-height:1.6}
-@media(max-width:1024px){.dd-grid{grid-template-columns:1fr}}
-@media(max-width:640px){.jury-list{grid-template-columns:1fr}}
+.hero h1 .accent::after{
+  content:'';
+  position:absolute;
+  bottom:-6px;left:0;
+  width:50px;height:2px;
+  background:var(--gold-light);
+}
 
-.sec-center{text-align:center}.sec-center .section-label{display:block}
-.accent-rule{width:50px;height:2px;background:var(--yellow);margin:1.2rem auto 0}
-.accent-rule--left{margin:1.2rem 0 0}
-.urgency-strip{background:var(--yellow);padding:.85rem 1rem;text-align:center}
-.urgency-strip span{font-family:'Poppins',sans-serif;font-weight:700;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:#0A0A0A}
-.apply-section{background:var(--black-rich);position:relative;overflow:hidden}.apply-section::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 85% 15%,rgba(253,225,0,.04) 0%,transparent 50%)}
-.apply-grid{position:relative;z-index:1;display:grid;grid-template-columns:repeat(5,1fr);gap:1rem;margin-top:3rem}
-.apply-step{background:rgba(255,255,255,.025);border:1px solid rgba(253,225,0,.14);border-radius:var(--r-md);padding:1.6rem 1.3rem;transition:all .35s}.apply-step:hover{border-color:rgba(253,225,0,.4);transform:translateY(-3px)}
-.apply-step .num{font-family:'Poppins',sans-serif;font-weight:800;font-size:.68rem;color:var(--yellow);letter-spacing:.14em}
-.apply-step h4{font-size:.92rem;color:var(--white);margin:.55rem 0 .45rem}
-.apply-step p{font-family:'Lora',serif;font-size:.8rem;color:rgba(255,255,255,.55);line-height:1.6}
-@media(max-width:1024px){.apply-grid{grid-template-columns:repeat(2,1fr)}.header-nav a:not(.btn-header-cta):not(.btn-nav-ghost){display:none}.hero-content{grid-template-columns:1fr}.hero-sidebar{display:none}.abstract-grid{grid-template-columns:1fr}.highlights-grid{grid-template-columns:1fr}.level-grid{grid-template-columns:repeat(2,1fr)}.form-container{grid-template-columns:1fr}.data-bar{grid-template-columns:repeat(2,1fr)}.curriculum-summary{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:640px){.header-nav a:not(.btn-header-cta){display:none}.header-nav{gap:.75rem}.apply-grid{grid-template-columns:1fr}.hero-stats{flex-direction:column;gap:1rem}.hero-ctas{flex-direction:column}.level-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}.data-bar{grid-template-columns:1fr}.curriculum-summary{grid-template-columns:1fr}.footer-inner{flex-direction:column;gap:1.5rem;text-align:center}}
+.hero h1 .gold-accent{color:var(--white)}
+
+.hero-tagline{
+  font-family:'Lora',serif;
+  font-style:italic;
+  font-size:clamp(1.05rem,2vw,1.4rem);
+  font-weight:400;
+  color:var(--accent-soft);
+  margin-bottom:0.6rem;
+  letter-spacing:0.02em;
+}
+
+.hero-date{
+  font-family:'Poppins',sans-serif;
+  font-size:0.78rem;font-weight:600;
+  color:var(--gold-light);
+  letter-spacing:0.22em;text-transform:uppercase;
+  margin-bottom:2.5rem;
+}
+
+.hero-abstract{
+  font-family:'Lora',serif;
+  font-size:1.05rem;
+  color:rgba(255,255,255,0.72);
+  line-height:1.85;
+  margin-bottom:2.5rem;
+  max-width:600px;
+}
+
+.hero-stats{display:flex;gap:2.5rem;margin-bottom:2.5rem;flex-wrap:wrap}
+
+.hero-stat{text-align:left}
+
+.hero-stat-number{
+  font-family:'Poppins',sans-serif;
+  font-size:2.2rem;font-weight:800;
+  color:var(--gold-light);
+  line-height:1;letter-spacing:-0.02em;
+}
+
+.hero-stat-label{
+  font-family:'Poppins',sans-serif;
+  font-size:0.7rem;font-weight:500;
+  color:var(--text-faint);
+  text-transform:uppercase;letter-spacing:0.12em;
+  margin-top:0.35rem;
+}
+
+.hero-ctas{display:flex;gap:1rem;flex-wrap:wrap}
+
+.btn-primary{
+  font-family:'Poppins',sans-serif;
+  font-size:0.9rem;font-weight:600;
+  color:var(--navy-deep);
+  background:linear-gradient(135deg,var(--gold-light),var(--gold));
+  padding:1rem 2.2rem;border-radius:100px;
+  text-decoration:none;
+  display:inline-flex;align-items:center;gap:0.5rem;
+  transition:all 0.35s ease;border:none;cursor:pointer;
+  letter-spacing:0.02em;white-space:nowrap;
+}
+
+.btn-primary:hover{
+  background:linear-gradient(135deg,#DDB23C,var(--gold-light));
+  transform:translateY(-2px);
+  box-shadow:0 8px 32px rgba(175,125,31,0.4);
+}
+
+.btn-secondary{
+  font-family:'Poppins',sans-serif;
+  font-size:0.9rem;font-weight:500;
+  color:rgba(255,255,255,0.82);
+  background:transparent;
+  padding:1rem 2.2rem;border-radius:100px;
+  text-decoration:none;
+  border:1px solid rgba(255,255,255,0.22);
+  display:inline-flex;align-items:center;gap:0.5rem;
+  transition:all 0.35s ease;white-space:nowrap;
+}
+
+.btn-secondary:hover{border-color:var(--accent-glow);color:var(--accent-glow)}
+
+/* Ficha lateral del hero */
+.hero-sidebar{
+  background:var(--surface);
+  border:1px solid var(--border-subtle);
+  border-radius:var(--radius-lg);
+  padding:2.5rem;
+  backdrop-filter:blur(12px);
+}
+
+.hero-sidebar h3{
+  font-size:0.7rem;font-weight:600;
+  color:var(--accent-glow);
+  letter-spacing:0.18em;text-transform:uppercase;
+  margin-bottom:1.5rem;
+}
+
+.sidebar-item{
+  display:flex;justify-content:space-between;align-items:baseline;
+  gap:1rem;
+  padding:0.85rem 0;
+  border-bottom:1px solid var(--line-soft);
+}
+
+.sidebar-item:last-of-type{border:none}
+
+.sidebar-item-label{
+  font-family:'Poppins',sans-serif;
+  font-size:0.78rem;color:var(--text-faint);font-weight:400;
+  white-space:nowrap;
+}
+
+.sidebar-item-value{
+  font-family:'Poppins',sans-serif;
+  font-size:0.88rem;color:var(--white);font-weight:600;text-align:right;
+}
+
+.sidebar-item-value .teal{color:var(--accent-glow)}
+
+.sidebar-start-date{
+  margin-top:1.5rem;text-align:center;padding:1.2rem;
+  background:rgba(175,125,31,0.08);
+  border:1px solid rgba(175,125,31,0.28);
+  border-radius:var(--radius-md);
+}
+
+.sidebar-start-date .label{
+  font-family:'Poppins',sans-serif;
+  font-size:0.64rem;color:var(--text-faint);
+  text-transform:uppercase;letter-spacing:0.18em;
+}
+
+.sidebar-start-date .date{
+  font-family:'Poppins',sans-serif;
+  font-size:1.35rem;font-weight:700;color:var(--gold-light);
+  margin-top:0.25rem;letter-spacing:0.04em;text-transform:uppercase;
+}
+
+/* --- FRANJA CUPO LIMITADO --- */
+.urgency-strip{
+  display:flex;align-items:center;justify-content:center;
+  gap:1.25rem;flex-wrap:wrap;
+  padding:1rem clamp(1.25rem,4vw,3rem);
+  background:rgba(175,125,31,0.07);
+  border-top:1px solid rgba(175,125,31,0.28);
+  border-bottom:1px solid rgba(175,125,31,0.28);
+  font-family:'Poppins',sans-serif;
+  font-size:0.72rem;font-weight:600;
+  letter-spacing:0.26em;text-transform:uppercase;
+  color:var(--gold-light);
+  text-align:center;
+}
+
+.urgency-strip .urgency-sep{
+  width:50px;height:2px;background:var(--gold-light);flex-shrink:0;
+}
+
+/* --- ABSTRACT --- */
+.abstract-section{background:transparent}
+
+.abstract-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:4rem;align-items:start;
+}
+
+.abstract-content p{
+  font-size:1.05rem;
+  color:var(--text-secondary);
+  margin-bottom:1.25rem;
+}
+
+.abstract-content p strong{color:var(--ivory);font-weight:600}
+
+.abstract-pullquote{
+  position:relative;padding:2.5rem;
+  background:rgba(13,33,81,0.55);
+  border:1px solid var(--line-soft);
+  border-radius:var(--radius-lg);
+  color:var(--white);
+}
+
+.abstract-pullquote::before{
+  content:'\201C';
+  position:absolute;top:-0.3rem;left:1.5rem;
+  font-family:'Poppins',sans-serif;
+  font-size:5rem;font-weight:800;
+  color:var(--accent-glow);opacity:0.3;line-height:1;
+}
+
+.abstract-pullquote p{
+  font-family:'Lora',serif;font-style:italic;
+  font-size:1.15rem;line-height:1.75;
+  color:rgba(255,255,255,0.85);
+  position:relative;z-index:1;
+}
+
+.abstract-pullquote .attribution{
+  margin-top:1rem;
+  font-family:'Poppins',sans-serif;font-style:normal;
+  font-size:0.75rem;color:var(--accent-glow);
+  font-weight:600;letter-spacing:0.06em;
+}
+
+.market-data-bar{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:1.5rem;margin-top:4rem;
+}
+
+.data-card{
+  background:var(--surface);
+  border:1px solid var(--line-soft);
+  border-radius:var(--radius-md);
+  padding:1.6rem;text-align:center;
+}
+
+.data-card-value{
+  font-family:'Poppins',sans-serif;
+  font-size:1.6rem;font-weight:800;
+  color:var(--ivory);letter-spacing:-0.01em;
+}
+
+.data-card-label{
+  font-family:'Poppins',sans-serif;
+  font-size:0.68rem;color:var(--text-secondary);
+  margin-top:0.3rem;text-transform:uppercase;
+  letter-spacing:0.08em;font-weight:500;
+}
+
+.data-card-source{
+  font-family:'Lora',serif;font-size:0.65rem;
+  color:var(--text-faint);font-style:italic;margin-top:0.4rem;
+}
+
+/* --- HIGHLIGHTS --- */
+.highlights-section{
+  background:rgba(4,10,26,0.28);
+  border-top:1px solid var(--line-soft);
+  border-bottom:1px solid var(--line-soft);
+  position:relative;overflow:hidden;
+}
+
+.highlights-section::before{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(circle at 80% 20%,rgba(87,154,218,0.06) 0%,transparent 50%);
+}
+
+.highlights-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);
+  gap:1.5rem;position:relative;z-index:1;
+}
+
+.highlight-card{
+  background:var(--surface);
+  border:1px solid var(--line-soft);
+  border-radius:var(--radius-md);
+  padding:2rem;transition:all 0.4s ease;
+}
+
+.highlight-card:hover{
+  background:rgba(87,154,218,0.05);
+  border-color:rgba(87,154,218,0.15);
+  transform:translateY(-3px);
+}
+
+.highlight-number{
+  font-family:'Poppins',sans-serif;
+  font-size:0.7rem;font-weight:700;
+  color:var(--gold-light);letter-spacing:0.12em;
+  margin-bottom:0.75rem;
+}
+
+.highlight-card h3{
+  font-size:1.02rem;font-weight:600;color:var(--white);
+  margin-bottom:0.6rem;line-height:1.35;
+}
+
+.highlight-card p{
+  font-family:'Lora',serif;font-size:0.9rem;
+  color:var(--text-secondary);line-height:1.65;
+}
+
+/* --- AUDIENCIA --- */
+.audience-section{background:transparent}
+
+.audience-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:1.25rem;margin-top:3.5rem;
+}
+
+.audience-card{
+  padding:1.8rem;
+  border:1px solid var(--line-soft);
+  border-radius:var(--radius-md);
+  transition:all 0.35s ease;
+  background:var(--surface);
+}
+
+.audience-card:hover{
+  border-color:rgba(87,154,218,0.3);
+  transform:translateY(-2px);
+}
+
+.audience-card h4{font-size:0.95rem;color:var(--ivory);margin-bottom:0.5rem}
+
+.audience-card p{font-size:0.85rem;color:var(--text-secondary);line-height:1.6}
+
+.audience-card .roles{
+  margin-top:0.75rem;
+  font-family:'Poppins',sans-serif;
+  font-size:0.7rem;color:var(--accent-glow);font-weight:500;
+  letter-spacing:0.03em;
+}
+
+/* --- METODOLOGIA --- */
+.methodology-section{
+  background:rgba(4,10,26,0.28);
+  border-top:1px solid var(--line-soft);
+  border-bottom:1px solid var(--line-soft);
+  position:relative;
+}
+
+.method-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:2rem;margin-top:3.5rem;
+}
+
+.method-card{
+  text-align:center;padding:2.8rem 2rem;
+  background:var(--surface);
+  border:1px solid var(--line-soft);
+  border-radius:var(--radius-lg);
+}
+
+.method-card h3{
+  font-size:1rem;color:var(--gold-light);
+  margin-bottom:0.9rem;
+  text-transform:uppercase;letter-spacing:0.14em;
+}
+
+.method-card p{font-size:0.9rem;color:var(--text-secondary);line-height:1.7}
+
+/* --- CURRICULUM --- */
+.curriculum-section{background:transparent}
+
+.phase-header{
+  display:flex;align-items:center;gap:1rem;
+  margin-bottom:2rem;margin-top:3.5rem;
+}
+
+.phase-header:first-of-type{margin-top:0}
+
+.phase-tag{
+  font-family:'Poppins',sans-serif;
+  font-size:0.64rem;font-weight:700;
+  color:var(--white);background:var(--accent);
+  padding:0.35rem 1rem;border-radius:100px;
+  letter-spacing:0.12em;text-transform:uppercase;
+  white-space:nowrap;
+}
+
+.phase-header h3{
+  font-size:0.95rem;color:var(--ivory);
+  text-transform:uppercase;letter-spacing:0.08em;
+}
+
+.module-card{
+  background:var(--surface);
+  border:1px solid var(--line-soft);
+  border-radius:var(--radius-md);
+  margin-bottom:1rem;overflow:hidden;
+  transition:border-color 0.3s ease;
+}
+
+.module-card:hover{border-color:rgba(87,154,218,0.25)}
+
+.module-card-header{
+  display:grid;grid-template-columns:56px 1fr auto;
+  align-items:center;
+  padding:1.25rem 1.5rem;cursor:pointer;gap:1.25rem;
+}
+
+.module-number{
+  font-family:'Poppins',sans-serif;
+  font-size:1.3rem;font-weight:800;
+  color:var(--accent-glow);text-align:center;line-height:1;
+}
+
+.module-info h4{
+  font-size:0.95rem;color:var(--ivory);
+  line-height:1.35;margin-bottom:0.15rem;
+}
+
+.module-meta{
+  font-family:'Poppins',sans-serif;
+  font-size:0.7rem;color:var(--text-faint);font-weight:400;
+}
+
+.module-toggle{
+  font-family:'Poppins',sans-serif;
+  font-size:1.4rem;color:var(--accent-glow);
+  width:32px;height:32px;
+  display:flex;align-items:center;justify-content:center;
+  border-radius:50%;background:rgba(87,154,218,0.10);
+  transition:transform 0.3s ease;
+  flex-shrink:0;
+}
+
+.module-card.active .module-toggle{transform:rotate(45deg)}
+
+.module-body{
+  display:none;
+  padding:0 1.5rem 1.5rem 1.5rem;
+  border-top:1px solid var(--line-soft);
+}
+
+.module-card.active .module-body{display:block}
+
+.module-objective{
+  background:rgba(87,154,218,0.06);
+  border-left:3px solid var(--accent-glow);
+  padding:1rem 1.25rem;
+  margin-bottom:1.25rem;margin-top:1rem;
+  border-radius:0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.module-objective h5{
+  font-family:'Poppins',sans-serif;
+  font-size:0.7rem;font-weight:600;
+  color:var(--accent-glow);
+  text-transform:uppercase;letter-spacing:0.1em;
+  margin-bottom:0.5rem;
+}
+
+.module-objective p{font-size:0.9rem;color:var(--text-secondary);line-height:1.7}
+
+.module-topics h5{
+  font-family:'Poppins',sans-serif;
+  font-size:0.75rem;font-weight:600;color:var(--ivory);
+  margin-bottom:0.75rem;
+  text-transform:uppercase;letter-spacing:0.08em;
+}
+
+.module-topics ul{list-style:none;padding:0}
+
+.module-topics li{
+  position:relative;
+  padding:0.45rem 0 0.45rem 1.5rem;
+  font-size:0.88rem;color:var(--text-secondary);line-height:1.55;
+}
+
+.module-topics li::before{
+  content:'';position:absolute;left:0;top:0.95rem;
+  width:6px;height:2px;
+  background:var(--gold-light);
+}
+
+.module-topics li strong{color:var(--ivory);font-weight:600}
+
+/* --- RESUMEN --- */
+.curriculum-summary{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:1.5rem;margin-top:4rem;padding:2.8rem;
+  background:rgba(13,33,81,0.55);
+  border:1px solid var(--line);
+  border-radius:var(--radius-lg);
+}
+
+.summary-item{text-align:center}
+
+.summary-item .number{
+  font-family:'Poppins',sans-serif;
+  font-size:2.5rem;font-weight:800;
+  color:var(--gold-light);line-height:1;
+}
+
+.summary-item .label{
+  font-family:'Poppins',sans-serif;
+  font-size:0.68rem;color:var(--text-faint);
+  text-transform:uppercase;letter-spacing:0.14em;
+  margin-top:0.4rem;
+}
+
+/* --- FACULTY --- */
+.faculty-section{background:transparent}
+
+.faculty-note{
+  background:var(--surface);
+  border:1px solid var(--line-soft);
+  border-radius:var(--radius-lg);
+  padding:3rem;text-align:center;
+  max-width:700px;margin:2.5rem auto 0;
+}
+
+.faculty-note p{font-size:1.05rem;color:var(--text-secondary);margin-bottom:0.5rem}
+
+.faculty-note .emphasis{
+  font-family:'Poppins',sans-serif;
+  font-size:0.82rem;font-weight:600;color:var(--gold-light);
+  letter-spacing:0.06em;text-transform:uppercase;
+}
+
+/* --- LATAM --- */
+.latam-section{
+  background:rgba(4,10,26,0.28);
+  border-top:1px solid var(--line-soft);
+  border-bottom:1px solid var(--line-soft);
+}
+
+.latam-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:1.25rem;margin-top:3rem;
+}
+
+.latam-card{
+  background:var(--surface);
+  border:1px solid var(--line-soft);
+  border-radius:var(--radius-md);
+  padding:1.8rem;
+}
+
+.latam-card h4{
+  font-size:0.9rem;color:var(--gold-light);
+  margin-bottom:0.6rem;
+  text-transform:uppercase;letter-spacing:0.14em;
+}
+
+.latam-card p{font-size:0.85rem;color:var(--text-secondary);line-height:1.65}
+
+/* --- ACRONIMOS --- */
+.acronyms-section{
+  background:transparent;
+  padding:4rem 0;
+  border-top:1px solid var(--line-soft);
+}
+
+.acronyms-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:0.6rem;margin-top:2rem;
+}
+
+.acronym-item{
+  font-family:'Poppins',sans-serif;
+  font-size:0.72rem;color:var(--text-faint);line-height:1.5;
+}
+
+.acronym-item strong{color:var(--text-secondary);font-weight:600}
+
+/* --- FOOTER --- */
+.site-footer{
+  background:rgba(4,10,26,0.45);
+  padding:3rem 0 2rem;
+  border-top:1px solid rgba(87,154,218,0.10);
+}
+
+.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:1.5rem}
+
+.footer-brand{display:flex;align-items:center;gap:1rem}
+
+.footer-text{
+  font-family:'Poppins',sans-serif;
+  font-size:0.72rem;color:var(--text-faint);
+}
+
+.footer-links{display:flex;gap:2rem}
+
+.footer-links a{
+  font-family:'Poppins',sans-serif;
+  font-size:0.72rem;color:var(--text-faint);
+  text-decoration:none;transition:color 0.3s;
+  white-space:nowrap;
+}
+
+.footer-links a:hover{color:var(--accent-glow)}
+
+/* --- RESPONSIVE --- */
+@media (max-width:1024px){
+  .hero-content{grid-template-columns:1fr}
+  .hero-sidebar{display:none}
+  .abstract-grid{grid-template-columns:1fr}
+  .highlights-grid{grid-template-columns:1fr}
+  .audience-grid{grid-template-columns:repeat(2,1fr)}
+  .method-grid{grid-template-columns:1fr}
+  .latam-grid{grid-template-columns:repeat(2,1fr)}
+  .market-data-bar{grid-template-columns:repeat(2,1fr)}
+  .curriculum-summary{grid-template-columns:repeat(2,1fr)}
+  .acronyms-grid{grid-template-columns:repeat(2,1fr)}
+}
+
+@media (max-width:640px){
+  .header-nav{gap:1rem}
+  .header-nav .nav-link{display:none}
+  .hero-stats{gap:1.4rem}
+  .hero-ctas{flex-direction:column}
+  .audience-grid{grid-template-columns:1fr}
+  .latam-grid{grid-template-columns:1fr}
+  .market-data-bar{grid-template-columns:1fr}
+  .curriculum-summary{grid-template-columns:1fr}
+  .acronyms-grid{grid-template-columns:1fr}
+  .footer-inner{flex-direction:column;gap:1.5rem;text-align:center}
+  .module-card-header{grid-template-columns:40px 1fr auto;padding:1rem;gap:0.8rem}
+}
+
+/* --- MODULO DE VENTAS: fix responsive (solo CSS, JS intacto) --- */
+#rm-enroll input,#rm-enroll button{min-width:0;max-width:100%}
+#rm-enroll h2{color:#fff}
+@media (max-width:560px){
+  #rm-enroll form>div{grid-template-columns:1fr !important}
+}
+
+/* --- ANIMACIONES --- */
+.animate-on-scroll{
+  opacity:0;transform:translateY(30px);
+  transition:all 0.8s cubic-bezier(0.16,1,0.3,1);
+}
+
+.animate-on-scroll.visible{opacity:1;transform:translateY(0)}
 </style>
 </head>
 <body>
-<header class="site-header"><div class="header-inner"><div style="font-family:'Poppins',sans-serif;font-weight:800;font-size:1.1rem;letter-spacing:.5px;color:#fff;">RISK<span style="color:var(--yellow)">MATHICS</span></div><nav class="header-nav"><a href="#levels">Niveles</a><a href="#curriculum">Programa</a><a href="#compare">Benchmark</a><a href="#rm-enroll" class="btn-nav-ghost">Quiero el temario</a><a href="#rm-enroll" class="btn-header-cta">Inscribirse</a></nav></div></header>
 
-<section class="hero"><div class="hero-content"><div class="hero-text">
-<div class="hero-badge"><div class="dot"></div><span>Edición 2026 · Programa Ejecutivo · MLC™</span></div>
-<h1 class="display-xl">Machine Learner™<br><span class="accent">Executive Certification</span></h1>
-<div class="accent-rule accent-rule--left"></div>
-<p class="hero-tagline">Learn · Apply · Create · Profit.</p>
-<p class="hero-date">Arranque Q3 2026 · 14 meses · Cohorte de 60</p>
-<p class="hero-abstract">La certificación ejecutiva más completa del mundo hispanohablante en Machine Learning, Deep Learning, IA Generativa, IA Agéntica y ML cuántico. 620+ horas en 20 módulos, 4 niveles y 25 capstones evaluados por practitioners reales. Aplicación selectiva: 60 lugares por cohorte.</p>
-<div class="hero-stats"><div><div class="hero-stat-number">620+</div><div class="hero-stat-label">Horas</div></div><div><div class="hero-stat-number">20</div><div class="hero-stat-label">Módulos</div></div><div><div class="hero-stat-number">25</div><div class="hero-stat-label">Capstones</div></div><div><div class="hero-stat-number">60</div><div class="hero-stat-label">Lugares / cohorte</div></div></div>
-<div class="hero-ctas"><a href="#rm-enroll" class="btn-primary">Solicitar información →</a><a href="#curriculum" class="btn-secondary">Ver programa completo</a></div>
+<!-- ════════════ HEADER ════════════ -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#" class="header-logo" style="text-decoration:none;font-family:'Poppins',sans-serif;font-weight:800;font-size:1.2rem;color:#fff;letter-spacing:.05em;height:auto;display:inline-block">RISK<span style="color:var(--gold)">MATHICS</span></a>
+    <nav class="header-nav">
+      <a href="#curriculum" class="nav-link">Programa</a>
+      <a href="#highlights" class="nav-link">Highlights</a>
+      <a href="#audience" class="nav-link">Audiencia</a>
+      <a href="#rm-enroll" class="btn-header-cta">Inscribirse</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ════════════ HERO ════════════ -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="hero-certification-badge">
+        <div class="dot"></div>
+        <span>Certification GFDS™ — Inicia Julio 2026</span>
+      </div>
+      <h1 class="display-xl">
+        Global Financial<br>
+        <span class="accent">Derivatives</span> <span class="gold-accent">Specialist</span>
+      </h1>
+      <p class="hero-tagline">Certification Program</p>
+      <p class="hero-date">Julio 2026 — Julio 2027 · Live Online</p>
+      <p class="hero-abstract">
+        La certificación más completa en Derivados Financieros del mundo hispanohablante. 
+        22 módulos que cubren el ciclo de vida completo del negocio de derivados: 
+        desde pricing y hedging hasta infraestructura, regulación, XVA, ejecución, 
+        y la construcción de mesas de trading.
+      </p>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-number">320</div>
+          <div class="hero-stat-label">Horas</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-number">128</div>
+          <div class="hero-stat-label">Sesiones</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-number">22</div>
+          <div class="hero-stat-label">Módulos</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-number">5</div>
+          <div class="hero-stat-label">Fases</div>
+        </div>
+      </div>
+      <div class="hero-ctas">
+        <a href="#rm-enroll" class="btn-primary">Solicitar información →</a>
+        <a href="#curriculum" class="btn-secondary">Ver programa completo</a>
+      </div>
+    </div>
+
+    <div class="hero-sidebar">
+      <h3>Ficha del programa</h3>
+      <div class="sidebar-item">
+        <span class="sidebar-item-label">Formato</span>
+        <span class="sidebar-item-value">Live online</span>
+      </div>
+      <div class="sidebar-item">
+        <span class="sidebar-item-label">Sesiones</span>
+        <span class="sidebar-item-value"><span class="teal">128</span> de 2.5h</span>
+      </div>
+      <div class="sidebar-item">
+        <span class="sidebar-item-label">Duración total</span>
+        <span class="sidebar-item-value"><span class="teal">320</span> horas</span>
+      </div>
+      <div class="sidebar-item">
+        <span class="sidebar-item-label">Calendario</span>
+        <span class="sidebar-item-value">Jul 2026 – Jul 2027</span>
+      </div>
+      <div class="sidebar-item">
+        <span class="sidebar-item-label">Módulos</span>
+        <span class="sidebar-item-value">22</span>
+      </div>
+      <div class="sidebar-item">
+        <span class="sidebar-item-label">Idioma</span>
+        <span class="sidebar-item-value">Español + Eng terms</span>
+      </div>
+      <div class="sidebar-item">
+        <span class="sidebar-item-label">Certificación</span>
+        <span class="sidebar-item-value"><span class="teal">GFDS™</span></span>
+      </div>
+      <div class="sidebar-start-date">
+        <div class="label">Fecha de inicio</div>
+        <div class="date">Julio 2026</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ CUPO LIMITADO ════════════ -->
+<div class="urgency-strip">
+  <span>Cupo limitado</span>
+  <span class="urgency-sep"></span>
+  <span>Inicia Julio 2026 &middot; Live Online</span>
 </div>
-<div class="hero-sidebar"><h3>Ficha del programa</h3>
-<div class="sidebar-item"><span class="sidebar-item-label">Formato</span><span class="sidebar-item-value">Live + On-Demand + Labs</span></div>
-<div class="sidebar-item"><span class="sidebar-item-label">Horas</span><span class="sidebar-item-value"><span class="hl">620+</span></span></div>
-<div class="sidebar-item"><span class="sidebar-item-label">Duración</span><span class="sidebar-item-value">14 meses</span></div>
-<div class="sidebar-item"><span class="sidebar-item-label">Niveles</span><span class="sidebar-item-value"><span class="hl">4</span></span></div>
-<div class="sidebar-item"><span class="sidebar-item-label">Capstones</span><span class="sidebar-item-value"><span class="hl">25</span> proyectos</span></div>
-<div class="sidebar-item"><span class="sidebar-item-label">Cupo</span><span class="sidebar-item-value"><span class="hl">60</span> por cohorte</span></div>
-<div class="sidebar-item"><span class="sidebar-item-label">Idioma</span><span class="sidebar-item-value">ES + EN técnico</span></div>
-<div class="sidebar-item"><span class="sidebar-item-label">Certificación</span><span class="sidebar-item-value"><span class="hl">MLC™</span></span></div>
-<div class="sidebar-start"><div class="label">Fecha de inicio</div><div class="date">Q3 2026</div></div></div></div></section>
 
-<div class="urgency-strip"><span>Cupo limitado — 60 lugares por cohorte · Arranque Q3 2026 · Aplicación selectiva</span></div>
+<!-- ════════════ ABSTRACT ════════════ -->
+<section class="abstract-section" id="abstract">
+  <div class="container">
+    <span class="section-label">Abstract ejecutivo</span>
+    <h2 class="display-md" style="margin-top: 0.75rem;">
+      Por qué este programa existe
+    </h2>
+    <div class="accent-line"></div>
 
-<section class="abstract-section" id="abstract"><div class="container">
-<div class="sec-center"><span class="section-label">Abstract</span>
-<h2 class="display-md" style="margin-top:.75rem;color:var(--black)">Las empresas que no entiendan esto, ya fueron</h2><div class="accent-rule"></div></div>
-<div class="abstract-grid" style="margin-top:2.5rem"><div class="abstract-content">
-<p>En 1943, McCulloch y Pitts publicaron el primer modelo de neurona artificial. 80 años después, McKinsey estima que la IA generativa agregará entre <strong>$2.6 y $4.4 trillones anuales</strong> a la economía global. Goldman Sachs proyecta <strong>300 millones de empleos</strong> transformados.</p>
-<p>JPMorgan tiene 2,000+ ingenieros ML. La FDA ha aprobado 900+ dispositivos con IA. El crédito se origina con scoring ML. Los contratos se revisan con NLP. Los portafolios se optimizan con reinforcement learning.</p>
-<p>La MLC™ no es un curso. No es un diplomado. Es la <strong>transformación completa de un profesional</strong> — de consumidor pasivo de tecnología a constructor activo de soluciones de ML/AI. De regresión lineal a Quantum Computing.</p>
-</div><div>
-<div class="abstract-pullquote"><p>Veo empresas muertas… que caminan como si estuvieran vivas, que hablan como si tuvieran futuro, pero ya fueron. Las organizaciones que no implementen ML/AI en sus operaciones quedarán obsoletas en 3–5 años.</p><div class="attribution">— Machine Learner Certification™ Manifesto</div></div></div></div>
-<div class="data-bar">
-<div class="data-chip"><div class="val">$4.4T</div><div class="lbl">Impacto anual AI</div><div class="src">McKinsey</div></div>
-<div class="data-chip"><div class="val">300M</div><div class="lbl">Empleos transformados</div><div class="src">Goldman Sachs</div></div>
-<div class="data-chip"><div class="val">2,000+</div><div class="lbl">Ingenieros ML</div><div class="src">Solo JPMorgan</div></div>
-<div class="data-chip"><div class="val">900+</div><div class="lbl">Dispositivos FDA AI</div><div class="src">Aprobados</div></div>
-</div></div></section>
+    <div class="abstract-grid" style="margin-top: 2.5rem;">
+      <div class="abstract-content">
+        <p>
+          En los últimos 80 años, los productos derivados pasaron de ser instrumentos de cobertura de nicho a 
+          convertirse en <strong>la capa operativa del sistema financiero global</strong>: una infraestructura para 
+          transferir riesgo —tasas, FX, crédito, commodities y equity— con precisión quirúrgica, a escala masiva 
+          y con velocidad electrónica.
+        </p>
+        <p>
+          Hoy, el profesional de derivados que crea valor es <strong>híbrido</strong>: domina pricing y hedging, 
+          entiende cómo se cotiza un trade con XVA y cómo consume capital, ejecuta con disciplina de microestructura 
+          (DMA, RFQ), navega el ciclo post-trade completo, y opera dentro de un marco real de regulación, contabilidad, 
+          riesgos operativos y gobernanza.
+        </p>
+        <p>
+          Este programa forma perfiles capaces de sentarse en el <strong>sell-side o en el buy-side</strong> y hablar 
+          el mismo idioma: instrumento, precio, riesgo, ejecución, costos, control y modelo operativo.
+        </p>
+      </div>
 
-<section class="timeline-section"><div class="container">
-<div class="sec-center"><span class="section-label">Cronología</span>
-<h2 class="display-md" style="margin-top:.75rem;color:var(--text-primary)">80 años de Inteligencia Artificial</h2><div class="accent-rule"></div></div>
-<div class="timeline-track">
-<div class="tl-item"><div class="tl-year">1943</div><div class="tl-txt">McCulloch & Pitts publican el primer modelo de neurona artificial.</div></div>
-<div class="tl-item"><div class="tl-year">1950</div><div class="tl-txt">Alan Turing formula la pregunta de una era: «Can machines think?»</div></div>
-<div class="tl-item"><div class="tl-year">1958</div><div class="tl-txt">Rosenblatt construye el Perceptrón, la primera red neuronal funcional.</div></div>
-<div class="tl-item"><div class="tl-year">1973</div><div class="tl-txt">Informe Lighthill: Primer Invierno de la IA.</div></div>
-<div class="tl-item"><div class="tl-year">1987</div><div class="tl-txt">Colapso de los Sistemas Expertos: Segundo Invierno de la IA.</div></div>
-<div class="tl-item"><div class="tl-year">2012</div><div class="tl-txt">AlexNet destroza ImageNet (26% → 15.3%) y detona el Deep Learning.</div></div>
-<div class="tl-item"><div class="tl-year">2016</div><div class="tl-txt">AlphaGo vence a Lee Sedol: la IA supera la intuición humana.</div></div>
-<div class="tl-item"><div class="tl-year">2017</div><div class="tl-txt">«Attention Is All You Need»: nace la arquitectura Transformer.</div></div>
-<div class="tl-item"><div class="tl-year">2020</div><div class="tl-txt">GPT-3 demuestra que las máquinas escriben, traducen y razonan.</div></div>
-<div class="tl-item"><div class="tl-year">2022</div><div class="tl-txt">ChatGPT: 100M de usuarios en 2 meses. Adopción sin precedente.</div></div>
-<div class="tl-item"><div class="tl-year">2024–26</div><div class="tl-txt">Claude, MCP e IA Agéntica transforman cómo operan las empresas.</div></div>
-</div></div></section>
+      <div>
+        <div class="abstract-pullquote">
+          <p>
+            No enseñamos derivados como 'materia'. Los enseñamos como negocio y como sistema. 
+            Cerramos la brecha que la mayoría de los programas dejan abierta: 
+            pricing + infraestructura + regulación + modelo operativo, en un solo lugar.
+          </p>
+          <div class="attribution">— Filosofía GFDS™ | RiskMathics</div>
+        </div>
+        <div style="margin-top: 1.5rem; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: var(--radius-lg); padding: 2rem;">
+          <h3 style="font-family:'Poppins',sans-serif; font-size: 0.72rem; font-weight: 600; color: var(--accent-glow); letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 1rem;">Al graduarte serás capaz de</h3>
+          <ul style="list-style: none; padding: 0; margin: 0;">
+            <li style="display:flex; gap:0.6rem; padding:0.35rem 0; font-family:'Lora',serif; font-size:0.9rem; color:var(--text-secondary); line-height:1.6;"><span style="color:var(--gold-light); font-weight:700;">&mdash;</span><span>Estructurar y valuar (pricing) derivados listados y OTC con criterios de no-arbitraje</span></li>
+            <li style="display:flex; gap:0.6rem; padding:0.35rem 0; font-family:'Lora',serif; font-size:0.9rem; color:var(--text-secondary); line-height:1.6;"><span style="color:var(--gold-light); font-weight:700;">&mdash;</span><span>Diseñar coberturas y estrategias (hedging) con medición de efectividad, costos y riesgos residuales</span></li>
+            <li style="display:flex; gap:0.6rem; padding:0.35rem 0; font-family:'Lora',serif; font-size:0.9rem; color:var(--text-secondary); line-height:1.6;"><span style="color:var(--gold-light); font-weight:700;">&mdash;</span><span>Cotizar y negociar entendiendo XVA, colateral, capital y documentación (ISDA/CSA)</span></li>
+            <li style="display:flex; gap:0.6rem; padding:0.35rem 0; font-family:'Lora',serif; font-size:0.9rem; color:var(--text-secondary); line-height:1.6;"><span style="color:var(--gold-light); font-weight:700;">&mdash;</span><span>Ejecutar con criterio de microestructura (DMA/RFQ), best execution y control de costos</span></li>
+            <li style="display:flex; gap:0.6rem; padding:0.35rem 0; font-family:'Lora',serif; font-size:0.9rem; color:var(--text-secondary); line-height:1.6;"><span style="color:var(--gold-light); font-weight:700;">&mdash;</span><span>Montar (o auditar) el operating model de una mesa: front-to-back, límites, reporteo y KPIs</span></li>
+            <li style="display:flex; gap:0.6rem; padding:0.35rem 0; font-family:'Lora',serif; font-size:0.9rem; color:var(--text-secondary); line-height:1.6;"><span style="color:var(--gold-light); font-weight:700;">&mdash;</span><span>Evaluar a un dealer / contraparte con checklist real: pricing, spreads, comisiones, colateral, netting y conducta</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-<section class="highlights-section"><div class="container">
-<div class="sec-center"><span class="section-label" style="color:var(--yellow)">10 Razones</span>
-<h2 class="display-md" style="margin-top:.75rem;color:var(--white)">Por qué la MLC™ es la mejor del planeta</h2><div class="accent-rule"></div></div>
-<div class="highlights-grid" style="margin-top:2.5rem">
-<div class="highlight-card"><div class="highlight-number">01</div><h3>620+ horas en 20 módulos — escala sin precedentes</h3><p>El programa de mayor cobertura después de la MLC (MIT MicroMasters) ofrece 300h. NYU Tandon 240h, Stanford 180h. La MLC entrega 2x+ que cualquiera.</p></div>
-<div class="highlight-card"><div class="highlight-number">02</div><h3>12+ industrias en una sola certificación</h3><p>Finanzas, Banking, Trading, Derivados, Legal, Auditoría, IB, M&A, Healthcare, Biomedical, Drug Discovery, Quantum.</p></div>
-<div class="highlight-card"><div class="highlight-number">03</div><h3>25 capstones evaluados por practitioners</h3><p>CTOs, CROs, Partners de Big 4, General Counsels, VCs, Directores Médicos. Los 3 mejores reciben mentoría real.</p></div>
-<div class="highlight-card"><div class="highlight-number">04</div><h3>Stack completo: Regresión → Quantum Computing</h3><p>ML Clásico → Deep Learning → NLP/FinBERT → Transformers/LLMs → Fine-Tuning → IA Agéntica/RAG/MCP → RL → Quantum ML.</p></div>
-<div class="highlight-card"><div class="highlight-number">05</div><h3>IA Agéntica, RAG Enterprise & MCP</h3><p>36 horas de agentes AI con Model Context Protocol, RAG enterprise, orquestación multi-agente. Ningún otro programa lo tiene.</p></div>
-<div class="highlight-card"><div class="highlight-number">06</div><h3>Healthcare, Biomedical & Nanotecnología</h3><p>32 horas: medical imaging, drug discovery con GNNs, genómica/AlphaFold, nanotecnología, FDA SaMD compliance.</p></div>
-<div class="highlight-card"><div class="highlight-number">07</div><h3>Legal & Contract Analytics + IB & M&A</h3><p>56 horas combinadas: due diligence con AI, risk scoring de contratos, deal sourcing con ML, valuaciones automatizadas.</p></div>
-<div class="highlight-card"><div class="highlight-number">08</div><h3>Quantum Computing & Quantum ML — 24h con Qiskit</h3><p>Grover, Shor, VQE, QAOA, quantum kernels, quantum GANs, option pricing con quantum amplitude estimation.</p></div>
-<div class="highlight-card"><div class="highlight-number">09</div><h3>MLOps: de notebook a Kubernetes</h3><p>MLflow, Kubeflow, Docker, AWS SageMaker, GCP Vertex AI, monitoring, compliance SR 11-7, EU AI Act, FDA.</p></div>
-<div class="highlight-card"><div class="highlight-number">10</div><h3>4 niveles: Learn → Apply → Create → Profit</h3><p>Foundations (140h) → Applied (160h) → Advanced (188h) → Frontier (132h). Progresión rigurosa de principios a producción.</p></div>
-</div></div></section>
+    <div class="market-data-bar">
+      <div class="data-card">
+        <div class="data-card-value">$846T</div>
+        <div class="data-card-label">Notional Outstanding OTC</div>
+        <div class="data-card-source">BIS, jun-2025</div>
+      </div>
+      <div class="data-card">
+        <div class="data-card-value">119.3B</div>
+        <div class="data-card-label">Contratos Listados (ETD)</div>
+        <div class="data-card-source">FIA, 2025</div>
+      </div>
+      <div class="data-card">
+        <div class="data-card-value">1.52B</div>
+        <div class="data-card-label">Open Interest (dic-2025)</div>
+        <div class="data-card-source">FIA, +22.8% YoY</div>
+      </div>
+      <div class="data-card">
+        <div class="data-card-value">$21.8T</div>
+        <div class="data-card-label">Gross Market Value OTC</div>
+        <div class="data-card-source">BIS, jun-2025</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<section class="levels-section" id="levels"><div class="container">
-<div class="sec-center"><span class="section-label">Arquitectura</span>
-<h2 class="display-md" style="margin-top:.75rem">4 niveles · 20 módulos · 620+ horas</h2><div class="accent-rule"></div></div>
-<div class="level-grid">
-<div class="level-card"><div class="level-num">Nivel 1</div><h4>Foundations</h4><div class="level-philosophy">LEARN</div><p>Bases matemáticas y computacionales rigurosas. Álgebra lineal, cálculo, probabilidad, Python, ML supervisado y no supervisado.</p><div class="level-hours">140</div><div class="level-hours-label">horas · 4 meses · M1–M4</div></div>
-<div class="level-card"><div class="level-num">Nivel 2</div><h4>Applied ML</h4><div class="level-philosophy">APPLY</div><p>Aplicaciones financieras reales: Deep Learning, NLP/FinBERT, derivatives pricing, algo trading, banking ML suite.</p><div class="level-hours">160</div><div class="level-hours-label">horas · 4 meses · M5–M9</div></div>
-<div class="level-card"><div class="level-num">Nivel 3</div><h4>Advanced AI</h4><div class="level-philosophy">CREATE</div><p>Transformers, LLMs, fine-tuning (LoRA/QLoRA/RLHF/DPO), IA agéntica, RAG enterprise, MCP, legal AI, IB & M&A.</p><div class="level-hours">188</div><div class="level-hours-label">horas · M10–M15</div></div>
-<div class="level-card"><div class="level-num">Nivel 4</div><h4>Frontier & Quantum</h4><div class="level-philosophy">PROFIT</div><p>MLOps/Kubernetes, multi-industria, Reinforcement Learning, Quantum Computing con Qiskit, Healthcare/Biomedical AI.</p><div class="level-hours">132</div><div class="level-hours-label">horas · M16–M20</div></div>
-</div></div></section>
+<!-- ════════════ HIGHLIGHTS ════════════ -->
+<section class="highlights-section" id="highlights">
+  <div class="container">
+    <span class="section-label" style="color: var(--accent-glow);">10 Razones</span>
+    <h2 class="display-md" style="margin-top: 0.75rem; color: var(--white);">
+      Por qué este programa es único
+    </h2>
+    <div class="accent-line"></div>
 
-<section class="curriculum-section" id="curriculum"><div class="container">
-<div class="sec-center"><span class="section-label">Programa completo</span>
-<h2 class="display-md" style="margin-top:.75rem">20 módulos · 25 capstones</h2><div class="accent-rule"></div></div>
+    <div class="highlights-grid" style="margin-top: 2.5rem;">
+      <div class="highlight-card">
+        <div class="highlight-number">01</div>
+        <h3>Derivados como industria, no como fórmula</h3>
+        <p>Integra instrumento + infraestructura + regulación + modelo de negocio en un solo framework.</p>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-number">02</div>
+        <h3>Enfoque doble sell-side / buy-side</h3>
+        <p>Sabes cotizar y sabes auditar al que cotiza. Doble lente para decisiones reales.</p>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-number">03</div>
+        <h3>De ETD a OTC sin brecha</h3>
+        <p>Se enseña el puente real: CCPs, margin, colateral, ISDA, XVA — la convergencia operativa.</p>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-number">04</div>
+        <h3>Desk Blueprint™</h3>
+        <p>Cómo se arma una mesa desde cero: gente, sistemas, límites, governance, KPIs, P&L.</p>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-number">05</div>
+        <h3>Post-trade avanzado</h3>
+        <p>Clearing, margin models (SPAN/VaR), colateral optimization y fallas operativas típicas.</p>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-number">06</div>
+        <h3>XVA aplicado</h3>
+        <p>CVA/DVA/FVA/MVA/KVA como drivers de precio, rentabilidad y consumo de capital.</p>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-number">07</div>
+        <h3>Hedge accounting sin humo</h3>
+        <p>IFRS 9 / ASC 815 con enfoque práctico para tesorerías e institucionales.</p>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-number">08</div>
+        <h3>Market structure & execution</h3>
+        <p>DMA, routing, microestructura, RFQ, market impact y best execution medible.</p>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-number">09</div>
+        <h3>Casos tipo Harvard + soluciones modelo</h3>
+        <p>No ejercicios sueltos, sino decisiones de negocio bajo presión real.</p>
+      </div>
+      <div class="highlight-card">
+        <div class="highlight-number">10</div>
+        <h3>Frontiers con criterio</h3>
+        <p>DeFi/on-chain, macro/geopolítica y quantum computing, conectados al negocio real.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-<div class="phase-header" style="margin-top:3rem"><span class="phase-tag">Nivel 1 · Learn</span><h3>Foundations — 140h</h3></div>
-<div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M1</div><div class="module-info"><h4>Mathematical Foundations for ML</h4><div class="module-meta">10 semanas · 40h · Álgebra lineal, Cálculo, Probabilidad, Optimización, Teoría de Información</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Álgebra lineal: vectores, matrices, eigenvalores, SVD, PCA</li><li>Cálculo multivariable: gradientes, Jacobianos, Hessianos, backpropagation</li><li>Probabilidad: distribuciones, Bayes, MLE, MAP, bootstrap</li><li>Optimización: Gradient Descent (batch/SGD/mini-batch), Adam, convexidad, KKT</li><li>Teoría de información: entropía de Shannon, KL-Divergence, cross-entropy</li></ul></div><div class="capstone"><h5>Capstone 1</h5><p>50 problemas aplicados a ML + 10 derivaciones manuales de gradientes para redes neuronales.</p></div></div></div>
+<!-- ════════════ AUDIENCE ════════════ -->
+<section class="audience-section" id="audience">
+  <div class="container">
+    <span class="section-label">Para quién</span>
+    <h2 class="display-md" style="margin-top: 0.75rem;">
+      Perfiles que necesitan dominar el negocio, no solo la teoría
+    </h2>
+    <div class="accent-line"></div>
 
-<div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M2</div><div class="module-info"><h4>Python for Data Science & Engineering</h4><div class="module-meta">8 semanas · 30h · OOP, NumPy, Pandas, SQL, Git, Plotly</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Python Core: OOP avanzado, decoradores, generators, type hints, pydantic</li><li>NumPy & Pandas: vectorización, window functions, memory optimization</li><li>Visualización: Matplotlib, Seaborn, Plotly dashboards interactivos</li><li>SQL, Git/GitHub, testing con pytest, CI/CD, cookiecutter data science</li></ul></div><div class="capstone"><h5>Capstone 2</h5><p>Pipeline end-to-end: Yahoo Finance + FRED API → limpieza → SQLite → dashboard interactivo Plotly con tests unitarios.</p></div></div></div>
+    <div class="audience-grid">
+      <div class="audience-card">
+        <h4>Banks (Sell-side)</h4>
+        <p>Rentabilizar el balance sheet, cotizar con XVA, controlar riesgos y cumplir regulación.</p>
+        <div class="roles">Trading, Sales, Structuring, Treasury/ALM, Risk, Compliance, Ops</div>
+      </div>
+      <div class="audience-card">
+        <h4>Broker-Dealers</h4>
+        <p>Competir en ejecución, fees, acceso y tecnología; optimizar post-trade.</p>
+        <div class="roles">Execution/Algo, Prime, Ops, Risk, Product</div>
+      </div>
+      <div class="audience-card">
+        <h4>Hedge Funds</h4>
+        <p>Estrategias de vol/credit/macro con foco en ejecución, financing y control de colateral.</p>
+        <div class="roles">PMs, Traders, Risk, Ops/Financing</div>
+      </div>
+      <div class="audience-card">
+        <h4>Asset Managers</h4>
+        <p>Derivados como overlays (duration, beta, FX) y auditar costos vs dealers.</p>
+        <div class="roles">Portfolio Managers, Risk, Trading Desk, Operations</div>
+      </div>
+      <div class="audience-card">
+        <h4>Pension Funds / AFORES</h4>
+        <p>Cobertura masiva con constraints de regulación/contabilidad; governance y métricas.</p>
+        <div class="roles">ALM, Investments, Risk, Treasury</div>
+      </div>
+      <div class="audience-card">
+        <h4>Insurance Companies</h4>
+        <p>Hedging de guarantees y ALM; contabilidad y capital regulatorio.</p>
+        <div class="roles">ALM, Risk, Investments, Actuarial</div>
+      </div>
+      <div class="audience-card">
+        <h4>Large Corporates</h4>
+        <p>Cobertura FX/commodities/tasas con hedge accounting y control de leakages.</p>
+        <div class="roles">Treasury, Risk, Accounting, Procurement</div>
+      </div>
+      <div class="audience-card">
+        <h4>SOFOM / SOFIPO</h4>
+        <p>Gestión de riesgo de fondeo/tasa/FX con gobierno y límites.</p>
+        <div class="roles">Treasury, Risk, Finance</div>
+      </div>
+      <div class="audience-card">
+        <h4>Reguladores & Consultoras</h4>
+        <p>Entender el plumbing real (CCP, margin, reporting) y diagnosticar mesas con credibilidad técnica.</p>
+        <div class="roles">Supervisión, Partners/Managers FS Practice</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M3</div><div class="module-info"><h4>Supervised Machine Learning</h4><div class="module-meta">10 semanas · 40h · Regresión, Clasificación, Ensembles, XGBoost, Feature Engineering</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Regresión: Linear, Ridge, Lasso, Elastic Net from scratch + scikit-learn</li><li>Clasificación: Logistic, SVM, Decision Trees, Random Forest, XGBoost/LightGBM</li><li>Ensembles: bagging vs boosting, stacking, Bayesian Optimization con Optuna</li><li>Model Evaluation: K-Fold, AUC-ROC, F1, bias-variance, calibration</li><li>Feature Engineering: selection, SMOTE/ADASYN, pipelines end-to-end</li></ul></div><div class="capstone"><h5>Capstone 3</h5><p>Credit scoring completo con Lending Club: 5+ algoritmos, Optuna tuning, reporte con Gini/KS/PSI. Presentable ante regulador.</p></div></div></div>
+<!-- ════════════ METHODOLOGY ════════════ -->
+<section class="methodology-section">
+  <div class="container">
+    <div style="text-align: center;">
+      <span class="section-label">Metodología</span>
+      <h2 class="display-md" style="margin-top: 0.75rem; color: var(--white);">
+        Learn. Apply. Profit.
+      </h2>
+    <div class="accent-line"></div>
+    </div>
 
-<div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M4</div><div class="module-info"><h4>Unsupervised ML & Anomaly Detection</h4><div class="module-meta">8 semanas · 30h · Clustering, PCA, t-SNE, UMAP, Isolation Forest, LDA</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Clustering: K-Means, DBSCAN, Hierarchical, GMM</li><li>Dimensionalidad: PCA, t-SNE, UMAP, autoencoders</li><li>Anomalías: Isolation Forest, One-Class SVM, LOF, autoencoders</li><li>Association Rules: Apriori, FP-Growth; Topic Modeling: LDA, NMF</li></ul></div><div class="capstone"><h5>Capstone 4</h5><p>Segmentación bancaria (3+ técnicas) + detección de transacciones anómalas (Isolation Forest + Autoencoder). Presentar al CRO.</p></div></div></div>
+    <div class="method-grid">
+      <div class="method-card">
+        <h3>Learn</h3>
+        <p>Contenido de alcance global con datos reales FIA, BIS, Bloomberg. Cada concepto conectado a un contexto de negocio: pricing, ejecución, regulación, P&L.</p>
+      </div>
+      <div class="method-card">
+        <h3>Apply</h3>
+        <p>Casos tipo Harvard/Wharton bajo presión. Capstone War Room sessions con decisiones en tiempo real, reconciliaciones con Bloomberg y simulaciones de mesa.</p>
+      </div>
+      <div class="method-card">
+        <h3>Profit</h3>
+        <p>Herramientas directamente aplicables a tu rol: checklists de evaluación de dealers, templates de P&L attribution, frameworks de hedge policy, blueprints de mesa.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-<div class="phase-header"><span class="phase-tag">Nivel 2 · Apply</span><h3>Applied ML — 160h</h3></div>
-<div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M5</div><div class="module-info"><h4>Deep Learning: Neural Networks, CNNs & RNNs</h4><div class="module-meta">9 semanas · 36h · PyTorch, backpropagation, ResNet, LSTM, GRU</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Neural Networks from scratch: backpropagation, activaciones, weight initialization</li><li>PyTorch deep dive: tensors, autograd, custom layers, training loops</li><li>CNNs: LeNet → AlexNet → VGG → ResNet → EfficientNet; transfer learning</li><li>RNNs: LSTM, GRU, bidirectional, seq2seq, attention pre-transformer</li></ul></div><div class="capstone"><h5>Capstone 5</h5><p>Clasificador de documentos financieros (CNN, accuracy >95%) + predictor LSTM vs ARIMA. Ambos con FastAPI.</p></div></div></div>
+<!-- ════════════ CURRICULUM ════════════ -->
+<section class="curriculum-section" id="curriculum">
+  <div class="container">
+    <span class="section-label">Arquitectura del programa</span>
+    <h2 class="display-md" style="margin-top: 0.75rem;">
+      22 módulos. 320 horas. 5 fases.
+    </h2>
+    <div class="accent-line"></div>
+    <p class="body-lg" style="color: var(--text-secondary); margin-top: 1rem; max-width: 700px;">
+      Cada módulo está diseñado con objetivo de aprendizaje específico, temario detallado y 
+      glosario de acrónimos. Haz clic en cada módulo para expandir el detalle completo.
+    </p>
 
-<div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M6</div><div class="module-info"><h4>NLP & Financial Text Analytics</h4><div class="module-meta">9 semanas · 36h · FinBERT, NER, Sentiment, Text Generation</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Foundations: TF-IDF, Word2Vec, GloVe, FastText</li><li>FinBERT: sentiment de earnings calls, 10-K parsing, riesgo extraction</li><li>NER financiero: empresas, montos, regulaciones; knowledge graphs</li><li>Text generation: summarization, reportes automatizados</li></ul></div><div class="capstone"><h5>Capstone 6</h5><p>Pipeline: scraping → FinBERT sentiment → NER → alertas automáticas. Dashboard Streamlit, 1,000+ noticias.</p></div></div></div>
+    <!-- FASE 1 -->
+    <div class="phase-header" style="margin-top: 3rem;">
+      <span class="phase-tag">Fase 1</span>
+      <h3>Foundations & Core Instruments (80h)</h3>
+    </div>
 
-<div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M7</div><div class="module-info"><h4>ML for Derivatives, Risk & Portfolio Optimization</h4><div class="module-meta">8 semanas · 32h · Deep Hedging, VaR con ML, Black-Litterman, TFT</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Options pricing con Neural Networks vs Black-Scholes; deep hedging</li><li>VaR/ES con ensemble methods; stress testing con GANs/VAEs</li><li>Portfolio: Black-Litterman + ML views, RL para asset allocation, risk parity</li><li>Time Series: GARCH+ML, Temporal Fusion Transformers, regime detection</li></ul></div><div class="capstone"><h5>Capstone 7</h5><p>Risk engine: superficie de vol con NN (error <5%), VaR/ES con 3+ modelos ML, stress testing con GAN.</p></div></div></div>
+    <!-- Module 0 -->
+    <div class="module-card">
+      <div class="module-card-header" onclick="toggleModule(this)">
+        <div class="module-number">0</div>
+        <div class="module-info">
+          <h4>Derivatives 360: del instrumento al negocio global</h4>
+          <div class="module-meta">12 sesiones · 30 horas · Exchange Traded + Over The Counter</div>
+        </div>
+        <div class="module-toggle">+</div>
+      </div>
+      <div class="module-body">
+        <div class="module-objective">
+          <h5>Objetivo de aprendizaje</h5>
+          <p>Dominio conceptual completo de instrumentos Derivados — Forwards, Futuros, Opciones, Swaps, CDS y CDOs — incluyendo quién compra, quién vende, por qué y cuándo. Comprensión del ciclo de vida completo de una operación desde origination hasta settlement, matemáticas financieras aplicadas, y diagnóstico de mercados locales listados vs OTC.</p>
+        </div>
+        <div class="module-topics">
+          <h5>Temario</h5>
+          <ul>
+            <li><strong>The Big Picture:</strong> Por qué los Derivados existen y por qué son un negocio de $1 Quadrillion — +$700T OTC (BIS), +80B contratos listados/año (FIA)</li>
+            <li><strong>The Evolution:</strong> De Chicago Pits (1848) a un mercado de $1 Quadrillion — de grain futures a Bitcoin futures en CME</li>
+            <li><strong>Financial Mathematics:</strong> Valor presente/futuro, capitalización, curvas, bootstrapping, factores de descuento, Greeks introductorios, DV01/PV01</li>
+            <li><strong>Every Instrument Explained:</strong> Forwards, Futures, Options (vanilla + exóticas), Swaps (IRS, CCS, commodity, equity, inflation), CDS — quién compra, quién vende, por qué</li>
+            <li><strong>The Complete Business Cycle:</strong> Origination → pricing → execution → clearing → margin → settlement → reporting — end-to-end</li>
+            <li><strong>ETD vs OTC:</strong> Comparación profunda en 5 dimensiones: estandarización, transparencia, contraparte, flexibilidad y costos</li>
+            <li><strong>Diagnóstico Local:</strong> MexDer vs B3 vs NSE — a dónde se está yendo la liquidez</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-<div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M8</div><div class="module-info"><h4>Algorithmic Trading con ML</h4><div class="module-meta">8 semanas · 32h · Feature engineering, backtesting, meta-labeling, execution</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Features: technical indicators, alternative data, microstructure</li><li>Walk-forward validation, purged K-Fold, triple barrier (López de Prado)</li><li>Backtesting: Backtrader/Zipline, overfitting detection, deflated Sharpe</li><li>Execution: Almgren-Chriss, market making con ML, order flow prediction</li></ul></div><div class="capstone"><h5>Capstone 8</h5><p>Sistema completo: señales ML → backtesting walk-forward 5 años → Sharpe, Sortino, max drawdown, Calmar.</p></div></div></div>
+    <!-- Module I -->
+    <div class="module-card">
+      <div class="module-card-header" onclick="toggleModule(this)">
+        <div class="module-number">I</div>
+        <div class="module-info">
+          <h4>Forward Engine: Forwards & Futuros</h4>
+          <div class="module-meta">8 sesiones · 20 horas · Pricing, Basis, Hedging & Execution</div>
+        </div>
+        <div class="module-toggle">+</div>
+      </div>
+      <div class="module-body">
+        <div class="module-objective">
+          <h5>Objetivo de aprendizaje</h5>
+          <p>Pricing con cost-of-carry completo, construcción de curvas forward, diseño de coberturas con hedge ratio óptimo, mecánica de ejecución en exchanges y OTC, margining avanzado (SPAN, VaR-based) y medición de hedge effectiveness.</p>
+        </div>
+        <div class="module-topics">
+          <h5>Temario</h5>
+          <ul>
+            <li><strong>Pricing Forwards:</strong> Cost-of-Carry Framework completo — equity, commodity, FX; arbitraje cash & carry y no-arbitrage bounds</li>
+            <li><strong>Pricing Futures:</strong> Basis, convergencia, curvas forward; top 10 contratos globales; roll strategy y calendar spreads</li>
+            <li><strong>Hedging con Futuros:</strong> Hedge ratio óptimo (minimum variance), cross-hedging, basis risk, tailing the hedge, stack vs strip</li>
+            <li><strong>Hedging Institucional:</strong> Duration hedging, beta hedging, portable alpha, asset allocation táctica con futures</li>
+            <li><strong>Execution:</strong> Order types, market microstructure, algorithmic execution (TWAP, VWAP), market impact, block trades, RFQ</li>
+            <li><strong>Margining:</strong> SPAN, VaR-based, cross-margining, gestión de colateral, hedge effectiveness, P&L explain</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-<div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M9</div><div class="module-info"><h4>Banking ML Suite: Credit, AML & Customer Analytics</h4><div class="module-meta">6 semanas · 24h · IFRS 9, scorecards, graph AML, recommender systems</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Credit Risk ML: IFRS 9/CECL con ML, scorecards regulatorios, SR 11-7</li><li>AML: network analysis, entity resolution, SAR automation</li><li>Customer: churn, CLV, next-best-action, recommender systems</li></ul></div><div class="capstone"><h5>Capstone 9</h5><p>Suite integrada: scorecard IFRS 9 compliant + sistema AML con graph analytics (50K+ tx) + motor next-best-offer (10K+ clientes).</p></div></div></div>
+    <!-- Module II -->
+    <div class="module-card">
+      <div class="module-card-header" onclick="toggleModule(this)">
+        <div class="module-number">II</div>
+        <div class="module-info">
+          <h4>Volatilidad y Opciones — Griegas y Superficies</h4>
+          <div class="module-meta">12 sesiones · 30 horas · Pricing, Hedging & Execution</div>
+        </div>
+        <div class="module-toggle">+</div>
+      </div>
+      <div class="module-body">
+        <div class="module-objective">
+          <h5>Objetivo de aprendizaje</h5>
+          <p>Pricing con BSM, binomial (CRR) y Monte Carlo. Greeks avanzadas. Superficies de volatilidad (SVI, SABR, Heston). Estrategias completas vanilla + exóticas. Delta hedging dinámico y gamma scalping. Ejecución de opciones listed y OTC.</p>
+        </div>
+        <div class="module-topics">
+          <h5>Temario</h5>
+          <ul>
+            <li><strong>Deep Dive Fundamentals:</strong> Payoffs, moneyness, put-call parity, americana vs europea, early exercise</li>
+            <li><strong>Black-Scholes-Merton:</strong> Derivación, intuición, limitaciones — "everyone knows the model is wrong"</li>
+            <li><strong>The Greeks:</strong> Delta, Gamma, Vega, Theta, Rho + segundo orden (Vanna, Volga, Charm) — deep dive completo</li>
+            <li><strong>Strategies:</strong> Desde protective put hasta iron condors, ratio spreads y calendar spreads — con breakevens y condiciones ideales</li>
+            <li><strong>Exotic Options:</strong> Barriers, digitales, asiáticas, lookbacks, choosers, compounds, cliquets</li>
+            <li><strong>Volatility Surfaces:</strong> Smile, skew, sticky strike vs sticky delta, SVI, SABR, Dupire, Heston</li>
+            <li><strong>Numerical Methods:</strong> Binomial CRR, Monte Carlo con variance reduction</li>
+            <li><strong>Delta Hedging & Gamma Scalping:</strong> Perspectiva del market maker — P&L, theta como costo, book management</li>
+            <li><strong>Volatility Trading:</strong> Implied vs realized, variance risk premium, VIX, MOVE, dispersion trading</li>
+            <li><strong>Execution & Applications:</strong> Listed vs OTC, vol quoting, delta exchange, corporates, structured products</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-<div class="phase-header"><span class="phase-tag">Nivel 3 · Create</span><h3>Advanced AI & Creation — 188h</h3></div>
-<div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M10</div><div class="module-info"><h4>Transformers & LLMs</h4><div class="module-meta">9 semanas · Self-attention from scratch, GPT, Claude, LLaMA, Mistral, prompt engineering</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Transformer: self-attention from scratch, multi-head, positional encoding (RoPE)</li><li>LLMs: BERT, GPT, LLaMA, Mistral, Claude (Constitutional AI)</li><li>Prompt engineering: CoT, tree-of-thought, system prompts, few-shot</li><li>APIs: OpenAI, Anthropic, function calling, structured outputs, streaming</li><li>Evaluación: MMLU, HumanEval, red teaming, hallucination measurement</li></ul></div><div class="capstone"><h5>Capstone 10</h5><p>LLM-Powered Financial Analyst: analizar 10-Ks, generar resúmenes, RAG Q&A. Precisión factual en 50 preguntas benchmark.</p></div></div></div>
+    <!-- FASE 2 -->
+    <div class="phase-header">
+      <span class="phase-tag">Fase 2</span>
+      <h3>Advanced Products & Credit (77.5h)</h3>
+    </div>
 
-<div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M11</div><div class="module-info"><h4>Fine-Tuning LLMs: LoRA, QLoRA, RLHF & DPO</h4><div class="module-meta">8 semanas · PEFT, data curation, reward modeling, vLLM deployment</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>LoRA/QLoRA: 4-bit fine-tuning, prefix tuning, adapter layers</li><li>Data prep: curación, quality filtering, synthetic data generation</li><li>RLHF: reward modeling, PPO, DPO, Constitutional AI training</li><li>Deployment: GPTQ, AWQ, vLLM, TGI, cost optimization, A/B testing</li></ul></div><div class="capstone"><h5>Capstone 11</h5><p>Fine-tunear LLaMA/Mistral 7B con QLoRA en 10K+ ejemplos financieros. Comparar pre/post en 5 tareas. Deploy con vLLM.</p></div></div></div>
+    <!-- Module III -->
+    <div class="module-card">
+      <div class="module-card-header" onclick="toggleModule(this)">
+        <div class="module-number">III</div>
+        <div class="module-info">
+          <h4>Global Swap Stack</h4>
+          <div class="module-meta">12 sesiones · 30 horas · Pricing, Hedging & Execution</div>
+        </div>
+        <div class="module-toggle">+</div>
+      </div>
+      <div class="module-body">
+        <div class="module-objective">
+          <h5>Objetivo de aprendizaje</h5>
+          <p>Pricing de IRS, CCS, basis swaps, commodity, equity e inflation swaps con multi-curve framework (OIS discounting). Swaptions. LIBOR transition a RFRs. Swap execution en SEFs y bilateral. SIMM para bilateral.</p>
+        </div>
+        <div class="module-topics">
+          <h5>Temario</h5>
+          <ul>
+            <li><strong>IRS Fundamentals:</strong> Anatomía, convenciones, par swap rate, >$500T notional outstanding</li>
+            <li><strong>Curve Construction:</strong> Bootstrapping, multi-curve post-2008, OIS discounting, interpolación</li>
+            <li><strong>IRS Pricing:</strong> Fixed vs floating legs, mark-to-market, DV01, key rate durations</li>
+            <li><strong>CCS:</strong> Principal exchange, basis spread, pricing multi-moneda, mark-to-market reset</li>
+            <li><strong>Basis, Commodity, Equity & Inflation Swaps</strong></li>
+            <li><strong>Advanced IRS:</strong> Amortizing, accreting, compounding, in-arrears, zero-coupon, step-up</li>
+            <li><strong>Swaptions:</strong> Payer vs receiver, Black's model, Greeks, caps/floors/collars</li>
+            <li><strong>LIBOR → RFRs:</strong> La migración de $400T+, SOFR, SONIA, €STR, fallback provisions</li>
+            <li><strong>Execution:</strong> SEFs, bilateral, clearing mandatorio, SIMM, hedge accounting</li>
+            <li><strong>P&L Attribution & Risk:</strong> DV01 by bucket, curve risk, basis risk, stress testing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-<div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M12</div><div class="module-info"><h4>IA Agéntica, RAG Enterprise & MCP</h4><div class="module-meta">9 semanas · 36h · Vector DBs, LangChain, CrewAI, MCP servers, observability</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>RAG: Pinecone/Chroma/Weaviate, chunking, hybrid search, RAGAS eval</li><li>RAG Enterprise: multi-modal, parent-child, query routing, access control</li><li>Agentes: LangChain/LangGraph, CrewAI, AutoGen, multi-agent orchestration</li><li>MCP: building servers from scratch, enterprise integrations, security</li><li>Production: LangSmith tracing, guardrails, human-in-the-loop</li></ul></div><div class="capstone"><h5>Capstone 12</h5><p>Enterprise AI Agent: MCP connections a 3+ sistemas, RAG sobre 500+ docs, 10+ herramientas, razonamiento multi-paso.</p></div></div></div>
+    <!-- Modules IV-VI compressed -->
+    <div class="module-card">
+      <div class="module-card-header" onclick="toggleModule(this)">
+        <div class="module-number">IV</div>
+        <div class="module-info">
+          <h4>Credit Derivatives Core: mercados, instrumentos y usos reales</h4>
+          <div class="module-meta">6 sesiones · 15 horas · PD, LGD, CDOs, CLOs, Credit Indices</div>
+        </div>
+        <div class="module-toggle">+</div>
+      </div>
+      <div class="module-body">
+        <div class="module-objective">
+          <h5>Objetivo de aprendizaje</h5>
+          <p>Fundamentos del riesgo de crédito (PD, LGD, EAD), mercado de crédito global, productos (CDS, CDOs, CLOs), crisis de 2008 con root causes técnicas, y aplicaciones para hedging/especulación/arbitraje.</p>
+        </div>
+        <div class="module-topics">
+          <h5>Temario</h5>
+          <ul>
+            <li><strong>Credit Risk Fundamentals:</strong> PD, LGD, EAD, spreads, rating agencies — Moody's, S&P, Fitch</li>
+            <li><strong>Credit Markets:</strong> IG vs HY bonds, leveraged loans, CDX, iTraxx, market structure</li>
+            <li><strong>CDOs:</strong> Estructura, waterfall, crisis 2008 — root causes técnicas, AIG, lecciones</li>
+            <li><strong>CLOs Today:</strong> El mercado de $1 Trillion — performance, estructura moderna, riesgos actuales</li>
+            <li><strong>Other Credit Derivatives:</strong> CLN, TRS, credit options, nth-to-default</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-<div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M13</div><div class="module-info"><h4>Legal & Contract Analytics con AI</h4><div class="module-meta">7 semanas · NLP legal, due diligence, compliance, litigation prediction</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Legal NER, clause classification, contract parsing, due diligence con RAG</li><li>Compliance: regulatory change detection, KYC/AML processing, GDPR</li><li>Litigation: case outcome prediction, settlement estimation</li></ul></div><div class="capstone"><h5>Capstone 13</h5><p>Procesar 100+ contratos: extracción de cláusulas de riesgo, risk score por contrato. Precisión >90%. Presentar al General Counsel.</p></div></div></div>
+    <div class="module-card">
+      <div class="module-card-header" onclick="toggleModule(this)">
+        <div class="module-number">V</div>
+        <div class="module-info">
+          <h4>CDS Desk: Pricing, Hedging, Default Events & Execution</h4>
+          <div class="module-meta">5 sesiones · 12.5 horas · Hazard Rates, Basis Trading, Clearing</div>
+        </div>
+        <div class="module-toggle">+</div>
+      </div>
+      <div class="module-body">
+        <div class="module-objective">
+          <h5>Objetivo de aprendizaje</h5>
+          <p>Pricing con hazard rates, Greeks (CS01, JTD), basis CDS-bonos, ejecución y clearing, sovereign CDS y capital relief trades.</p>
+        </div>
+        <div class="module-topics">
+          <h5>Temario</h5>
+          <ul>
+            <li><strong>CDS Mechanics:</strong> ISDA 2014 Definitions, credit events, SNAC/SES, Big Bang/Small Bang</li>
+            <li><strong>Pricing:</strong> Hazard rates, survival probabilities, bootstrap, MTM, upfront pricing</li>
+            <li><strong>Greeks & Risk:</strong> CS01, risky duration, jump-to-default, recovery sensitivity, book management</li>
+            <li><strong>CDS-Bond Basis:</strong> Negative/positive basis trades, determinantes, basis during stress</li>
+            <li><strong>Execution & Clearing:</strong> ICE Clear Credit, CME, index trading, capital implications</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-<div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M14</div><div class="module-info"><h4>Investment Banking & M&A con ML</h4><div class="module-meta">7 semanas · Deal sourcing, valuación, due diligence, ESG scoring, pitch books</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Deal sourcing con ML: targets, company matching, market signals</li><li>Valuación: DCF augmented, comps automatizados, precedent transactions</li><li>DD: anomaly detection financiero, ESG scoring, red flag (Beneish + ML)</li><li>Pitch books con LLMs, graph analytics, competitive landscape automation</li></ul></div><div class="capstone"><h5>Capstone 14</h5><p>Deal sourcing (20 targets ML-ranked) + valuación automatizada (5 empresas vs analistas) + DD con red flags. Pitch completo.</p></div></div></div>
+    <div class="module-card">
+      <div class="module-card-header" onclick="toggleModule(this)">
+        <div class="module-number">VI</div>
+        <div class="module-info">
+          <h4>Structured Notes: Diseño de payoffs, distribución y hedging</h4>
+          <div class="module-meta">8 sesiones · 20 horas · $7T+ Outstanding Globally</div>
+        </div>
+        <div class="module-toggle">+</div>
+      </div>
+      <div class="module-body">
+        <div class="module-objective">
+          <h5>Objetivo de aprendizaje</h5>
+          <p>Descomposición bond + derivado, pricing de las 5 familias principales, structuring desde la perspectiva del dealer, sales/distribución, y riesgos ocultos.</p>
+        </div>
+        <div class="module-topics">
+          <h5>Temario</h5>
+          <ul>
+            <li><strong>Anatomy:</strong> Decomposición, market overview ($7T+), distribución, regulación</li>
+            <li><strong>PPN:</strong> Pricing, construction, variables clave, variantes, riesgos</li>
+            <li><strong>Yield Enhancement, Leveraged, Auto-callables, Range Accruals</strong></li>
+            <li><strong>Dealer Hedging:</strong> Greeks management, dynamic hedging del libro de estructurados</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-<div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M15</div><div class="module-info"><h4>Audit, Fraud Detection & Forensic Accounting con AI</h4><div class="module-meta">7 semanas · Benford's Law, continuous auditing, journal entry testing</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Fraud: gradient boosting, Benford's Law, network analysis, real-time scoring</li><li>Continuous auditing: full-population testing, risk-based planning con ML</li><li>Forensic: Beneish M-Score + ML, digital forensics, whistleblower NLP</li><li>Automation: reconciliation, revenue recognition (IFRS 15), lease (IFRS 16)</li></ul></div><div class="capstone"><h5>Capstone 15</h5><p>100K+ journal entries: 3 técnicas de anomaly detection + Beneish M-Score + ML para manipulación. Accuracy >85%.</p></div></div></div>
+    <!-- FASE 3 -->
+    <div class="phase-header">
+      <span class="phase-tag">Fase 3</span>
+      <h3>Infrastructure & Operational Architecture (62.5h)</h3>
+    </div>
 
-<div class="phase-header"><span class="phase-tag">Nivel 4 · Profit</span><h3>Frontier & Quantum — 132h</h3></div>
-<div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M16</div><div class="module-info"><h4>MLOps & Production Deployment</h4><div class="module-meta">7 semanas · MLflow, Docker, Kubernetes, AWS/GCP/Azure, SR 11-7, EU AI Act</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Pipelines: MLflow, Kubeflow, Airflow, feature stores (Feast)</li><li>Cloud: Docker, Kubernetes, SageMaker, Vertex AI, Azure ML</li><li>Monitoring: Evidently AI, A/B testing, shadow deployment, model cards</li><li>Regulatory: SR 11-7, CNBV, EU AI Act, FDA AI/ML framework</li></ul></div><div class="capstone"><h5>Capstone 16</h5><p>Credit scoring end-to-end en cloud: MLflow → FastAPI → Docker → Kubernetes → Evidently → SR 11-7 compliant. Corriendo live.</p></div></div></div>
+    <div class="module-card">
+      <div class="module-card-header" onclick="toggleModule(this)">
+        <div class="module-number">VII</div>
+        <div class="module-info">
+          <h4>Trading Book Management: Greeks, límites y P&L</h4>
+          <div class="module-meta">4 sesiones · 10 horas · Vol Book + Delta 1</div>
+        </div>
+        <div class="module-toggle">+</div>
+      </div>
+      <div class="module-body">
+        <div class="module-objective"><h5>Objetivo</h5><p>Construir y gestionar vol book + Delta 1 book con Greeks targets, risk limits, P&L attribution diaria, y un día completo en la vida de un trader.</p></div>
+        <div class="module-topics"><h5>Temario</h5>
+          <ul>
+            <li>Building a Vol Book: inventario, Greek targets, daily P&L decomposition</li>
+            <li>Building a Delta 1 Book: futures, forwards, swaps lineales, funding</li>
+            <li>Interacción Vol ↔ Delta 1: cómo gamma rebalancing genera flow</li>
+            <li>Day in the Life: 7AM morning meeting → 4PM risk report</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-<div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M17</div><div class="module-info"><h4>Multi-Industry ML: Marketing, Retail, Logística, Energía & Physics-Informed</h4><div class="module-meta">7 semanas · CLV, demand forecasting, PINNs, federated learning</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Marketing: CLV, marketing mix, attribution, dynamic pricing con RL</li><li>Retail: recommender systems, demand forecasting (Prophet/TFT/N-BEATS)</li><li>Logística: route optimization, predictive maintenance, inventory</li><li>Energía: production forecasting, energy trading, carbon footprint</li><li>Physics-Informed Neural Networks (PINNs), Neural ODEs, federated learning</li></ul></div><div class="capstone"><h5>Capstone 17</h5><p>Solución end-to-end para UNA industria elegida. Problema REAL, datos reales, panel de practitioners evalúa.</p></div></div></div>
+    <div class="module-card">
+      <div class="module-card-header" onclick="toggleModule(this)">
+        <div class="module-number">VIII</div>
+        <div class="module-info">
+          <h4>Post-Trade Reality: Clearing, Margining, Colateral & Lifecycle</h4>
+          <div class="module-meta">6 sesiones · 15 horas</div>
+        </div>
+        <div class="module-toggle">+</div>
+      </div>
+      <div class="module-body">
+        <div class="module-objective"><h5>Objetivo</h5><p>Clearing central completo, modelos de margin (SPAN, VaR, SIMM), gestión de colateral avanzada, default management, riesgo sistémico en CCPs, y ciclo post-trade end-to-end.</p></div>
+        <div class="module-topics"><h5>Temario</h5>
+          <ul>
+            <li>Arquitectura del Clearing: novation, netting, default waterfall, CCPs globales</li>
+            <li>Margin Models: SPAN, VaR-based, TIMS, add-ons, cross-margining</li>
+            <li>SIMM y UMR: fases, methodology, segregation, impacto en costos</li>
+            <li>Colateral Avanzado: eligible, haircuts, rehypothecation, tri-party, optimization</li>
+            <li>Default Management: close-out, auction, loss allocation, recovery/resolution</li>
+            <li>Post-Trade Ops: confirmación → clearing → settlement → reporting → compression</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-<div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M18</div><div class="module-info"><h4>Reinforcement Learning & Deep RL</h4><div class="module-meta">5 semanas · MDP, Q-Learning, DQN, PPO, SAC, RL para finanzas</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Foundations: MDP, Bellman, Q-Learning, SARSA, REINFORCE, Actor-Critic</li><li>Deep RL: DQN, PPO, SAC, A3C, multi-agent, model-based RL</li><li>RL Finanzas: portfolio optimization, optimal execution, market making, dynamic hedging</li></ul></div><div class="capstone"><h5>Capstone 18</h5><p>Agente RL para portfolio: 10 activos, PPO, walk-forward 3 años, transaction costs reales. Comparar vs benchmarks.</p></div></div></div>
+    <div class="module-card">
+      <div class="module-card-header" onclick="toggleModule(this)">
+        <div class="module-number">IX</div>
+        <div class="module-info">
+          <h4>Economics of Flow: Fees, Rebates y Economía de Exchanges</h4>
+          <div class="module-meta">3 sesiones · 7.5 horas</div>
+        </div>
+        <div class="module-toggle">+</div>
+      </div>
+      <div class="module-body">
+        <div class="module-objective"><h5>Objetivo</h5><p>Revenue models de exchanges y CCPs, estructuras de comisiones maker/taker, Transaction Cost Analysis (TCA), y negociación de fee schedules.</p></div>
+        <div class="module-topics"><h5>Temario</h5>
+          <ul>
+            <li>Revenue de Exchanges: transaction fees, market data, technology, listing — CME vs ICE vs Eurex</li>
+            <li>Costos Totales: comisiones + spread + market impact + clearing + regulatory + opportunity cost</li>
+            <li>TCA: pre-trade, at-trade, post-trade; market impact models</li>
+            <li>Negociación de Fees: exchanges, FCMs/brokers, tendencias de fee compression</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-<div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M19</div><div class="module-info"><h4>Quantum Computing & Quantum ML</h4><div class="module-meta">8 semanas · 24h · Qiskit, Grover, Shor, VQE, QAOA, quantum finance</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Foundations: qubits, entrelazamiento, gates cuánticos, Qiskit</li><li>Algorithms: Grover, Shor, VQE, QAOA, quantum annealing</li><li>Quantum ML: quantum kernels, variational classifiers, quantum GANs</li><li>Quantum Finance: option pricing con amplitude estimation, portfolio QAOA, Monte Carlo cuántico</li></ul></div><div class="capstone"><h5>Capstone 19</h5><p>En Qiskit: option pricing cuántico vs Monte Carlo + portfolio optimization QAOA (8 activos) + credit risk cuántico.</p></div></div></div>
+    <div class="module-card">
+      <div class="module-card-header" onclick="toggleModule(this)">
+        <div class="module-number">X</div>
+        <div class="module-info">
+          <h4>Ventas y Distribución Institucional: del pitch a la ejecución</h4>
+          <div class="module-meta">4 sesiones · 10 horas · Sell-side / Buy-side</div>
+        </div>
+        <div class="module-toggle">+</div>
+      </div>
+      <div class="module-body">
+        <div class="module-objective"><h5>Objetivo</h5><p>Función de sales, necesidades por sector, onboarding (KYC/AML, ISDA/CSA), structuring/cotización, suitability, disclosure, ética y métricas comerciales.</p></div>
+        <div class="module-topics"><h5>Temario</h5>
+          <ul>
+            <li>Función de Sales y coordinación con la mesa</li>
+            <li>Segmentación por sector, onboarding workflow, límites de crédito</li>
+            <li>Structuring y cotización: precio base + spread + transparencia + P&L allocation</li>
+            <li>Suitability, disclosure, ética y métricas: hit rate, revenue/cliente, NPS, wallet share</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-<div class="module-card"><div class="module-card-header" onclick="toggleModule(this)"><div class="module-number">M20</div><div class="module-info"><h4>Healthcare, Biomedical & Nanotecnología AI</h4><div class="module-meta">8 semanas · 32h · Medical imaging, drug discovery, genómica, FDA SaMD</div></div><div class="module-toggle">+</div></div><div class="module-body"><div class="module-topics"><h5>Temario</h5><ul><li>Medical Imaging: CNNs para radiología, U-Net, CheXNet, AI vs radiólogo</li><li>Drug Discovery: GNNs moleculares, diseño de novo, ADMET, virtual screening</li><li>Genómica: AlphaFold, CRISPR prediction, farmacogenómica</li><li>Nanotecnología: nanomateriales con ML, drug delivery, quantum dots</li><li>Clinical AI: wearables, EHR mining, survival analysis, federated learning</li><li>Regulación: FDA SaMD, COFEPRIS, EU MDR, HIPAA, bias en AI médica</li></ul></div><div class="capstone"><h5>Capstone 20</h5><p>Plataforma integral: (1) diagnóstico por imagen accuracy >90% + Grad-CAM, (2) drug discovery pipeline con 1,000+ compuestos, (3) clinical prediction con wearables.</p></div></div></div>
+    <div class="module-card">
+      <div class="module-card-header" onclick="toggleModule(this)">
+        <div class="module-number">XI</div>
+        <div class="module-info">
+          <h4>Market Infrastructure & Access: Tech Stack, Exchange Design & DMA Global</h4>
+          <div class="module-meta">8 sesiones · 20 horas</div>
+        </div>
+        <div class="module-toggle">+</div>
+      </div>
+      <div class="module-body">
+        <div class="module-objective"><h5>Objetivo</h5><p>Arquitectura de exchanges, matching engines, protocolos (FIX, APIs), DMA, OMS/EMS, business plan de exchange, regulación/licenciamiento, go-to-market, gobernanza/M&A, smart order routing, cross-border access y prime brokerage.</p></div>
+        <div class="module-topics"><h5>Temario</h5>
+          <ul>
+            <li>Matching Engines, Market Data, Co-location & Proximity</li>
+            <li>Conectividad: FIX, APIs, OMS/EMS & DMA</li>
+            <li>Business Plan de un Exchange de Derivados: market sizing, tech stack, financial projections</li>
+            <li>Regulación y Licenciamiento: DCM (USA), MTF (Europa), CNBV (México)</li>
+            <li>Go-to-Market: atraer liquidez, incentive programs, partnerships</li>
+            <li>Gobernanza, M&A y Futuro de la Industria</li>
+            <li>Smart Order Routing & Best Execution</li>
+            <li>Marco Regulatorio Cross-Border y Prime Brokerage</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-<div class="curriculum-summary"><div class="summary-item"><div class="number">20</div><div class="label">Módulos</div></div><div class="summary-item"><div class="number">620+</div><div class="label">Horas</div></div><div class="summary-item"><div class="number">25</div><div class="label">Capstones</div></div><div class="summary-item"><div class="number">12+</div><div class="label">Industrias</div></div></div>
-</div></section>
+    <!-- FASE 4 -->
+    <div class="phase-header">
+      <span class="phase-tag">Fase 4</span>
+      <h3>Regulation, Accounting & Legal (47.5h)</h3>
+    </div>
 
+    <div class="module-card">
+      <div class="module-card-header" onclick="toggleModule(this)">
+        <div class="module-number">XII</div>
+        <div class="module-info"><h4>XVA Framework: CVA, DVA, FVA, MVA, KVA</h4><div class="module-meta">4 sesiones · 10 horas</div></div>
+        <div class="module-toggle">+</div>
+      </div>
+      <div class="module-body">
+        <div class="module-objective"><h5>Objetivo</h5><p>Cálculo e interpretación del framework XVA completo, organización de la mesa, transfer pricing, hedging de CVA, P&L attribution, Basel III CVA capital charge, y wrong-way risk.</p></div>
+        <div class="module-topics"><h5>Temario</h5><ul>
+          <li>CVA y DVA: fundamentos del riesgo de contraparte, exposure profiles por producto</li>
+          <li>FVA, MVA, KVA y ColVA: el framework completo — impacto 5-50 bps según producto</li>
+          <li>XVA Desks: organización, transfer pricing, hedging, P&L attribution, SA-CVA/BA-CVA</li>
+        </ul></div>
+      </div>
+    </div>
 
-<section class="compare-section" id="compare"><div class="container">
-<div class="sec-center"><span class="section-label" style="color:var(--yellow)">Benchmark mundial</span>
-<h2 class="display-md" style="margin-top:.75rem;color:var(--white)">La MLC™ no tiene competencia real</h2><div class="accent-rule"></div></div>
-<p style="position:relative;z-index:1;color:rgba(255,255,255,.55);max-width:680px;margin:1rem auto 0;font-size:1rem;line-height:1.75;text-align:center">La MLC™ es el único programa global que combina cobertura matemática profunda, frontera 2026 (LLMs, agentes, MCP, Quantum), aplicación multi-industria sistemática y horas-laboratorio con práctica real. Los top schools son excepcionales en una dimensión; ninguno integra las cuatro.</p>
-<div class="compare-wrap"><table class="compare">
-<thead><tr><th>Programa</th><th>Horas</th><th>Matemática</th><th>LLMs / Agentes</th><th>Multi-industria</th><th>Capstones</th></tr></thead>
-<tbody>
-<tr class="mlc"><td>MLC™ — RiskMathics</td><td>620+</td><td class="yes">✓ Profunda</td><td class="yes">✓ Frontera 2026</td><td class="yes">✓ 12+ verticales</td><td>25</td></tr>
-<tr><td>MIT MicroMasters Stats &amp; DS</td><td>300</td><td class="yes">✓ Profunda</td><td class="no">◐ Parcial</td><td class="no">◐ Limitada</td><td>5</td></tr>
-<tr><td>NYU Tandon Quant Finance ML</td><td>240</td><td class="yes">✓ Profunda</td><td class="no">◐ Limitado</td><td class="no">✗ Solo finanzas</td><td>6</td></tr>
-<tr><td>Stanford AI Professional</td><td>180</td><td class="no">◐ Media</td><td class="yes">✓ Frontera</td><td class="no">✗ Generalista</td><td>4</td></tr>
-</tbody></table></div>
-<div class="compare-note">Fuente: Análisis Competitivo Global MLC™ 2026 — comparativa contra MIT, Stanford, NYU Tandon, Imperial College, Berkeley Haas, Wharton, INSEAD y CFA Institute.</div>
-</div></section>
+    <div class="module-card">
+      <div class="module-card-header" onclick="toggleModule(this)">
+        <div class="module-number">XIII</div>
+        <div class="module-info"><h4>Hedge Accounting: IFRS 9 / ASC 815</h4><div class="module-meta">4 sesiones · 10 horas</div></div>
+        <div class="module-toggle">+</div>
+      </div>
+      <div class="module-body">
+        <div class="module-objective"><h5>Objetivo</h5><p>Designación de coberturas (fair value, cash flow, net investment hedge), documentación formal, medición de efectividad, impacto en P&L vs OCI.</p></div>
+        <div class="module-topics"><h5>Temario</h5><ul>
+          <li>Fundamentos: por qué hedge accounting importa — el problema de la volatilidad artificial en P&L</li>
+          <li>IFRS 9: tipos de cobertura, requisitos, effectiveness testing</li>
+          <li>ASC 815: comparativa US GAAP, diferencias prácticas</li>
+          <li>Documentación y asesoría: implicaciones contables de estrategias de derivados</li>
+        </ul></div>
+      </div>
+    </div>
 
-<section class="dd-section" id="demoday"><div class="container">
-<div class="sec-center"><span class="section-label">Capstone Final & Demo Day</span>
-<h2 class="display-md" style="margin-top:.75rem;color:var(--black)">Tu proyecto, ante un jurado real</h2><div class="accent-rule"></div></div>
-<div class="dd-grid">
-<div class="dd-card">
-<h3>Demo Day: proyecto integrador final</h3>
-<p class="dd-lead">El examen final no es un examen: es un producto. Capstone integrador de 8 semanas que combina 4+ módulos resolviendo un problema REAL, con defensa pública ante un jurado de industria. Tres formatos: producto-empresa (MVP SaaS con caso de negocio), investigación aplicada (paper de frontera con extensión propia) o proyecto-empleador (ROI demostrable desplegado en producción).</p>
-<h4>Composición del jurado</h4>
-<ul class="jury-list">
-<li>Quants senior de asset managers</li>
-<li>Heads de Machine Learning</li>
-<li>Partners de venture capital</li>
-<li>CIOs de hospitales</li>
-<li>CTOs de empresas financieras</li>
-<li>Partners de Big 4</li>
-<li>General Counsels</li>
-<li>Directores Médicos</li>
-</ul>
-<div class="dd-quote">"El Demo Day es público y se transmite. Los proyectos sobresalientes reciben aceleración, conexión con inversionistas o presentación a comité ejecutivo con respaldo institucional de RiskMathics." — MLC™ Demo Day</div>
-</div>
-<div class="dd-card">
-<h3>Dirigido a & Requisitos</h3>
-<ul class="req-list">
-<li>Cálculo nivel licenciatura y álgebra lineal.</li>
-<li>Programación intermedia (cualquier lenguaje).</li>
-<li>Inglés técnico de lectura.</li>
-<li>Perfil: quants, ingenieros financieros, científicos de datos, ejecutivos de tecnología y profesionales senior.</li>
-</ul>
-<h4>Datos generales</h4>
-<div class="dd-facts">
-<div class="fact"><span>Modalidad</span><b>Híbrida · Live 40% · On-Demand 30% · Labs 20% · Mentoría 10%</b></div>
-<div class="fact"><span>Duración</span><b>14 meses · 620+ horas</b></div>
-<div class="fact"><span>Idioma</span><b>Español · materiales y código en inglés</b></div>
-<div class="fact"><span>Inicio</span><b>Cohorte 2026 · arranque Q3 2026</b></div>
-<div class="fact"><span>Cupo</span><b>60 lugares por cohorte</b></div>
-<div class="fact"><span>Certificación</span><b>Diploma MLC™ · transcript · LinkedIn badge</b></div>
-<div class="fact"><span>Alumni</span><b>Comunidad vitalicia · job board · updates trimestrales</b></div>
-</div>
-<p class="dd-corp">¿Vas en equipo? Patrocinio empresarial: las empresas que envían 3+ alumnos reciben descuento por volumen, sesiones onsite adicionales y un capstone alineado a un problema de negocio real del patrocinador. Solicita información en el formulario.</p>
-</div>
-</div></div></section>
+    <div class="module-card">
+      <div class="module-card-header" onclick="toggleModule(this)">
+        <div class="module-number">XIV</div>
+        <div class="module-info"><h4>ISDA & Legal Architecture: Master Agreement & CSA</h4><div class="module-meta">3 sesiones · 7.5 horas</div></div>
+        <div class="module-toggle">+</div>
+      </div>
+      <div class="module-body">
+        <div class="module-objective"><h5>Objetivo</h5><p>ISDA Master Agreement completo, negociación de Schedule/CSA, protocolos ISDA, enforceability multi-jurisdicción, documentación de operaciones listadas.</p></div>
+        <div class="module-topics"><h5>Temario</h5><ul>
+          <li>ISDA Master Agreement: arquitectura, versiones 1992 vs 2002, events of default, termination events</li>
+          <li>CSA: threshold, MTA, eligible collateral, negotiation battlegrounds</li>
+          <li>Protocolos: IBOR Fallback, Initial Margin, close-out netting</li>
+          <li>Documentación listada: exchange rulebooks, clearing member agreements, give-up</li>
+        </ul></div>
+      </div>
+    </div>
 
-<section class="apply-section" id="apply"><div class="container">
-<div class="sec-center"><span class="section-label" style="color:var(--yellow)">Inscripción &amp; próximos pasos</span>
-<h2 class="display-md" style="margin-top:.75rem;color:var(--white)">Aplicación selectiva · 60 lugares</h2><div class="accent-rule"></div></div>
-<div class="apply-grid">
-<div class="apply-step"><div class="num">01 · APLICACIÓN</div><h4>Formulario + evaluación</h4><p>Formulario online, CV, carta de motivación de 600 palabras, 2 referencias y evaluación matemática diagnóstica de 90 minutos.</p></div>
-<div class="apply-step"><div class="num">02 · ENTREVISTA</div><h4>Comité académico</h4><p>45 minutos con el comité: motivación, expectativas, profundidad técnica actual y encaje cultural con la cohorte.</p></div>
-<div class="apply-step"><div class="num">03 · ADMISIÓN</div><h4>Decisión en 10 días</h4><p>Carta de admisión condicional o final. 30 días para confirmar y depositar reserva (10% del monto).</p></div>
-<div class="apply-step"><div class="num">04 · ONBOARDING</div><h4>Pre-work de 30 horas</h4><p>Repaso matemático, instalación de stack, lecturas y asignación de mentor y grupo de cohorte, 4 semanas antes del arranque.</p></div>
-<div class="apply-step"><div class="num">05 · ARRANQUE</div><h4>Sesión inaugural</h4><p>Presencial o híbrida, con buddy asignado. Acceso a plataforma, código base, datasets, GPU credits y biblioteca digital.</p></div>
-</div>
-<p style="font-family:'Lora',serif;font-style:italic;text-align:center;color:rgba(255,255,255,.45);font-size:.85rem;margin-top:2.5rem">Financiamiento: pago directo con descuento por liquidación anticipada · plan a 12 meses sin intereses para la cohorte 2026 (cupo limitado) · patrocinio empresarial para equipos de 3+.</p>
-</div></section>
+    <div class="module-card">
+      <div class="module-card-header" onclick="toggleModule(this)">
+        <div class="module-number">XV</div>
+        <div class="module-info"><h4>Regulación Global de Derivados: Dodd-Frank, EMIR, UMR & LATAM</h4><div class="module-meta">4 sesiones · 10 horas</div></div>
+        <div class="module-toggle">+</div>
+      </div>
+      <div class="module-body">
+        <div class="module-objective"><h5>Objetivo</h5><p>Marcos regulatorios USA (Dodd-Frank Title VII, Volcker, CFTC/SEC), Europa (EMIR, MiFID II/MiFIR, Brexit), México (CNBV, Banxico, CONSAR) y LATAM.</p></div>
+        <div class="module-topics"><h5>Temario</h5><ul>
+          <li>Dodd-Frank: clearing mandatorio, SEFs, trade reporting, swap dealer, Volcker Rule, position limits</li>
+          <li>EMIR, MiFID II: clearing obligation, bilateral margin, transparency, EMIR Refit, Brexit impact</li>
+          <li>México y LATAM: CNBV circulares, Banxico, CONSAR (Afores)</li>
+        </ul></div>
+      </div>
+    </div>
 
-<div id="contact"></div>
+    <div class="module-card">
+      <div class="module-card-header" onclick="toggleModule(this)">
+        <div class="module-number">XVI</div>
+        <div class="module-info"><h4>ESG & Climate Derivatives: carbono, SLD y riesgo climático</h4><div class="module-meta">4 sesiones · 10 horas</div></div>
+        <div class="module-toggle">+</div>
+      </div>
+      <div class="module-body">
+        <div class="module-objective"><h5>Objetivo</h5><p>SLD structure y KPIs, carbon markets/futures (EU ETS), cat bonds y weather derivatives, PPAs sintéticos, gobernanza y greenwashing risk.</p></div>
+        <div class="module-topics"><h5>Temario</h5><ul>
+          <li>SLD: estructura, KPIs (GHG, ESG ratings), ISDA SLD Clause Library, auditoría buy-side</li>
+          <li>Carbon Markets: compliance vs voluntary, futures/options sobre allowances</li>
+          <li>Climate Risk Transfer: cat bonds, weather derivatives (HDD/CDD), seguros paramétricos</li>
+          <li>Renewables: PPAs sintéticos, proxy revenue swaps, smart contracts paramétricos</li>
+        </ul></div>
+      </div>
+    </div>
+
+    <!-- FASE 5 -->
+    <div class="phase-header">
+      <span class="phase-tag">Fase 5</span>
+      <h3>Frontiers & Institutional Implementation (52.5h)</h3>
+    </div>
+
+    <div class="module-card">
+      <div class="module-card-header" onclick="toggleModule(this)">
+        <div class="module-number">XVII</div>
+        <div class="module-info"><h4>Behavioral Edge: Neuro-Trading & Decision Risk</h4><div class="module-meta">4 sesiones · 10 horas</div></div>
+        <div class="module-toggle">+</div>
+      </div>
+      <div class="module-body">
+        <div class="module-topics"><h5>Temario</h5><ul>
+          <li>Neuroeconomics of Risk: cómo el cerebro procesa riesgo vs recompensa</li>
+          <li>Sesgos en derivados: anchoring, loss aversion, herd behavior, overconfidence — ejemplos reales</li>
+          <li>Debiasing: pre-mortem, red teams, governance de decisiones</li>
+          <li>Stress & Performance: wearable tech, protocolos de alta volatilidad, risk culture</li>
+        </ul></div>
+      </div>
+    </div>
+
+    <div class="module-card">
+      <div class="module-card-header" onclick="toggleModule(this)">
+        <div class="module-number">XVIII</div>
+        <div class="module-info"><h4>Computational Edge: HPC & Quantum Finance</h4><div class="module-meta">3 sesiones · 7.5 horas</div></div>
+        <div class="module-toggle">+</div>
+      </div>
+      <div class="module-body">
+        <div class="module-topics"><h5>Temario</h5><ul>
+          <li>Quantum Computing Fundamentals: qubits, superposition, entanglement, quantum gates</li>
+          <li>Quantum Monte Carlo: QAE para pricing — speedup 100-1000x (teórico), limitaciones actuales</li>
+          <li>Portfolio Optimization, Risk & Strategy: QAOA, VaR quantum, timeline realista (NISQ → fault-tolerant)</li>
+        </ul></div>
+      </div>
+    </div>
+
+    <div class="module-card">
+      <div class="module-card-header" onclick="toggleModule(this)">
+        <div class="module-number">XIX</div>
+        <div class="module-info"><h4>Macro & Tail Risk: geopolítica, regímenes de tasas y derivados</h4><div class="module-meta">3 sesiones · 7.5 horas</div></div>
+        <div class="module-toggle">+</div>
+      </div>
+      <div class="module-body">
+        <div class="module-topics"><h5>Temario</h5><ul>
+          <li>Mapping de Riesgos Geopolíticos: GPR Index, VIX/MOVE, CDS soberanos, event studies</li>
+          <li>Estrategias de Cobertura: FX (protective puts, risk reversals), commodities, tasas (swaptions), equity (VIX calls)</li>
+          <li>Scenario Planning & Tail Risk: framework 4 escenarios, convexity strategies, board communication</li>
+        </ul></div>
+      </div>
+    </div>
+
+    <div class="module-card">
+      <div class="module-card-header" onclick="toggleModule(this)">
+        <div class="module-number">XX</div>
+        <div class="module-info"><h4>On-chain Derivatives: DeFi 2.0, Perps, Oráculos y Riesgos</h4><div class="module-meta">3 sesiones · 7.5 horas</div></div>
+        <div class="module-toggle">+</div>
+      </div>
+      <div class="module-body">
+        <div class="module-topics"><h5>Temario</h5><ul>
+          <li>Protocolos DeFi: perpetual swaps, on-chain options, synthetics — dYdX, GMX, Hyperliquid</li>
+          <li>AMMs & Riesgos: smart contract exploits, oracle manipulation, liquidation cascades, MEV</li>
+          <li>Regulación & Convergencia: CFTC, MiCA, Bitcoin ETFs, tokenización TradFi-DeFi</li>
+        </ul></div>
+      </div>
+    </div>
+
+    <div class="module-card">
+      <div class="module-card-header" onclick="toggleModule(this)">
+        <div class="module-number">XXI</div>
+        <div class="module-info"><h4>Derivatives Desk Blueprint: construcción y administración del área y las mesas de derivados</h4><div class="module-meta">8 sesiones · 20 horas · People / Process / Tech</div></div>
+        <div class="module-toggle">+</div>
+      </div>
+      <div class="module-body">
+        <div class="module-objective"><h5>Objetivo</h5><p>Business case completo para lanzar/expandir mesa de derivados: streams de ingresos, estructura de costos, P&L 5 años (ROE 18-25%), organización FO/MO/BO, tech stack ($5-15M), licencias regulatorias, go-to-market y compliance program.</p></div>
+        <div class="module-topics"><h5>Temario</h5><ul>
+          <li>Business Case: revenue streams, costos, P&L 5 años, capital Basel III</li>
+          <li>Diseño Organizacional: roles FO/MO/BO, headcount ratios, compensación, retención</li>
+          <li>Infraestructura Tech: Murex/Calypso/Quantifi, Bloomberg, connectivity, DR</li>
+          <li>Licencias: broker-dealer, swap dealer, casa de bolsa — timelines y costos</li>
+          <li>Go-to-Market: soft launch → scale → madurez (3 fases en 36 meses)</li>
+          <li>P&L Management: attribution, IPV, Sharpe, RAROC, compensation pools</li>
+        </ul></div>
+      </div>
+    </div>
+
+    <!-- SUMMARY BAR -->
+    <div class="curriculum-summary">
+      <div class="summary-item">
+        <div class="number">22</div>
+        <div class="label">Módulos</div>
+      </div>
+      <div class="summary-item">
+        <div class="number">128</div>
+        <div class="label">Sesiones</div>
+      </div>
+      <div class="summary-item">
+        <div class="number">320</div>
+        <div class="label">Horas</div>
+      </div>
+      <div class="summary-item">
+        <div class="number">5</div>
+        <div class="label">Fases</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ FACULTY ════════════ -->
+<section class="faculty-section">
+  <div class="container">
+    <span class="section-label">Faculty</span>
+    <h2 class="display-md" style="margin-top: 0.75rem;">
+      Practitioners de clase mundial
+    </h2>
+    <div class="accent-line"></div>
+    <div class="faculty-note">
+      <p>El programa es impartido por un faculty compuesto por practitioners activos en exchanges, bancos de inversión, asset managers, CCPs y reguladores con amplio reconocimiento global.</p>
+      <div class="emphasis" style="margin-top: 1rem;">Perfiles completos del faculty disponibles bajo solicitud.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ LATAM ════════════ -->
+<section class="latam-section">
+  <div class="container">
+    <span class="section-label">Contexto regional</span>
+    <h2 class="display-md" style="margin-top: 0.75rem;">
+      LatAm ya no es periférico
+    </h2>
+    <div class="accent-line"></div>
+    <p class="body-lg" style="color: var(--text-secondary); margin-top: 1rem; max-width: 700px;">
+      El diferencial competitivo no es 'saber el producto', sino operar el producto con infraestructura, control y métricas de negocio.
+    </p>
+
+    <div class="latam-grid">
+      <div class="latam-card">
+        <h4>México</h4>
+        <p>Asigna liquidó $3.8 billones de pesos en derivados en 2024 (≈11.4% del PIB). Banxico reporta $32.5B MXN en nocional vigente de tasas e inflación.</p>
+      </div>
+      <div class="latam-card">
+        <h4>Brasil</h4>
+        <p>B3 reportó ADV de 6.1 millones de contratos en derivados listados (4T24), con profundidad en tasas (BRL), FX y Bitcoin futures.</p>
+      </div>
+      <div class="latam-card">
+        <h4>Colombia</h4>
+        <p>CRCC: promedio diario aceptado para clearing de COP $23.0 billones (+12% vs 2023). Open interest promedio COP $335.1 billones.</p>
+      </div>
+      <div class="latam-card">
+        <h4>Chile</h4>
+        <p>Stock de derivados vigentes en bancos USD $1.56T con valor de mercado de USD $25.6B. Profundidad OTC (FX y tasas) estructural.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ REQUISITOS ════════════ -->
+<section style="background: transparent; border-top: 1px solid rgba(255,255,255,0.06); padding: clamp(3.5rem, 6vw, 5.5rem) 0;">
+  <div class="container">
+    <span class="section-label">Admisión</span>
+    <h2 class="display-md" style="margin-top: 0.75rem;">Requisitos del programa</h2>
+    <div class="accent-line"></div>
+    <div class="audience-grid" style="margin-top: 2rem;">
+      <div class="audience-card">
+        <h4>Formación</h4>
+        <p>Formación Económico-Administrativa y/o Financiera.</p>
+      </div>
+      <div class="audience-card">
+        <h4>Matemáticas Financieras</h4>
+        <p>Bases sólidas de Matemáticas Financieras.</p>
+      </div>
+      <div class="audience-card">
+        <h4>Experiencia</h4>
+        <p>De preferencia trabajar o haber trabajado en instituciones del medio financiero.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ===== RISKMATHICS SALES MACHINE v2 (inyectable) ===== -->
-<section id="rm-enroll" style="background:linear-gradient(135deg,#1A1700,#050505);color:#fff;padding:64px 20px;font-family:'Poppins',Arial,sans-serif;">
+<section id="rm-enroll" style="background:linear-gradient(135deg,#0D2151,#11203E,#1F3152);color:#fff;padding:72px 20px;font-family:'Poppins',Arial,sans-serif;">
   <div style="max-width:660px;margin:0 auto;">
     <div style="text-align:center;margin-bottom:28px;">
-      <div style="color:#FDE100;letter-spacing:3px;font-size:12px;font-weight:700;">INSCRIPCIÓN · CUPO LIMITADO</div>
+      <div style="color:#AF7D1F;letter-spacing:3px;font-size:12px;font-weight:700;">INSCRIPCIÓN · CUPO LIMITADO</div>
       <h2 style="font-size:34px;margin:12px 0 8px;font-weight:800;line-height:1.15;">Asegura tu lugar</h2>
-      <p style="color:#c9ccd4;font-size:16px;margin:0;font-family:'Lora',Georgia,serif;">Déjanos tus datos, verifica tu WhatsApp y recibe el temario completo. Sin compromiso.</p>
+      <p style="color:#AEBDD6;font-size:16px;margin:0;font-family:'Lora',Georgia,serif;">Déjanos tus datos, verifica tu WhatsApp y recibe el temario completo. Sin compromiso.</p>
     </div>
     <div style="background:#fff;color:#1f2937;border-radius:18px;padding:32px;box-shadow:0 30px 70px rgba(0,0,0,.3);">
       <form id="rm-lead" onsubmit="return rmSubmit(event)" style="display:grid;gap:12px;">
@@ -419,17 +1875,21 @@ table.compare{width:100%;border-collapse:collapse;min-width:820px;font-family:'P
           <option>Otro</option>
         </select>
         <input name="whatsapp" placeholder="WhatsApp (ej. +52...)" required style="padding:13px 14px;border:1px solid #d8dee9;border-radius:10px;font-size:15px;font-family:'Lora',Georgia,serif;">
-        <button type="submit" style="background:linear-gradient(135deg,#FFF04D,#FDE100);color:#111111;font-weight:800;font-size:16px;border:none;padding:15px;border-radius:10px;cursor:pointer;font-family:'Poppins',Arial,sans-serif;">Quiero el temario</button>
-        <p style="font-size:12px;color:#8a94a6;margin:0;text-align:center;">🔒 Te enviamos un código por SMS para verificar. Datos protegidos.</p>
+        <label style="display:flex;align-items:flex-start;gap:9px;font-size:13px;color:#4b5563;font-family:'Lora',Georgia,serif;line-height:1.45;margin-top:2px;cursor:pointer;">
+          <input type="checkbox" name="privacidad" required style="margin-top:3px;width:17px;height:17px;flex:none;cursor:pointer;">
+          <span>He leído y acepto el <a href="https://riskmathics.com/avisoprivacidad" target="_blank" rel="noopener" style="color:#11203E;font-weight:700;text-decoration:underline;">Aviso de Privacidad</a> y autorizo el tratamiento de mis datos y ser contactado por RiskMathics.</span>
+        </label>
+        <button type="submit" style="background:linear-gradient(135deg,#C9992F,#AF7D1F);color:#11203E;font-weight:800;font-size:16px;border:none;padding:15px;border-radius:10px;cursor:pointer;font-family:'Poppins',Arial,sans-serif;">Quiero el temario</button>
+        <p style="font-size:12px;color:#8a94a6;margin:0;text-align:center;">🔒 Verificamos tu <b>correo</b> y tu <b>teléfono</b> con un código. Datos protegidos.</p>
       </form>
       <div id="rm-verify" style="display:none;"></div>
       <div id="rm-thanks" style="display:none;background:#ecfdf5;border:1px solid #6ee7b7;color:#065f46;padding:20px;border-radius:14px;font-size:15px;">✅ <b>¡Listo!</b> Recibimos y verificamos tus datos. Te enviamos el temario y un asesor te contactará.</div>
       <div style="margin-top:24px;padding-top:22px;border-top:1px solid #eef1f6;text-align:center;">
         <div style="font-size:13px;color:#6b7280;letter-spacing:1px;">O INSCRÍBETE Y PAGA DIRECTO</div>
-        <div style="font-size:30px;font-weight:800;color:#0A0A0A;margin:8px 0 4px;">USD $<span>24,500</span> <span style="font-size:14px;color:#6b7280;font-weight:500;">+ IVA</span></div>
+        <div style="font-size:30px;font-weight:800;color:#11203E;margin:8px 0 4px;">USD $<span>8,500</span> <span style="font-size:14px;color:#6b7280;font-weight:500;">+ IVA</span></div>
         <div style="display:grid;gap:10px;margin-top:16px;">
-          <a id="rm-paypal" href="https://bffdsgvgcvmojobfiuay.supabase.co/functions/v1/paypal-pay?curso=riskmastery" target="_blank" rel="noopener" style="background:#FDE100;color:#111111;font-weight:800;padding:14px;border-radius:10px;text-decoration:none;white-space:nowrap;">Pagar con PayPal</a>
-          <a id="rm-stripe" href="https://buy.stripe.com/eVq9ALbzF9GUf335QZ2Ry11" target="_blank" rel="noopener" style="background:#0A0A0A;color:#fff;font-weight:700;padding:14px;border-radius:10px;text-decoration:none;white-space:nowrap;">Pagar con tarjeta · Stripe</a>
+          <a id="rm-paypal" href="https://bffdsgvgcvmojobfiuay.supabase.co/functions/v1/paypal-pay?curso=globalderivatives" target="_blank" rel="noopener" style="background:#AF7D1F;color:#11203E;font-weight:800;padding:14px;border-radius:10px;text-decoration:none;white-space:nowrap;">Pagar con PayPal</a>
+          <a id="rm-stripe" href="https://buy.stripe.com/bJefZ9bzF7yMg772EN2Ry19" target="_blank" rel="noopener" style="background:#11203E;color:#fff;font-weight:700;padding:14px;border-radius:10px;text-decoration:none;white-space:nowrap;">Pagar con tarjeta · Stripe</a>
         </div>
         <p style="font-size:11px;color:#9aa4b4;margin-top:12px;">100% seguro · SSL · PayPal Verified · RiskMathics Financial Institute</p>
       </div>
@@ -437,24 +1897,160 @@ table.compare{width:100%;border-collapse:collapse;min-width:820px;font-family:'P
   </div>
 </section>
 <script>
-const RM_CFG={id:"riskmastery",folleto:"https://riskmathics-folletos-2026.s3.amazonaws.com/machine-learning-2026.pdf",paypal:"https://bffdsgvgcvmojobfiuay.supabase.co/functions/v1/paypal-pay?curso=riskmastery",stripe:"https://buy.stripe.com/eVq9ALbzF9GUf335QZ2Ry11"};
+const RM_CFG={id:"riskmastery",folleto:"https://riskmathics-folletos-2026.s3.amazonaws.com/global-derivatives-2026.pdf",paypal:"https://bffdsgvgcvmojobfiuay.supabase.co/functions/v1/paypal-pay?curso=globalderivatives",stripe:"https://buy.stripe.com/bJefZ9bzF7yMg772EN2Ry19"};
 const RM_VURL="https://bffdsgvgcvmojobfiuay.supabase.co/functions/v1/verify-lead";
 const RM_VKEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJmZmRzZ3ZnY3Ztb2pvYmZpdWF5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzUzOTQ0NzQsImV4cCI6MjA5MDk3MDQ3NH0.7VKn7st3POLRTLIXx9Y4gRjXbh8v_BKXblc7vFIVu-U";
 let RM_LEAD=null;
 (function(){var pp=document.getElementById('rm-paypal');if(pp&&!RM_CFG.paypal)pp.style.display='none';var sp=document.getElementById('rm-stripe');if(sp&&!RM_CFG.stripe)sp.style.display='none';})();
 async function rmPost(p){const r=await fetch(RM_VURL,{method:"POST",headers:{"Content-Type":"application/json","apikey":RM_VKEY,"Authorization":"Bearer "+RM_VKEY},body:JSON.stringify(p)});return r.json();}
-async function rmSubmit(e){e.preventDefault();const f=e.target,d=Object.fromEntries(new FormData(f));let phone=(d.whatsapp||"").trim().replace(/[\s\-()]/g,"");if(phone&&!phone.startsWith("+"))phone="+52"+phone.replace(/^0+/,"");if(!phone||phone.length<10){alert("Escribe tu WhatsApp con lada (ej +52...).");return false;}d.phone=phone;d.apellido=((d.apellido_paterno||"")+" "+(d.apellido_materno||"")).trim();d.curso=RM_CFG.id;d.folleto=RM_CFG.folleto;RM_LEAD=d;const b=f.querySelector('button[type=submit]');b.textContent="Enviando código...";b.disabled=true;let res;try{res=await rmPost({action:"start",phone:phone,channel:"sms"});}catch(_){res={};}if(res&&(res.status==="pending"||res.ok)){f.style.display="none";rmShowCode(phone);}else{b.textContent="Quiero el temario";b.disabled=false;alert("No pudimos enviar el código. Revisa tu número.");}return false;}
-function rmShowCode(phone){var c=document.getElementById('rm-verify');c.innerHTML='<p style="margin:0 0 12px;font-size:15px;color:#1f2937;">📲 Te enviamos un código por SMS a <b>'+phone+'</b>. Ingrésalo:</p><input id="rm-otp" inputmode="numeric" placeholder="Código de 6 dígitos" style="width:100%;padding:14px;border:1px solid #d8dee9;border-radius:10px;font-size:22px;text-align:center;letter-spacing:8px;margin-bottom:12px;"><button type="button" onclick="rmVerify()" style="width:100%;background:linear-gradient(135deg,#FFF04D,#FDE100);color:#111111;font-weight:800;font-size:16px;border:none;padding:14px;border-radius:10px;cursor:pointer;">Verificar y recibir temario</button><p id="rm-vmsg" style="font-size:12px;color:#8a94a6;margin-top:8px;"></p>';c.style.display="block";document.getElementById('rm-otp').focus();}
-async function rmVerify(){var code=(document.getElementById('rm-otp').value||"").trim();var m=document.getElementById('rm-vmsg');if(code.length<4){m.textContent="Escribe el código completo.";return;}m.textContent="Verificando...";var res;try{res=await rmPost({action:"check",phone:RM_LEAD.phone,code:code,email:RM_LEAD.email,nombre:RM_LEAD.nombre,apellido:RM_LEAD.apellido,apellido_paterno:RM_LEAD.apellido_paterno,apellido_materno:RM_LEAD.apellido_materno,puesto:RM_LEAD.puesto,empresa:RM_LEAD.empresa,sector:RM_LEAD.sector,curso:RM_CFG.id,folleto:RM_CFG.folleto});}catch(_){res={};}if(res&&res.verified){document.getElementById('rm-verify').style.display="none";document.getElementById('rm-thanks').style.display="block";if(RM_CFG.folleto)window.open(RM_CFG.folleto,'_blank');}else{m.textContent="Código incorrecto o expirado. Intenta de nuevo.";}}
+async function rmSubmit(e){e.preventDefault();const f=e.target,d=Object.fromEntries(new FormData(f));if(!f.privacidad||!f.privacidad.checked){alert("Debes aceptar el Aviso de Privacidad para continuar.");return false;}let phone=(d.whatsapp||"").trim().replace(/[\s\-()]/g,"");if(phone&&!phone.startsWith("+"))phone="+52"+phone.replace(/^0+/,"");if(!phone||phone.length<10){alert("Escribe tu WhatsApp con lada (ej +52...).");return false;}d.phone=phone;d.apellido=((d.apellido_paterno||"")+" "+(d.apellido_materno||"")).trim();d.curso=RM_CFG.id;d.folleto=RM_CFG.folleto;d.privacidad=true;RM_LEAD=d;const b=f.querySelector('button[type=submit]');b.textContent="Enviando códigos...";b.disabled=true;let res;try{res=await rmPost({action:"start",phone:phone,email:d.email,privacidad:true});}catch(_){res={};}if(res&&res.ok){RM_LEAD.email_mode=res.email_mode||"fallback";f.style.display="none";rmShowCode(phone,d.email);}else{b.textContent="Quiero el temario";b.disabled=false;alert((res&&res.error)||"No pudimos enviar los códigos. Revisa tu correo y número.");}return false;}
+function rmShowCode(phone,email){var c=document.getElementById('rm-verify');c.innerHTML='<p style="margin:0 0 14px;font-size:15px;color:#1f2937;font-family:\'Lora\',Georgia,serif;">Te enviamos <b>dos códigos</b> para verificar tu identidad:</p><div style="margin-bottom:12px;"><label style="font-size:13px;color:#6b7280;font-family:\'Poppins\',Arial,sans-serif;">📱 Código por SMS a '+phone+'</label><input id="rm-otp" inputmode="numeric" placeholder="Código SMS" style="width:100%;padding:13px;border:1px solid #d8dee9;border-radius:10px;font-size:20px;text-align:center;letter-spacing:6px;margin-top:5px;"></div><div style="margin-bottom:14px;"><label style="font-size:13px;color:#6b7280;font-family:\'Poppins\',Arial,sans-serif;">📧 Código por correo a '+email+'</label><input id="rm-otp-email" inputmode="numeric" placeholder="Código Email" style="width:100%;padding:13px;border:1px solid #d8dee9;border-radius:10px;font-size:20px;text-align:center;letter-spacing:6px;margin-top:5px;"></div><button type="button" onclick="rmVerify()" style="width:100%;background:linear-gradient(135deg,#C9992F,#AF7D1F);color:#11203E;font-weight:800;font-size:16px;border:none;padding:14px;border-radius:10px;cursor:pointer;font-family:\'Poppins\',Arial,sans-serif;">Verificar y recibir temario</button><p id="rm-vmsg" style="font-size:12px;color:#8a94a6;margin-top:8px;"></p>';c.style.display="block";document.getElementById('rm-otp').focus();}
+async function rmVerify(){var code=(document.getElementById('rm-otp').value||"").trim();var ecode=(document.getElementById('rm-otp-email').value||"").trim();var m=document.getElementById('rm-vmsg');if(code.length<4||ecode.length<4){m.textContent="Escribe ambos códigos (SMS y correo).";return;}m.textContent="Verificando...";var res;try{res=await rmPost({action:"check",phone:RM_LEAD.phone,code:code,email:RM_LEAD.email,email_code:ecode,email_mode:RM_LEAD.email_mode,nombre:RM_LEAD.nombre,apellido:RM_LEAD.apellido,apellido_paterno:RM_LEAD.apellido_paterno,apellido_materno:RM_LEAD.apellido_materno,puesto:RM_LEAD.puesto,empresa:RM_LEAD.empresa,sector:RM_LEAD.sector,curso:RM_CFG.id,folleto:RM_CFG.folleto});}catch(_){res={};}if(res&&res.verified){document.getElementById('rm-verify').style.display="none";document.getElementById('rm-thanks').style.display="block";if(RM_CFG.folleto)window.open(RM_CFG.folleto,'_blank');}else if(res&&(res.phone_ok===false||res.email_ok===false)){m.textContent=(res.phone_ok===false?"Código SMS incorrecto. ":"")+(res.email_ok===false?"Código de correo incorrecto.":"")+" Intenta de nuevo.";}else{m.textContent="Códigos incorrectos o expirados. Intenta de nuevo.";}}
 </script>
 <!-- ===== /SALES MACHINE v2 ===== -->
 
 
-<footer class="site-footer"><div class="container"><div class="footer-inner"><div style="display:flex;align-items:center;gap:1rem"><div style="font-family:'Poppins',sans-serif;font-weight:800;font-size:.95rem;letter-spacing:.5px;color:#fff;">RISK<span style="color:var(--yellow)">MATHICS</span></div><span class="footer-text">© 2026 RiskMathics Financial Institute. Machine Learner Certification™ (MLC). 20 Módulos | 620+ Horas.</span></div><div class="footer-links"><a href="javascript:void(0)">Términos</a><a href="javascript:void(0)">Privacidad</a><a href="#rm-enroll">Contacto</a></div></div></div></footer>
 
+<!-- ════════════ ACRONYMS ════════════ -->
+<section class="acronyms-section">
+  <div class="container">
+    <span class="section-label">Glosario</span>
+    <h2 class="display-md" style="margin-top: 0.5rem; font-size: 1.3rem;">Acrónimos utilizados en este programa</h2>
+    <div class="accent-line"></div>
+    <div class="acronyms-grid">
+      <div class="acronym-item"><strong>ALM</strong> — Asset-Liability Management</div>
+      <div class="acronym-item"><strong>ASC</strong> — Accounting Standards Codification</div>
+      <div class="acronym-item"><strong>BIS</strong> — Bank for International Settlements</div>
+      <div class="acronym-item"><strong>BSM</strong> — Black-Scholes-Merton</div>
+      <div class="acronym-item"><strong>CCP</strong> — Central Counterparty</div>
+      <div class="acronym-item"><strong>CCS</strong> — Cross-Currency Swap</div>
+      <div class="acronym-item"><strong>CDS</strong> — Credit Default Swap</div>
+      <div class="acronym-item"><strong>CDO</strong> — Collateralized Debt Obligation</div>
+      <div class="acronym-item"><strong>CLO</strong> — Collateralized Loan Obligation</div>
+      <div class="acronym-item"><strong>CSA</strong> — Credit Support Annex</div>
+      <div class="acronym-item"><strong>CVA</strong> — Credit Valuation Adjustment</div>
+      <div class="acronym-item"><strong>DMA</strong> — Direct Market Access</div>
+      <div class="acronym-item"><strong>DVA</strong> — Debit Valuation Adjustment</div>
+      <div class="acronym-item"><strong>DV01</strong> — Dollar Value of a Basis Point</div>
+      <div class="acronym-item"><strong>EMIR</strong> — European Market Infrastructure Regulation</div>
+      <div class="acronym-item"><strong>ESG</strong> — Environmental, Social, Governance</div>
+      <div class="acronym-item"><strong>ETD</strong> — Exchange-Traded Derivatives</div>
+      <div class="acronym-item"><strong>ETS</strong> — Emissions Trading System</div>
+      <div class="acronym-item"><strong>FIA</strong> — Futures Industry Association</div>
+      <div class="acronym-item"><strong>FIX</strong> — Financial Information eXchange</div>
+      <div class="acronym-item"><strong>FVA</strong> — Funding Valuation Adjustment</div>
+      <div class="acronym-item"><strong>GHG</strong> — Greenhouse Gas</div>
+      <div class="acronym-item"><strong>IFRS</strong> — International Financial Reporting Standards</div>
+      <div class="acronym-item"><strong>IRS</strong> — Interest Rate Swap</div>
+      <div class="acronym-item"><strong>ISDA</strong> — Intl. Swaps and Derivatives Assoc.</div>
+      <div class="acronym-item"><strong>KVA</strong> — Capital Valuation Adjustment</div>
+      <div class="acronym-item"><strong>MVA</strong> — Margin Valuation Adjustment</div>
+      <div class="acronym-item"><strong>OTC</strong> — Over-The-Counter</div>
+      <div class="acronym-item"><strong>PPA</strong> — Power Purchase Agreement</div>
+      <div class="acronym-item"><strong>RFQ</strong> — Request for Quote</div>
+      <div class="acronym-item"><strong>SABR</strong> — Stochastic Alpha Beta Rho</div>
+      <div class="acronym-item"><strong>SEF</strong> — Swap Execution Facility</div>
+      <div class="acronym-item"><strong>SIMM</strong> — Standard Initial Margin Model</div>
+      <div class="acronym-item"><strong>SLD</strong> — Sustainability-Linked Derivative</div>
+      <div class="acronym-item"><strong>SPAN</strong> — Standard Portfolio Analysis of Risk</div>
+      <div class="acronym-item"><strong>UMR</strong> — Uncleared Margin Rules</div>
+      <div class="acronym-item"><strong>VaR</strong> — Value at Risk</div>
+      <div class="acronym-item"><strong>XVA</strong> — Valuation Adjustments (familia)</div>
+      <div class="acronym-item"><strong>SVI</strong> — Stochastic Volatility Inspired</div>
+      <div class="acronym-item"><strong>TCA</strong> — Transaction Cost Analysis</div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ FOOTER ════════════ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo" style="font-family:'Poppins',sans-serif;font-weight:800;font-size:1.05rem;color:#fff;letter-spacing:.05em;height:auto">RISK<span style="color:var(--gold)">MATHICS</span></span>
+        <span class="footer-text">© 2026 RiskMathics Financial Innovation Institute. Todos los derechos reservados.</span>
+      </div>
+      <div class="footer-links">
+        <a href="javascript:void(0)">Términos</a>
+        <a href="javascript:void(0)">Privacidad</a>
+        <a href="javascript:void(0)">Contacto</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ════════════ SCRIPTS ════════════ -->
 <script>
-function toggleModule(h){h.parentElement.classList.toggle('active')}
-window.addEventListener('scroll',()=>{document.querySelector('.site-header').style.padding=window.pageYOffset>100?'.6rem 0':'1rem 0'})
+// Module accordion
+function toggleModule(header) {
+  const card = header.parentElement;
+  card.classList.toggle('active');
+}
+
+// Form handling
+function handleSubmit(e) {
+  e.preventDefault();
+  
+  const email = document.getElementById('email').value;
+  const blocked = ['gmail.com','googlemail.com','hotmail.com','hotmail.co.uk','hotmail.fr','hotmail.de','hotmail.es','hotmail.it',
+'outlook.com','outlook.es','outlook.co.uk','live.com','live.com.mx','msn.com',
+'yahoo.com','yahoo.com.mx','yahoo.co.uk','yahoo.es','yahoo.fr','yahoo.de','yahoo.it','ymail.com',
+'aol.com','icloud.com','me.com','mac.com','protonmail.com','proton.me','pm.me',
+'zoho.com','mail.com','gmx.com','gmx.de','gmx.net','yandex.com','yandex.ru',
+'tutanota.com','tuta.io','fastmail.com','hey.com','inbox.com',
+'rediffmail.com','qq.com','163.com','126.com','sina.com','naver.com',
+'daum.net','hanmail.net','web.de','t-online.de','orange.fr','free.fr',
+'laposte.net','wanadoo.fr','libero.it','virgilio.it','terra.com.mx'];
+  const domain = email.split('@')[1]?.toLowerCase();
+  
+  if (blocked.includes(domain)) {
+    alert('⚠️ Solo se aceptan correos corporativos.\n\nDirecciones como @gmail, @hotmail, @yahoo, @outlook no son válidas.\nPor favor ingresa tu correo de empresa.');
+    return;
+  }
+  
+  const formData = new FormData(e.target);
+  const data = Object.fromEntries(formData);
+  data.source = document.title;
+  data.timestamp = new Date().toISOString();
+  data.url = window.location.href;
+  
+  fetch('https://hook.eu1.make.com/6c7yq50qkr6ena51ccqxsxgrydsfwx3k', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data)
+  }).then(() => {
+    document.getElementById('formContainer').classList.add('submitted');
+  }).catch(() => {
+    document.getElementById('formContainer').classList.add('submitted');
+  });
+}
+
+// Scroll animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+// Header scroll effect
+let lastScroll = 0;
+window.addEventListener('scroll', () => {
+  const header = document.querySelector('.site-header');
+  const currentScroll = window.pageYOffset;
+  
+  if (currentScroll > 100) {
+    header.style.padding = '0.6rem 0';
+  } else {
+    header.style.padding = '1rem 0';
+  }
+  
+  lastScroll = currentScroll;
+});
 </script>
+
 </body>
 </html>
