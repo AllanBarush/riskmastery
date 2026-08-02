@@ -400,5 +400,6 @@ else{m.textContent="Códigos incorrectos o expirados. Intenta de nuevo.";}}
 <!-- ===== /SALES MACHINE v3.2 ===== -->
 
 <a href="#rm-enroll" style="position:fixed;bottom:22px;right:22px;z-index:99999;background:#FDE100;color:#1b1710;font-family:'Poppins',Arial,sans-serif;font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;padding:14px 26px;border-radius:50px;text-decoration:none;box-shadow:0 10px 34px rgba(0,0,0,.32);">Inscríbete &rarr;</a>
+<script>(function(){var U="https://bffdsgvgcvmojobfiuay.supabase.co/functions/v1/rm-hit";function h(e){var d=JSON.stringify({slug:"riskmastery",ev:e});try{navigator.sendBeacon(U,d)}catch(_){try{fetch(U,{method:"POST",body:d,keepalive:true})}catch(__){}}}h("view");document.addEventListener("click",function(ev){var a=ev.target&&ev.target.closest?ev.target.closest("a"):null;if(!a)return;var href=a.href||"";if(href.indexOf("buy.stripe.com")>=0)h("stripe");else if(href.indexOf("paypal-pay")>=0)h("paypal");},true);})();</script>
 </body>
 </html>
