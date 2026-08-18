@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
 <style>
-:root{--black:#000000;--black-rich:#050508;--black-soft:#0d0f14;--yellow:#FDE100;--yellow-dark:#D4BE00;--yellow-glow:#FFF04D;--yellow-soft:#F5E680;--teal:#00DCF7;--teal-dark:#00B4CC;--ivory:#F9F9F2;--ivory-warm:#FCFCF7;--white:#FFF;--text-primary:#111111;--text-secondary:#555555;--border-subtle:rgba(0,0,0,0.08);--shadow-md:0 8px 32px rgba(0,0,0,0.15);--r-sm:8px;--r-md:16px;--r-lg:24px}
+:root{--black:#000000;--black-rich:#050508;--black-soft:#0d0f14;--yellow:#FDE100;--yellow-dark:#A06EE6;--yellow-glow:#FFF04D;--yellow-soft:#F5E680;--teal:#00DCF7;--teal-dark:#00B4CC;--ivory:#0A0616;--ivory-warm:#160C2D;--white:#FFF;--text-primary:#FFFFFF;--text-secondary:#C3AFE1;--border-subtle:rgba(255,255,255,.10);--shadow-md:0 8px 32px rgba(0,0,0,0.15);--r-sm:8px;--r-md:16px;--r-lg:24px}
 *{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth;font-size:16px;-webkit-font-smoothing:antialiased}body{font-family:'Lora',Georgia,serif;font-size:1rem;line-height:1.72;color:var(--text-primary);background:var(--ivory);overflow-x:hidden}
 h1,h2,h3,h4,h5,h6{font-family:'Poppins',sans-serif;font-weight:700;line-height:1.15;letter-spacing:-.02em}
 .display-xl{font-size:clamp(2.6rem,5.5vw,4.8rem);font-weight:900;letter-spacing:-.03em}.display-md{font-size:clamp(1.5rem,3vw,2.2rem);font-weight:700}
@@ -39,7 +39,7 @@ h1,h2,h3,h4,h5,h6{font-family:'Poppins',sans-serif;font-weight:700;line-height:1
 .btn-primary:hover{background:var(--yellow-glow);transform:translateY(-2px);box-shadow:0 8px 32px rgba(253,225,0,.3)}
 .btn-secondary{font-family:'Poppins',sans-serif;font-size:.9rem;font-weight:500;color:rgba(255,255,255,.8);background:transparent;padding:1rem 2.2rem;border-radius:100px;text-decoration:none;border:1px solid rgba(255,255,255,.2);display:inline-flex;align-items:center;transition:all .35s}
 .btn-secondary:hover{border-color:var(--yellow);color:var(--yellow)}.hero-ctas{display:flex;gap:1rem;flex-wrap:wrap}
-.hero-sidebar{background:rgba(255,255,255,.04);border:1px solid rgba(253,225,0,.1);border-radius:var(--r-lg);padding:2.5rem;backdrop-filter:blur(12px)}
+.hero-sidebar{background:#160C2D;border:1px solid rgba(253,225,0,.1);border-radius:var(--r-lg);padding:2.5rem;backdrop-filter:blur(12px)}
 .hero-sidebar h3{font-size:.72rem;font-weight:600;color:var(--yellow);letter-spacing:.15em;text-transform:uppercase;margin-bottom:1.5rem}
 .sidebar-item{display:flex;justify-content:space-between;align-items:baseline;padding:.75rem 0;border-bottom:1px solid rgba(255,255,255,.06)}.sidebar-item:last-child{border:none}
 .sidebar-item-label{font-family:'Poppins',sans-serif;font-size:.78rem;color:rgba(255,255,255,.5)}.sidebar-item-value{font-family:'Poppins',sans-serif;font-size:.85rem;color:var(--white);font-weight:600;text-align:right}.sidebar-item-value .hl{color:var(--yellow)}
@@ -60,7 +60,7 @@ h1,h2,h3,h4,h5,h6{font-family:'Poppins',sans-serif;font-weight:700;line-height:1
 
 .highlights-section{background:var(--black);position:relative;overflow:hidden}.highlights-section::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(253,225,0,.03) 0%,transparent 50%)}
 .highlights-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;position:relative;z-index:1}
-.highlight-card{background:rgba(255,255,255,.02);border:1px solid rgba(255,255,255,.06);border-radius:var(--r-md);padding:2rem;transition:all .4s}
+.highlight-card{background:#160C2D;border:1px solid rgba(255,255,255,.06);border-radius:var(--r-md);padding:2rem;transition:all .4s}
 .highlight-card:hover{background:rgba(253,225,0,.03);border-color:rgba(253,225,0,.15);transform:translateY(-3px)}
 .highlight-number{font-family:'Poppins',sans-serif;font-size:.7rem;font-weight:700;color:var(--yellow);letter-spacing:.12em;margin-bottom:.75rem}
 .highlight-card h3{font-size:1rem;font-weight:600;color:var(--white);margin-bottom:.5rem;line-height:1.35}
@@ -105,11 +105,11 @@ h1,h2,h3,h4,h5,h6{font-family:'Poppins',sans-serif;font-weight:700;line-height:1
 .form-container{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
 .form-left h2{color:var(--white);margin-bottom:1rem}.form-left p{color:rgba(255,255,255,.6);font-size:1.05rem;line-height:1.75;margin-bottom:2rem}
 .form-benefits{list-style:none;padding:0}.form-benefits li{display:flex;align-items:flex-start;gap:.75rem;padding:.5rem 0;font-family:'Poppins',sans-serif;font-size:.85rem;color:rgba(255,255,255,.7)}.form-benefits li .check{color:var(--yellow);font-weight:700;font-size:1rem;flex-shrink:0}
-.form-right{background:rgba(255,255,255,.03);border:1px solid rgba(253,225,0,.1);border-radius:var(--r-lg);padding:2.5rem}
+.form-right{background:#160C2D;border:1px solid rgba(253,225,0,.1);border-radius:var(--r-lg);padding:2.5rem}
 .form-right h3{font-size:1.1rem;color:var(--white);margin-bottom:.4rem}.form-right .form-subtitle{font-family:'Poppins',sans-serif;font-size:.75rem;color:rgba(255,255,255,.4);margin-bottom:1.5rem}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.form-group{margin-bottom:1rem}
 .form-group label{display:block;font-family:'Poppins',sans-serif;font-size:.72rem;font-weight:500;color:rgba(255,255,255,.5);margin-bottom:.4rem;text-transform:uppercase;letter-spacing:.08em}
-.form-group input,.form-group select{width:100%;padding:.8rem 1rem;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--r-sm);color:var(--white);font-family:'Lora',serif;font-size:.9rem;transition:all .3s;outline:none}
+.form-group input,.form-group select{width:100%;padding:.8rem 1rem;background:#160C2D;border:1px solid rgba(255,255,255,.1);border-radius:var(--r-sm);color:var(--white);font-family:'Lora',serif;font-size:.9rem;transition:all .3s;outline:none}
 .form-group input::placeholder{color:rgba(255,255,255,.25)}
 .form-group input:focus,.form-group select:focus{border-color:var(--yellow);background:rgba(253,225,0,.04);box-shadow:0 0 0 3px rgba(253,225,0,.08)}
 .form-group select{cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23FDE100' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .8rem center;background-size:16px;padding-right:2.5rem}
@@ -257,29 +257,112 @@ Direcciones como @gmail, @hotmail, @yahoo, @outlook no son válidas.
 Por favor ingresa tu correo de empresa.');return}const fd=new FormData(e.target);const data=Object.fromEntries(fd);data.source=document.title;data.timestamp=new Date().toISOString();data.url=window.location.href;fetch('https://hook.eu1.make.com/6c7yq50qkr6ena51ccqxsxgrydsfwx3k',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)}).then(()=>{document.getElementById('formContainer').classList.add('submitted')}).catch(()=>{document.getElementById('formContainer').classList.add('submitted')})}
 window.addEventListener('scroll',()=>{document.querySelector('.site-header').style.padding=window.pageYOffset>100?'.6rem 0':'1rem 0'})
 </script>
-<!--RMFICHA--><section id="rm-ficha-oficial" style="background:#0b1220;padding:60px 22px;font-family:'Poppins',Arial,sans-serif;"><div style="max-width:920px;margin:0 auto;text-align:center;"><div style="color:#FDE100;letter-spacing:3px;font-size:11px;font-weight:600;">PROGRAMA OFICIAL 2026 · 2027</div><h2 style="color:#f4f2ec;font-size:23px;font-weight:600;line-height:1.35;margin:16px auto 0;max-width:800px;font-family:'Lora',Georgia,serif;">Machine Learner Certification™ (MLC), La Más Completa del Mundo en ML/AI</h2><div style="width:50px;height:2px;background:#FDE100;margin:20px auto;"></div><div style="color:#c2cee0;font-family:'Lora',Georgia,serif;font-style:italic;font-size:15px;">3 Nov 2026 - 11 Mar 2028</div><div style="color:#9aa4b4;font-size:12.5px;letter-spacing:.5px;margin-top:6px;">Virtual Live + Sábados presenciales · 3 niveles</div><div style="display:flex;flex-wrap:wrap;justify-content:center;gap:14px 0;margin-top:34px;border-top:1px solid rgba(255,255,255,.08);padding-top:30px;"><div style="text-align:center;padding:0 14px;"><div style="font-family:'Poppins',Arial,sans-serif;font-size:30px;font-weight:700;color:#FDE100;line-height:1;">629</div><div style="font-family:'Poppins',Arial,sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#9aa4b4;margin-top:6px;">horas</div></div><div style="text-align:center;padding:0 14px;"><div style="font-family:'Poppins',Arial,sans-serif;font-size:30px;font-weight:700;color:#FDE100;line-height:1;">196</div><div style="font-family:'Poppins',Arial,sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#9aa4b4;margin-top:6px;">sesiones</div></div><div style="text-align:center;padding:0 14px;"><div style="font-family:'Poppins',Arial,sans-serif;font-size:30px;font-weight:700;color:#FDE100;line-height:1;">20</div><div style="font-family:'Poppins',Arial,sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#9aa4b4;margin-top:6px;">módulos</div></div><div style="text-align:center;padding:0 14px;"><div style="font-family:'Poppins',Arial,sans-serif;font-size:30px;font-weight:700;color:#FDE100;line-height:1;">25</div><div style="font-family:'Poppins',Arial,sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#9aa4b4;margin-top:6px;">capstones</div></div><div style="text-align:center;padding:0 14px;"><div style="font-family:'Poppins',Arial,sans-serif;font-size:30px;font-weight:700;color:#FDE100;line-height:1;">4</div><div style="font-family:'Poppins',Arial,sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#9aa4b4;margin-top:6px;">niveles</div></div></div></div></section><!--/RMFICHA-->
+<!--RMFICHA--><section id="rm-ficha-oficial" style="background:#0A0616;padding:60px 22px;font-family:'Poppins',Arial,sans-serif;"><div style="max-width:920px;margin:0 auto;text-align:center;"><div style="color:#FDE100;letter-spacing:3px;font-size:11px;font-weight:600;">PROGRAMA OFICIAL 2026 · 2027</div><h2 style="color:#FFFFFF;font-size:23px;font-weight:600;line-height:1.35;margin:16px auto 0;max-width:800px;font-family:'Lora',Georgia,serif;">Machine Learner Certification™ (MLC), La Más Completa del Mundo en ML/AI</h2><div style="width:50px;height:2px;background:#FDE100;margin:20px auto;"></div><div style="color:#C3AFE1;font-family:'Lora',Georgia,serif;font-style:italic;font-size:15px;">3 Nov 2026 - 11 Mar 2028</div><div style="color:#C3AFE1;font-size:12.5px;letter-spacing:.5px;margin-top:6px;">Virtual Live + Sábados presenciales · 3 niveles</div><div style="display:flex;flex-wrap:wrap;justify-content:center;gap:14px 0;margin-top:34px;border-top:1px solid rgba(255,255,255,.08);padding-top:30px;"><div style="text-align:center;padding:0 14px;"><div style="font-family:'Poppins',Arial,sans-serif;font-size:30px;font-weight:700;color:#FDE100;line-height:1;">629</div><div style="font-family:'Poppins',Arial,sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#C3AFE1;margin-top:6px;">horas</div></div><div style="text-align:center;padding:0 14px;"><div style="font-family:'Poppins',Arial,sans-serif;font-size:30px;font-weight:700;color:#FDE100;line-height:1;">196</div><div style="font-family:'Poppins',Arial,sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#C3AFE1;margin-top:6px;">sesiones</div></div><div style="text-align:center;padding:0 14px;"><div style="font-family:'Poppins',Arial,sans-serif;font-size:30px;font-weight:700;color:#FDE100;line-height:1;">20</div><div style="font-family:'Poppins',Arial,sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#C3AFE1;margin-top:6px;">módulos</div></div><div style="text-align:center;padding:0 14px;"><div style="font-family:'Poppins',Arial,sans-serif;font-size:30px;font-weight:700;color:#FDE100;line-height:1;">25</div><div style="font-family:'Poppins',Arial,sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#C3AFE1;margin-top:6px;">capstones</div></div><div style="text-align:center;padding:0 14px;"><div style="font-family:'Poppins',Arial,sans-serif;font-size:30px;font-weight:700;color:#FDE100;line-height:1;">4</div><div style="font-family:'Poppins',Arial,sans-serif;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:#C3AFE1;margin-top:6px;">niveles</div></div></div></div></section><!--/RMFICHA-->
 <!-- ===== RISKMATHICS SALES MACHINE v3.2 (inyectable) ===== -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
 <style>
  #rm-enroll .iti{width:100%;}
  #rm-enroll .iti__selected-flag{background:transparent;padding-left:0;}
  #rm-enroll input,#rm-enroll select{outline:none;background:transparent;}
- #rm-enroll .rm-in{width:100%;border:none;border-bottom:1px solid #dfe5ee;border-radius:0;padding:9px 1px 10px;font-size:15px;font-family:'Lora',Georgia,serif;color:#1b2430;transition:border-color .18s;}
+ #rm-enroll .rm-in{width:100%;border:none;border-bottom:1px solid #2A1B45;border-radius:0;padding:9px 1px 10px;font-size:15px;font-family:'Lora',Georgia,serif;color:#FFFFFF;transition:border-color .18s;}
  #rm-enroll .rm-in:focus{border-bottom-color:#8f9bb0;}
  #rm-enroll .rm-in::placeholder{color:#b7c0cd;}
- #rm-enroll .rm-lb{display:block;font-family:'Poppins',Arial,sans-serif;font-size:10px;letter-spacing:1.6px;font-weight:500;color:#93A0B4;text-transform:uppercase;margin-bottom:2px;}
+ #rm-enroll .rm-lb{display:block;font-family:'Poppins',Arial,sans-serif;font-size:10px;letter-spacing:1.6px;font-weight:500;color:#C3AFE1;text-transform:uppercase;margin-bottom:2px;}
  #rm-enroll select.rm-in{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%2393A0B4' stroke-width='1.4' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 4px center;padding-right:20px;}
  @media (max-width:560px){#rm-enroll .rm-2col{grid-template-columns:1fr !important;}}
+
+/* ===== identidad RiskMathics: paleta oficial (risk) ===== */
+body{background:#0A0616 !important;color:#FFFFFF}
+h1,h2,h3,h4,h5,h6,.display-md,.display-lg,.sec-title,.module-title{color:#FFFFFF !important}
+p,li,td,dd{color:#C3AFE1}
+b,strong{color:#FFFFFF}
+a{color:#A06EE6}
+.section-label,.kicker,.eyebrow{color:#A06EE6 !important}
+.abstract-section,.sector-chip,.module-card,.faculty-card,.card,.panel,.audience-card,
+.pricing-card,.bundle-card,.fc,.f,.hl,.temario-section,.cta-section,.faq-section{
+ background:#160C2D !important;border-color:#2A1B45 !important}
+.audience-card h3,.audience-card h4,.card h3,.card h4{color:#FFFFFF !important}
+.audience-card p,.card p,.fc p{color:#C3AFE1 !important}
+table,th,td{border-color:#2A1B45 !important}
+th{background:#160C2D !important;color:#C3AFE1 !important}
+input,select,textarea{background:transparent;color:#FFFFFF;border-color:#2A1B45}
+.rule,.line,.sep,.accent-line{width:50px !important;height:2px !important;background:#A06EE6 !important}
+.iti__country-list,.iti__dropdown-content{background:#160C2D !important;border-color:#2A1B45 !important}
+.iti__country-name{color:#FFFFFF !important}
+.iti__dial-code,.iti__selected-dial-code,.iti__selected-country{color:#C3AFE1 !important}
+.iti__country:hover,.iti__country.iti__highlight,.iti__active{background:#1E0F37 !important}
+.iti__search-input{background:#0A0616 !important;color:#FFFFFF !important;border-color:#2A1B45 !important}
+#rm-stripe{background:#A06EE6 !important;color:#FFFFFF !important}
+#rm-paypal{background:transparent !important;color:#A06EE6 !important;border:1.5px solid #A06EE6 !important}
+#rm-enroll a[href*="privacidad"],#rm-enroll a[href*="aviso"]{color:#C3AFE1 !important;text-decoration:underline}
+.tw-scroll{display:block;width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tw-scroll table{min-width:520px}
+@media(max-width:700px){
+ html,body{max-width:100%;overflow-x:hidden}
+ a,span,div,p,h1,h2,h3,h4{max-width:100%;overflow-wrap:break-word;word-break:break-word}
+ [style*="white-space:nowrap"]{white-space:normal !important}
+ .tw-scroll table{min-width:480px}
+}
+
+h1,h2,h3,h4,h5,h6{color:#FFFFFF !important}
+.btn-primary,.btn.btn-primary,#rm-stripe{background:#A06EE6 !important;color:#0A0616 !important;border-color:#A06EE6 !important}
+#rm-paypal{background:transparent !important;color:#A06EE6 !important;border:1.5px solid #A06EE6 !important}
+.phase-tag,.badge,.tag,.chip{color:#0A0616 !important}
+[style*="background:#fff"],[style*="background:#FFF"],[style*="background:#ffffff"],
+[style*="background-color:#fff"],[style*="background:white"]{background:#160C2D !important}
+.audience-section,.audience-card,.card{background:#160C2D !important}
+.audience-card h3,.audience-card h4,.card h3{color:#FFFFFF !important}
+.audience-card p,.card p{color:#C3AFE1 !important}
+
+/* utilidades de Tailwind y tarjetas con clase propia */
+.bg-white,.bg-rm-card,.bg-rm-sand,.bg-gray-50,.bg-gray-100,.bg-slate-50,
+.level-card,.latam-card,.faculty-section,.mod,.card-white{background:#160C2D !important}
+.border,.border-rm-sand,.border-gray-200,.border-slate-200{border-color:#2A1B45 !important}
+.text-rm-ink,.text-gray-900,.text-slate-900,.text-black{color:#FFFFFF !important}
+.text-gray-600,.text-gray-700,.text-slate-600{color:#C3AFE1 !important}
+.bg-white h1,.bg-white h2,.bg-white h3,.bg-white h4,.bg-rm-card h3,.bg-rm-card h4,
+.level-card h3,.level-card h4,.latam-card h3{color:#FFFFFF !important}
+.bg-white p,.bg-white li,.bg-rm-card p,.bg-rm-card li,.level-card p,.latam-card p{color:#C3AFE1 !important}
+/* texto muy oscuro sobre panel oscuro */
+[style*="color:#A06EE6"],[style*="color:#A06EE6"]{color:#A06EE6 !important}
+[style*="color:#0A0616"]{color:#FFFFFF !important}
+[style*="background:#FDE100"],[style*="background-color:#FDE100"]{color:#0A0616 !important}
+*{color:inherit}
+.level-card,.level-card *{color:#FFFFFF}
+
+.val,.val *{color:#FFFFFF !important}
+.level-card .val{color:#FFFFFF !important}
+
+.level-hours,.level-hours *{color:#FFFFFF !important}
+
+.tw-scroll{display:block;width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tw-scroll table{min-width:520px}
+@media(max-width:700px){
+ html,body{max-width:100%;overflow-x:hidden}
+ a,span,div,p,h1,h2,h3,h4,td,th{max-width:100%;overflow-wrap:break-word;word-break:break-word}
+ [style*="white-space:nowrap"]{white-space:normal !important}
+ table{display:block;overflow-x:auto;max-width:100%}
+ .grid,.flex{flex-wrap:wrap}
+}
+
+@media(max-width:700px){
+ /* las rejillas de tarjetas no envolvian: se fuerzan a una columna */
+ [class*="grid"],[style*="display:grid"],[style*="display: grid"]{
+  grid-template-columns:1fr !important}
+ [class*="flex"],[style*="display:flex"],[style*="display: flex"]{
+  flex-wrap:wrap !important}
+ [class*="grid"]>*,[class*="flex"]>*{min-width:0 !important;max-width:100% !important;flex:1 1 100% !important}
+}
 </style>
-<section id="rm-enroll" style="background:linear-gradient(135deg,#12305c,#0a1f3c);color:#fff;padding:88px 22px;font-family:'Poppins',Arial,sans-serif;">
+<section id="rm-enroll" style="background:linear-gradient(135deg,#12305c,#0A0616);color:#fff;padding:88px 22px;font-family:'Poppins',Arial,sans-serif;">
  <div style="max-width:600px;margin:0 auto;">
  <div style="text-align:center;margin-bottom:38px;">
  <div style="color:#FDE100;letter-spacing:3px;font-size:10.5px;font-weight:500;">INSCRIPCIÓN · CUPO LIMITADO</div>
  <h2 style="font-size:26px;margin:16px 0 0;font-weight:600;line-height:1.25;letter-spacing:.3px;">Asegura tu lugar</h2>
  <div style="width:50px;height:2px;background:#FDE100;margin:18px auto;"></div>
- <p style="color:#c2cee0;font-size:15px;margin:0;font-family:'Lora',Georgia,serif;font-style:italic;">Déjanos tus datos y verifica tu correo,<br>y recibe el temario completo. Sin compromiso.</p>
+ <p style="color:#C3AFE1;font-size:15px;margin:0;font-family:'Lora',Georgia,serif;font-style:italic;">Déjanos tus datos y verifica tu correo,<br>y recibe el temario completo. Sin compromiso.</p>
  </div>
- <div style="background:#ffffff;color:#1b2430;border-radius:6px;padding:44px 42px;border:1px solid rgba(255,255,255,.14);box-shadow:0 2px 24px rgba(0,0,0,.16);">
+ <div style="background:#160C2D;color:#FFFFFF;border-radius:6px;padding:44px 42px;border:1px solid rgba(255,255,255,.14);box-shadow:0 2px 24px rgba(0,0,0,.16);">
  <form id="rm-lead" onsubmit="return rmSubmit(event)" style="display:grid;gap:22px;">
  <div><label class="rm-lb">Nombre(s)</label><input class="rm-in" name="nombre" required></div>
  <div class="rm-2col" style="display:grid;grid-template-columns:1fr 1fr;gap:22px 20px;">
@@ -293,7 +376,7 @@ window.addEventListener('scroll',()=>{document.querySelector('.site-header').sty
  <option value="grupo">Grupo o delegación</option>
  <option value="licencia_corporativa">Licencia / cohorte corporativa</option>
  </select>
- <small style="display:block;margin-top:7px;color:#93A0B4;font-family:'Lora',Georgia,serif;font-size:11.5px;">Para inscripción individual, empresa, puesto y sector son opcionales.</small>
+ <small style="display:block;margin-top:7px;color:#C3AFE1;font-family:'Lora',Georgia,serif;font-size:11.5px;">Para inscripción individual, empresa, puesto y sector son opcionales.</small>
  </div>
  <div><label class="rm-lb">Email corporativo o institucional</label><input class="rm-in" type="email" name="email" required></div>
  <div class="rm-2col" style="display:grid;grid-template-columns:1fr 1fr;gap:22px 20px;">
@@ -347,25 +430,25 @@ window.addEventListener('scroll',()=>{document.querySelector('.site-header').sty
  </div>
  <div><label class="rm-lb">WhatsApp (opcional)</label><input class="rm-in" id="rm-whatsapp" name="whatsapp" type="tel"></div>
  </div>
- <label style="display:flex;align-items:flex-start;gap:10px;font-size:11.5px;color:#5a6577;font-family:'Lora',Georgia,serif;line-height:1.55;cursor:pointer;margin-top:2px;">
- <input type="checkbox" name="privacidad" required style="margin-top:2px;width:14px;height:14px;flex:none;cursor:pointer;accent-color:#1b2430;">
- <span>He leído y acepto el <a href="https://riskmathics.com/avisoprivacidad" target="_blank" rel="noopener" style="color:#1b2430;font-weight:600;text-decoration:underline;text-underline-offset:2px;">Aviso de Privacidad</a> y autorizo el tratamiento de mis datos y ser contactado por RiskMathics.</span>
+ <label style="display:flex;align-items:flex-start;gap:10px;font-size:11.5px;color:#9C8FB4;font-family:'Lora',Georgia,serif;line-height:1.55;cursor:pointer;margin-top:2px;">
+ <input type="checkbox" name="privacidad" required style="margin-top:2px;width:14px;height:14px;flex:none;cursor:pointer;accent-color:#160C2D;">
+ <span>He leído y acepto el <a href="https://riskmathics.com/avisoprivacidad" target="_blank" rel="noopener" style="color:#FFFFFF;font-weight:600;text-decoration:underline;text-underline-offset:2px;">Aviso de Privacidad</a> y autorizo el tratamiento de mis datos y ser contactado por RiskMathics.</span>
  </label>
- <button type="submit" style="background:#FDE100;color:#1b1710;font-weight:600;font-size:13px;letter-spacing:1.8px;text-transform:uppercase;border:none;padding:17px;border-radius:4px;cursor:pointer;font-family:'Poppins',Arial,sans-serif;margin-top:4px;">Quiero el temario</button>
- <p style="font-size:10.5px;color:#9aa4b4;margin:0;text-align:center;font-family:'Poppins',Arial,sans-serif;letter-spacing:.4px;">Te enviamos un código a tu correo · Datos protegidos</p>
+ <button type="submit" style="background:#FDE100;color:#FFFFFF;font-weight:600;font-size:13px;letter-spacing:1.8px;text-transform:uppercase;border:none;padding:17px;border-radius:4px;cursor:pointer;font-family:'Poppins',Arial,sans-serif;margin-top:4px;">Quiero el temario</button>
+ <p style="font-size:10.5px;color:#C3AFE1;margin:0;text-align:center;font-family:'Poppins',Arial,sans-serif;letter-spacing:.4px;">Te enviamos un código a tu correo · Datos protegidos</p>
  </form>
  <div id="rm-verify" style="display:none;"></div>
- <div id="rm-thanks" style="display:none;border:1px solid #b7e4c7;background:#f6fdf9;color:#1b4332;padding:22px;border-radius:6px;font-size:14.5px;font-family:'Lora',Georgia,serif;line-height:1.6;"><b>Listo.</b> Recibimos y verificamos tu correo. Te enviamos el temario a tu correo y un asesor te contactará.</div>
+ <div id="rm-thanks" style="display:none;border:1px solid #b7e4c7;background:#160C2D;color:#1b4332;padding:22px;border-radius:6px;font-size:14.5px;font-family:'Lora',Georgia,serif;line-height:1.6;"><b>Listo.</b> Recibimos y verificamos tu correo. Te enviamos el temario a tu correo y un asesor te contactará.</div>
  <div style="margin-top:34px;padding-top:28px;border-top:1px solid #edf0f5;text-align:center;">
- <div style="font-size:10px;color:#93A0B4;letter-spacing:2.2px;font-family:'Poppins',Arial,sans-serif;">O INSCRÍBETE Y PAGA DIRECTO</div>
- <div style="font-size:30px;font-weight:300;color:#0a1f3c;margin:14px 0 2px;font-family:'Poppins',Arial,sans-serif;letter-spacing:.5px;">USD $24,500 + TAX</div>
- <div style="font-size:11px;color:#9aa4b4;font-family:'Lora',Georgia,serif;font-style:italic;margin-bottom:18px;">El costo no incluye impuestos</div>
+ <div style="font-size:10px;color:#C3AFE1;letter-spacing:2.2px;font-family:'Poppins',Arial,sans-serif;">O INSCRÍBETE Y PAGA DIRECTO</div>
+ <div style="font-size:30px;font-weight:300;color:#FFFFFF;margin:14px 0 2px;font-family:'Poppins',Arial,sans-serif;letter-spacing:.5px;">USD $24,500 + TAX</div>
+ <div style="font-size:11px;color:#C3AFE1;font-family:'Lora',Georgia,serif;font-style:italic;margin-bottom:18px;">El costo no incluye impuestos</div>
  <div style="display:grid;gap:10px;">
- <a id="rm-paypal" href="https://bffdsgvgcvmojobfiuay.supabase.co/functions/v1/paypal-pay?curso=riskmastery" target="_blank" rel="noopener" style="background:#FDE100;color:#1b1710;font-weight:600;font-size:12.5px;letter-spacing:1.6px;text-transform:uppercase;padding:15px;border-radius:4px;text-decoration:none;white-space:nowrap;font-family:'Poppins',Arial,sans-serif;">Pagar con PayPal</a>
- <a id="rm-stripe" href="https://buy.stripe.com/6oUfZ9avB1aof33frz2Rz44" target="_blank" rel="noopener" style="background:transparent;border:1.5px solid #0a1f3c;color:#0a1f3c;font-weight:600;font-size:12.5px;letter-spacing:1.6px;text-transform:uppercase;padding:14px;border-radius:4px;text-decoration:none;white-space:nowrap;font-family:'Poppins',Arial,sans-serif;">Pagar con tarjeta · Stripe</a>
+ <a id="rm-paypal" href="https://bffdsgvgcvmojobfiuay.supabase.co/functions/v1/paypal-pay?curso=riskmastery" target="_blank" rel="noopener" style="background:#FDE100;color:#FFFFFF;font-weight:600;font-size:12.5px;letter-spacing:1.6px;text-transform:uppercase;padding:15px;border-radius:4px;text-decoration:none;white-space:nowrap;font-family:'Poppins',Arial,sans-serif;">Pagar con PayPal</a>
+ <a id="rm-stripe" href="https://buy.stripe.com/6oUfZ9avB1aof33frz2Rz44" target="_blank" rel="noopener" style="background:transparent;border:1.5px solid #0A0616;color:#FFFFFF;font-weight:600;font-size:12.5px;letter-spacing:1.6px;text-transform:uppercase;padding:14px;border-radius:4px;text-decoration:none;white-space:nowrap;font-family:'Poppins',Arial,sans-serif;">Pagar con tarjeta · Stripe</a>
  </div>
  <p style="font-size:11px;color:#8fa2b8;margin-top:14px;font-family:'Lora',Georgia,serif;font-style:italic;">M&aacute;s de 100,000 profesionales formados en 25 a&ntilde;os &middot; BANXICO, CNBV, AFOREs y la banca de LATAM</p>
-<p style="font-size:10.5px;color:#9aa4b4;margin-top:6px;font-family:'Poppins',Arial,sans-serif;letter-spacing:.4px;">Meses sin intereses disponibles con PayPal</p>
+<p style="font-size:10.5px;color:#C3AFE1;margin-top:6px;font-family:'Poppins',Arial,sans-serif;letter-spacing:.4px;">Meses sin intereses disponibles con PayPal</p>
 <p style="font-size:10px;color:#b3bcc9;margin-top:16px;font-family:'Poppins',Arial,sans-serif;letter-spacing:.5px;">100% seguro · SSL · PayPal Verified · RiskMathics Financial Institute</p>
  </div>
  </div>
@@ -397,22 +480,22 @@ if(res&&res.ok){f.style.display="none";rmShowCode(d.email);}
 else{b.textContent=txt;b.disabled=false;alert((res&&res.error)||"No pudimos enviar el codigo. Escribenos a growth@riskmathics.com");}
 return false;}
 function rmCorporativo(c){var box=document.getElementById('rm-verify');
-box.innerHTML='<div style="border:1px solid #f0d9a8;background:#fffaf0;padding:22px;border-radius:6px;">'+
-'<p style="margin:0 0 14px;font-size:15px;color:#1b2430;font-family:\'Lora\',Georgia,serif;line-height:1.6;">Para enviarte el temario necesitamos tu <b>correo institucional o de empresa</b>.</p>'+
-'<p style="margin:0 0 18px;font-size:14px;color:#5a6577;font-family:\'Lora\',Georgia,serif;line-height:1.6;">Si no cuentas con uno, escribenos y con gusto te atendemos:</p>'+
+box.innerHTML='<div style="border:1px solid #f0d9a8;background:#160C2D;padding:22px;border-radius:6px;">'+
+'<p style="margin:0 0 14px;font-size:15px;color:#FFFFFF;font-family:\'Lora\',Georgia,serif;line-height:1.6;">Para enviarte el temario necesitamos tu <b>correo institucional o de empresa</b>.</p>'+
+'<p style="margin:0 0 18px;font-size:14px;color:#9C8FB4;font-family:\'Lora\',Georgia,serif;line-height:1.6;">Si no cuentas con uno, escribenos y con gusto te atendemos:</p>'+
 '<div style="display:grid;gap:10px;">'+
 '<a href="'+(c.whatsapp||"https://wa.me/525579894034")+'" target="_blank" rel="noopener" style="background:#25D366;color:#fff;font-weight:600;font-size:13px;letter-spacing:1px;text-transform:uppercase;padding:14px;border-radius:4px;text-decoration:none;text-align:center;font-family:\'Poppins\',Arial,sans-serif;">Escribenos por WhatsApp</a>'+
-'<a href="tel:'+(c.telefono||"+525579894034").replace(/\s/g,"")+'" style="border:1.5px solid #1b2430;color:#1b2430;font-weight:600;font-size:13px;letter-spacing:1px;text-transform:uppercase;padding:13px;border-radius:4px;text-decoration:none;text-align:center;font-family:\'Poppins\',Arial,sans-serif;">Llamar '+(c.whatsapp_texto||"+52 55 7989 4034")+'</a>'+
-'<a href="mailto:'+(c.correo||"growth@riskmathics.com")+'?subject=Informes%20'+encodeURIComponent(RM_CFG.id)+'" style="border:1.5px solid #dfe5ee;color:#5a6577;font-weight:600;font-size:12.5px;letter-spacing:1px;text-transform:uppercase;padding:13px;border-radius:4px;text-decoration:none;text-align:center;font-family:\'Poppins\',Arial,sans-serif;">'+(c.correo||"growth@riskmathics.com")+'</a>'+
-'</div><p style="margin:16px 0 0;font-size:12px;color:#9aa4b4;font-family:\'Lora\',Georgia,serif;font-style:italic;text-align:center;">O corrige tu correo arriba e intenta de nuevo.</p></div>';
+'<a href="tel:'+(c.telefono||"+525579894034").replace(/\s/g,"")+'" style="border:1.5px solid #160C2D;color:#FFFFFF;font-weight:600;font-size:13px;letter-spacing:1px;text-transform:uppercase;padding:13px;border-radius:4px;text-decoration:none;text-align:center;font-family:\'Poppins\',Arial,sans-serif;">Llamar '+(c.whatsapp_texto||"+52 55 7989 4034")+'</a>'+
+'<a href="mailto:'+(c.correo||"growth@riskmathics.com")+'?subject=Informes%20'+encodeURIComponent(RM_CFG.id)+'" style="border:1.5px solid #2A1B45;color:#9C8FB4;font-weight:600;font-size:12.5px;letter-spacing:1px;text-transform:uppercase;padding:13px;border-radius:4px;text-decoration:none;text-align:center;font-family:\'Poppins\',Arial,sans-serif;">'+(c.correo||"growth@riskmathics.com")+'</a>'+
+'</div><p style="margin:16px 0 0;font-size:12px;color:#C3AFE1;font-family:\'Lora\',Georgia,serif;font-style:italic;text-align:center;">O corrige tu correo arriba e intenta de nuevo.</p></div>';
 box.style.display="block";box.scrollIntoView({behavior:"smooth",block:"center"});}
 function rmShowCode(email){var c=document.getElementById('rm-verify');
-c.innerHTML='<p style="margin:0 0 20px;font-size:14.5px;color:#1b2430;font-family:\'Lora\',Georgia,serif;line-height:1.6;">Te enviamos un <b>codigo</b> a <b>'+email+'</b>. Escribelo aqui para recibir tu temario:</p>'+
-'<div style="margin-bottom:24px;"><label style="display:block;font-family:\'Poppins\',Arial,sans-serif;font-size:10px;letter-spacing:1.6px;font-weight:500;color:#93A0B4;text-transform:uppercase;margin-bottom:4px;">Codigo de 6 digitos</label>'+
-'<input id="rm-otp-email" inputmode="numeric" maxlength="6" style="width:100%;border:none;border-bottom:1px solid #dfe5ee;padding:9px 1px 10px;font-size:22px;letter-spacing:8px;font-family:\'Poppins\',Arial,sans-serif;color:#1b2430;outline:none;"></div>'+
-'<button type="button" onclick="rmVerify()" style="width:100%;background:#0a1f3c;color:#ffffff;font-weight:600;font-size:13px;letter-spacing:1.8px;text-transform:uppercase;border:none;padding:16px;border-radius:4px;cursor:pointer;font-family:\'Poppins\',Arial,sans-serif;">Verificar y recibir temario</button>'+
-'<p id="rm-vmsg" style="font-size:11.5px;color:#9aa4b4;margin-top:10px;font-family:\'Lora\',Georgia,serif;"></p>'+
-'<p style="font-size:11.5px;color:#9aa4b4;margin-top:14px;font-family:\'Lora\',Georgia,serif;">No te llego? Revisa tu bandeja de no deseados o escribenos a <a href="mailto:growth@riskmathics.com" style="color:#0a1f3c;">growth@riskmathics.com</a></p>';
+c.innerHTML='<p style="margin:0 0 20px;font-size:14.5px;color:#FFFFFF;font-family:\'Lora\',Georgia,serif;line-height:1.6;">Te enviamos un <b>codigo</b> a <b>'+email+'</b>. Escribelo aqui para recibir tu temario:</p>'+
+'<div style="margin-bottom:24px;"><label style="display:block;font-family:\'Poppins\',Arial,sans-serif;font-size:10px;letter-spacing:1.6px;font-weight:500;color:#C3AFE1;text-transform:uppercase;margin-bottom:4px;">Codigo de 6 digitos</label>'+
+'<input id="rm-otp-email" inputmode="numeric" maxlength="6" style="width:100%;border:none;border-bottom:1px solid #2A1B45;padding:9px 1px 10px;font-size:22px;letter-spacing:8px;font-family:\'Poppins\',Arial,sans-serif;color:#FFFFFF;outline:none;"></div>'+
+'<button type="button" onclick="rmVerify()" style="width:100%;background:#0A0616;color:#ffffff;font-weight:600;font-size:13px;letter-spacing:1.8px;text-transform:uppercase;border:none;padding:16px;border-radius:4px;cursor:pointer;font-family:\'Poppins\',Arial,sans-serif;">Verificar y recibir temario</button>'+
+'<p id="rm-vmsg" style="font-size:11.5px;color:#C3AFE1;margin-top:10px;font-family:\'Lora\',Georgia,serif;"></p>'+
+'<p style="font-size:11.5px;color:#C3AFE1;margin-top:14px;font-family:\'Lora\',Georgia,serif;">No te llego? Revisa tu bandeja de no deseados o escribenos a <a href="mailto:growth@riskmathics.com" style="color:#FFFFFF;">growth@riskmathics.com</a></p>';
 c.style.display="block";var i=document.getElementById('rm-otp-email');if(i)i.focus();}
 async function rmVerify(){var ecode=(document.getElementById('rm-otp-email').value||"").trim();var m=document.getElementById('rm-vmsg');
 if(ecode.length<4){m.textContent="Escribe el codigo que te enviamos por correo.";return;}
@@ -423,7 +506,7 @@ else{m.textContent=(res&&res.error)||"Codigo incorrecto o vencido. Intenta de nu
 </script>
 <!-- ===== /SALES MACHINE v3.2 ===== -->
 
-<a href="#rm-enroll" style="position:fixed;bottom:22px;right:22px;z-index:99999;background:#FDE100;color:#1b1710;font-family:'Poppins',Arial,sans-serif;font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;padding:14px 26px;border-radius:50px;text-decoration:none;box-shadow:0 10px 34px rgba(0,0,0,.32);">Inscríbete &rarr;</a>
+<a href="#rm-enroll" style="position:fixed;bottom:22px;right:22px;z-index:99999;background:#FDE100;color:#FFFFFF;font-family:'Poppins',Arial,sans-serif;font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;padding:14px 26px;border-radius:50px;text-decoration:none;box-shadow:0 10px 34px rgba(0,0,0,.32);">Inscríbete &rarr;</a>
 <script>(function(){var U="https://bffdsgvgcvmojobfiuay.supabase.co/functions/v1/rm-hit";function h(e){var d=JSON.stringify({slug:"riskmastery",ev:e});try{navigator.sendBeacon(U,d)}catch(_){try{fetch(U,{method:"POST",body:d,keepalive:true})}catch(__){}}}h("view");document.addEventListener("click",function(ev){var a=ev.target&&ev.target.closest?ev.target.closest("a"):null;if(!a)return;var href=a.href||"";if(href.indexOf("buy.stripe.com")>=0)h("stripe");else if(href.indexOf("paypal-pay")>=0)h("paypal");},true);})();</script>
 <script async src="https://bffdsgvgcvmojobfiuay.supabase.co/functions/v1/rm-pixel"></script>
 </body>
