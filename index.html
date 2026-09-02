@@ -239,11 +239,11 @@ body{background:#040408}
 <ul class="form-benefits"><li><span class="check"></span> Brochure completo, 14 módulos, 150 clases</li><li><span class="check"></span> Calendario de niveles y estructura de evaluación</li><li><span class="check"></span> Opciones de inversión (individual, corporativa, becas)</li><li><span class="check"></span> Licencias corporativas e institucionales</li><li><span class="check"></span> Early-bird pricing y planes de pago</li></ul></div>
 <div class="form-right" id="formContainer"><h3>Solicitar información</h3><div class="form-subtitle">Campos con * son obligatorios</div>
 <form id="mlcForm" onsubmit="handleSubmit(event)">
-<div class="form-row"><div class="form-group"><label>Name *</label><input type="text" name="firstName" required placeholder="Carlos"></div><div class="form-group"><label>Surname *</label><input type="text" name="lastName" required placeholder="Rodríguez"></div></div>
-<div class="form-group"><label>Title *</label><input type="text" name="title" required placeholder="Data Scientist, CTO, Head of Analytics"></div>
-<div class="form-group"><label>Company *</label><input type="text" name="company" required placeholder="BBVA, Stori, Hospital Angeles, KPMG"></div>
+<div class="form-row"><div class="form-group"><label>Name *</label><input type="text" name="firstName" placeholder="Carlos"></div><div class="form-group"><label>Surname *</label><input type="text" name="lastName" placeholder="Rodríguez"></div></div>
+<div class="form-group"><label>Title *</label><input type="text" name="title" placeholder="Data Scientist, CTO, Head of Analytics"></div>
+<div class="form-group"><label>Company *</label><input type="text" name="company" placeholder="BBVA, Stori, Hospital Angeles, KPMG"></div>
 <div class="form-group"><label>Business Email *</label><input type="email" id="email" name="email" required placeholder="nombre@empresa.com"><div class="form-disclaimer">Se requiere correo corporativo.</div></div>
-<div class="form-group"><label>Sector *</label><select name="sector" required><option value="" disabled selected>Selecciona</option><option>Bank / Banca</option><option>Fintech / Neobank</option><option>Asset Manager / Hedge Fund</option><option>Insurance</option><option>Broker-Dealer / Trading</option><option>Corporate / Treasury</option><option>Consulting / Big 4</option><option>Healthcare / Pharma / Biotech</option><option>Legal / Law Firm</option><option>Technology / SaaS</option><option>Energy / Retail / Logistics</option><option>Regulator / Government</option><option>Academic / Research</option><option>Independent / Startup</option></select></div>
+<div class="form-group"><label>Sector *</label><select name="sector"><option value="" disabled selected>Selecciona</option><option>Bank / Banca</option><option>Fintech / Neobank</option><option>Asset Manager / Hedge Fund</option><option>Insurance</option><option>Broker-Dealer / Trading</option><option>Corporate / Treasury</option><option>Consulting / Big 4</option><option>Healthcare / Pharma / Biotech</option><option>Legal / Law Firm</option><option>Technology / SaaS</option><option>Energy / Retail / Logistics</option><option>Regulator / Government</option><option>Academic / Research</option><option>Independent / Startup</option></select></div>
 <div class="form-group"><label>Interés</label><select name="interest"><option value="" disabled selected>¿Qué buscas?</option><option>Programa completo (3 niveles)</option><option>Nivel(es) específico(s)</option><option>Licencia corporativa</option><option>Solo más información</option></select></div>
 <button type="submit" class="btn-submit">Solicitar información →</button>
 <div class="form-secure"> Información protegida.</div></form>
@@ -378,11 +378,11 @@ h1,h2,h3,h4,h5,h6{color:#FFFFFF !important}
  <form id="rm-lead" onsubmit="return rmSubmit(event)" style="display:grid;gap:22px;">
  <div><label class="rm-lb">Nombre(s)</label><input class="rm-in" name="nombre" required></div>
  <div class="rm-2col" style="display:grid;grid-template-columns:1fr 1fr;gap:22px 20px;">
- <div><label class="rm-lb">Apellido paterno</label><input class="rm-in" name="apellido_paterno" required></div>
+ <div><label class="rm-lb">Apellido paterno</label><input class="rm-in" name="apellido_paterno"></div>
  <div><label class="rm-lb">Apellido materno</label><input class="rm-in" name="apellido_materno"></div>
  </div>
  <div><label class="rm-lb">Tipo de registro</label>
- <select class="rm-in" name="tipo_interes" required onchange="var individual=this.value==='individual',form=this.form;['puesto','empresa','sector'].forEach(function(name){var field=form.elements[name];if(field)field.required=!individual;});">
+ <select class="rm-in" name="tipo_interes" onchange="var individual=this.value==='individual',form=this.form;['puesto','empresa','sector'].forEach(function(name){var field=form.elements[name];if(field)field.required = false;});">
  <option value="" disabled selected></option>
  <option value="individual">Inscripción individual</option>
  <option value="grupo">Grupo o delegación</option>
@@ -392,11 +392,11 @@ h1,h2,h3,h4,h5,h6{color:#FFFFFF !important}
  </div>
  <div><label class="rm-lb">Email corporativo o institucional</label><input class="rm-in" type="email" name="email" required></div>
  <div class="rm-2col" style="display:grid;grid-template-columns:1fr 1fr;gap:22px 20px;">
- <div><label class="rm-lb">Puesto</label><input class="rm-in" name="puesto" required></div>
- <div><label class="rm-lb">Institución / Empresa</label><input class="rm-in" name="empresa" required></div>
+ <div><label class="rm-lb">Puesto</label><input class="rm-in" name="puesto"></div>
+ <div><label class="rm-lb">Institución / Empresa</label><input class="rm-in" name="empresa"></div>
  </div>
  <div><label class="rm-lb">Sector financiero / industria</label>
- <select class="rm-in" name="sector" required>
+ <select class="rm-in" name="sector">
  <option value="" disabled selected></option>
  <option>AFORE / Fondos de Pensión</option>
  <option>Aseguradora / Insurance</option>
@@ -414,7 +414,7 @@ h1,h2,h3,h4,h5,h6{color:#FFFFFF !important}
  </div>
  <div class="rm-2col" style="display:grid;grid-template-columns:1fr 1fr;gap:22px 20px;">
  <div><label class="rm-lb">País</label>
- <select class="rm-in" name="pais" required>
+ <select class="rm-in" name="pais">
  <option value="" disabled data-iso=""></option>
  <option data-iso="mx" selected>México</option>
  <option data-iso="us">Estados Unidos</option>
